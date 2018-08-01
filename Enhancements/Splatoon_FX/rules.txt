@@ -1,0 +1,46 @@
+[Definition]
+titleIds = 0005000010176900,0005000010176A00,0005000010162B00
+name = SplatFX
+path = "Splatoon/SplatFX"
+#description = 
+version = 4
+
+[Preset]
+name = User Defined
+$preset = 0
+
+[Preset]
+name = Bruz Option (BotW)
+$preset = 1
+
+[Preset]
+name = BSOD Option (BotW)
+$preset = 2
+
+[Preset]
+name = Clarity Option (BotW)
+$preset = 3
+
+[Preset]
+name = Contrasty Option (BotW)
+$preset = 4
+
+[Preset]
+name = Serfrost Option (BotW)
+$preset = 5
+
+[Preset]
+name = Sharpen Only Option (BotW)
+$preset = 6
+
+[Preset]
+name = The Complaining Gamer Option (BotW)
+$preset = 7
+
+[Preset]
+name = Filmic Preset Option (BotW)
+$preset = 8
+
+[Preset]
+name = CellHunter Option (BotW)
+$preset = 9
