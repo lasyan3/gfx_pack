@@ -1,0 +1,64 @@
+[Definition]
+titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
+name = Shadow Resolution
+path = "The Legend of Zelda: Breath of the Wild/Shadow Resolution"
+description = Note: Increasing shadow resolution is known to increase VRAM usage directly. Lowering this increases performance but makes shadows blockier.
+version = 4
+
+[Preset]
+name = 640x480
+$width = 640
+$height = 480
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = 1600x900
+$width = 1600
+$height = 900
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = 1920x1080
+$width = 1920
+$height = 1080
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = 2560x1440
+$width = 2560
+$height = 1440
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = 3200x1800
+$width = 3200
+$height = 1800
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = 3840x2160
+$width = 3840
+$height = 2160
+$gameWidth = 1280
+$gameHeight = 720
+
+
+
+[TextureRedefine]
+width = 360
+height = 360
+formats = 0x005
+overwriteWidth = $width/gameWidth*360
+overwriteHeight = $width/gameHeight*360
+
+[TextureRedefine]
+width = 720
+height = 720
+formats = 0x005
+overwriteWidth = $width/gameWidth*720
+overwriteHeight = $width/gameHeight*720
