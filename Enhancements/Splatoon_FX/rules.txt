@@ -18,7 +18,7 @@ name = BSOD Option (BotW)
 $preset = 2
 
 [Preset]
-name = Clarity Option (BotW)
+name = Jamie Option (BotW)
 $preset = 3
 
 [Preset]
