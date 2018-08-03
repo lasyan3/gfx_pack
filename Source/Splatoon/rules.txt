@@ -69,6 +69,7 @@ overwriteHeight = ($height / $gameHeight) * 360
 [TextureRedefine] # Blur Map
 width = 512
 height = 256
+formats = 0x816
 overwriteWidth = ($width / $gameWidth) * 512
 overwriteHeight = ($height / $gameHeight) * 256
 
@@ -106,6 +107,7 @@ overwriteHeight = ($height / $gameHeight) * 180
 [TextureRedefine] # Bloom Mip
 width = 256
 height = 128
+formats = 0x816
 overwriteWidth = ($width / $gameWidth) * 256
 overwriteHeight = ($height / $gameHeight) * 128
 
@@ -124,6 +126,7 @@ overwriteHeight = ($height / $gameHeight) * 90
 [TextureRedefine] # Bloom Mip
 width = 128
 height = 64
+formats = 0x816
 overwriteWidth = ($width / $gameWidth) * 128
 overwriteHeight = ($height / $gameHeight) * 64
 
@@ -142,6 +145,7 @@ overwriteHeight = ($height / $gameHeight) * 45
 [TextureRedefine] # Bloom Mip
 width = 64
 height = 32
+formats = 0x816
 overwriteWidth = ($width / $gameWidth) * 64
 overwriteHeight = ($height / $gameHeight) * 32
 
@@ -154,12 +158,14 @@ overwriteHeight = ($height / $gameHeight) * 22
 [TextureRedefine] # Bloom Mip
 width = 32
 height = 16
+formats = 0x816
 overwriteWidth = ($width / $gameWidth) * 32
 overwriteHeight = ($height / $gameHeight) * 16
 
 [TextureRedefine] # Bloom Mip
 width = 24
 height = 16
+formats = 0x816
 overwriteWidth = ($width / $gameWidth) * 24
 overwriteHeight = ($height / $gameHeight) * 16
 
