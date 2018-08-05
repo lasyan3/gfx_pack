@@ -16,7 +16,7 @@ $gameHeight = 720
 
 [Preset]
 name = 427x240
-$width = 426.6666666666667
+$width = 427
 $height = 240
 $gameWidth = 1280
 $gameHeight = 720
@@ -29,8 +29,8 @@ $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = 853x480
-$width = 853.3333333333333
+name = 854x480
+$width = 854
 $height = 480
 $gameWidth = 1280
 $gameHeight = 720
