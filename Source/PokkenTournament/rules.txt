@@ -244,5 +244,5 @@ overwriteHeight = ($height / $gameHeight) * 8
 width = 512
 height = 512
 formats = 0x5
-overwriteWidth = ($width / $gameWidth) * 512
+overwriteWidth = ($height / $gameHeight) * 512
 overwriteHeight = ($height / $gameHeight) * 512
