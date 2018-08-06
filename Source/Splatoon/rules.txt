@@ -112,6 +112,7 @@ $gameHeight = 720
 [TextureRedefine] # Game Resolution
 width = 1280
 height = 720
+formatsExcluded = 0x31
 overwriteWidth = ($width / $gameWidth) * 1280
 overwriteHeight = ($height / $gameHeight) * 720
 
@@ -162,7 +163,7 @@ overwriteHeight = ($height / $gameHeight) * 192
 [TextureRedefine] # Bloom Mip
 width = 320
 height = 180
-formatsExcluded = 0x35
+formatsExcluded = 0x35,0x11f
 overwriteWidth = ($width / $gameWidth) * 320
 overwriteHeight = ($height / $gameHeight) * 180
 
