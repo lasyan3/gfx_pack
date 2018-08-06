@@ -7,15 +7,15 @@ version = 3
 
 [Preset]
 name = Disabled
-$preset = 0
+$preset:int = 0
 
 [Preset]
 name = Enabled
-$preset = 1
+$preset:int = 1
 
 [Preset]
 name = FXAA
-$preset = 2
+$preset:int = 2
 
 # Subpix:
 # Choose the amount of sub-pixel aliasing removal.

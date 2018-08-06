@@ -7,40 +7,40 @@ version = 3
 
 [Preset]
 name = User Defined
-$preset = 0
+$preset:int = 0
 
 [Preset]
 name = Bruz Option (BotW)
-$preset = 1
+$preset:int = 1
 
 [Preset]
 name = BSOD Option (BotW)
-$preset = 2
+$preset:int = 2
 
 [Preset]
 name = Jamie Option (BotW)
-$preset = 3
+$preset:int = 3
 
 [Preset]
 name = Contrasty Option (BotW)
-$preset = 4
+$preset:int = 4
 
 [Preset]
 name = Serfrost Option (BotW)
-$preset = 5
+$preset:int = 5
 
 [Preset]
 name = Sharpen Only Option (BotW)
-$preset = 6
+$preset:int = 6
 
 [Preset]
 name = The Complaining Gamer Option (BotW)
-$preset = 7
+$preset:int = 7
 
 [Preset]
 name = Filmic Preset Option (BotW)
-$preset = 8
+$preset:int = 8
 
 [Preset]
 name = CellHunter Option (BotW)
-$preset = 9
+$preset:int = 9

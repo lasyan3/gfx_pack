@@ -7,40 +7,40 @@ version = 3
 
 [Preset]
 name = User Defined
-$preset = 0
+$preset:int = 0
 
 [Preset]
 name = Bruz Option
-$preset = 1
+$preset:int = 1
 
 [Preset]
 name = BSOD Option
-$preset = 2
+$preset:int = 2
 
 [Preset]
 name = Jamie Option
-$preset = 3
+$preset:int = 3
 
 [Preset]
 name = Contrasty Option
-$preset = 4
+$preset:int = 4
 
 [Preset]
 name = Serfrost Option
-$preset = 5
+$preset:int = 5
 
 [Preset]
 name = Sharpen Only Option
-$preset = 6
+$preset:int = 6
 
 [Preset]
 name = The Complaining Gamer Option
-$preset = 7
+$preset:int = 7
 
 [Preset]
 name = Filmic Preset Option
-$preset = 8
+$preset:int = 8
 
 [Preset]
 name = CellHunter Option
-$preset = 9
+$preset:int = 9

@@ -7,7 +7,7 @@ const Calc = require("expression-calculator");
 
 const watchInterval = 4000;
 var watchFlag = false;
-buildFolder = "../Build";
+buildFolder = "../Build/";
 
 process.argv.slice(2).forEach((val, index) => {
     if (val === "--watch") watchFlag = true;
