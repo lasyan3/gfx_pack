@@ -7,22 +7,14 @@ node_js:
 git:
   depth: 1
 
-install: cd docs && npm install
+install:
+ - cd docs
+ - npm install
+ - npm install -g github-release-cli@0.4.1
 
 script: node version-transcompiler.js
 
-before_deploy:
- - cd ../Build/
- - zip -o -9 -r -q "Cemu1.14.0GFXPacks-$TRAVIS_BUILD_NUMBER"".zip" ./*
-
-deploy:
-  provider: releases
-  skip_cleanup: true
-  api_key:
-    secure: $GITHUB_TOKEN
-  name: 'Cemu 1.14.0 Graphic Pack Releases'
-  file_glob: true
-  file: ./*.zip
-  on:
-    tags: false
-    repo: slashiee/gfx_pack
+after_success:
+  - cd ../Build/
+  - zip -o -9 -r -q "Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./*
+  - github-release upload --owner=slashiee --repo=gfx_pack --tag="Travis$TRAVIS_BUILD_NUMBER" --name="Cemu 1.14.0 WIP: version $TRAVIS_BUILD_NUMBER" --body="$(git log -1 --format='Commited at %ci by **%cn** in commit %h%n### %s%n```%n%b%n```%n')" "Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip"
