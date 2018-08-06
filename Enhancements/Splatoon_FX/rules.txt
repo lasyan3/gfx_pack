@@ -3,7 +3,7 @@ titleIds = 0005000010176900,0005000010176A00,0005000010162B00
 name = SplatFX
 path = "Splatoon/SplatFX"
 #description = 
-version = 4
+version = 3
 
 [Preset]
 name = User Defined

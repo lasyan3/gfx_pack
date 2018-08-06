@@ -3,7 +3,7 @@ titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
 name = Clarity
 path = "The Legend of Zelda: Breath of the Wild/Clarity"
 description = This version of Clarity only works with Cemu 1.13.0e! These packs don't work on the Cemu 1.14.0 WIP builds using the version-transcompiler (use the old Clarity pack instead). They also don't work on Cemu 1.13.0d.
-version = 4
+version = 3
 
 [Preset]
 name = User Defined

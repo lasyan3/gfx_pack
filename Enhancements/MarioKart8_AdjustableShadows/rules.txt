@@ -1,7 +1,7 @@
 [Definition]
-titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
+titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
 name = Shadow Resolution
-path = "The Legend of Zelda: Breath of the Wild/Shadow Resolution"
+path = "Mario Kart 8/Shadow Resolution"
 description = Note: Increasing shadow resolution is known to increase VRAM usage directly. Lowering this increases performance but makes shadows blockier.
 version = 3
 
@@ -109,16 +109,10 @@ $height = 5760
 $gameWidth = 1280
 $gameHeight = 720
 
-[TextureRedefine]
-width = 360
-height = 360
-formats = 0x005
-overwriteWidth = ($width/$gameWidth) * 360
-overwriteHeight = ($height/$gameHeight) * 360
 
-[TextureRedefine]
-width = 720
-height = 720
+[TextureRedefine] # Shadows
+width = 1024
+height = 1024
 formats = 0x005
-overwriteWidth = ($width/$gameWidth) * 720
-overwriteHeight = ($height/$gameHeight) * 720
+overwriteWidth = ($width/$gameWidth) * 1024
+overwriteHeight = ($height/$gameHeight) * 1024

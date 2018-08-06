@@ -12,7 +12,7 @@ buildFolder = "../Build";
 process.argv.slice(2).forEach((val, index) => {
     if (val === "--watch") watchFlag = true;
     if (val === "--help") console.log(
-        `This graphic pack version transcompiler has a few optional command line arguments:
+        `This graphic pack Cemu version transcompiler has a few optional command line arguments:
         node version-transcompiler.js [--help] [--watch] [file path to a directory]
         --watch: Will watch the folder for any changes and automatically compile everything.
         path to a directory: By default the Build folder in the parent directory, but this let's you point it to your own directory, like your Cemu graphic pack folder.
