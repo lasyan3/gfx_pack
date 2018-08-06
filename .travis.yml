@@ -2,8 +2,6 @@ dist: trusty
 sudo: false
 language: node_js
 
-if: tag IS blank
-
 git:
   depth: 1
 
@@ -14,7 +12,7 @@ script: node version-transcompiler.js
 
 before_deploy:
  - cd ../Build/
- - zip -o -9 -r -q "Cemu1.14.0GFXPacks-V$TRAVIS_BUILD_NUMBER"".zip" ./*
+ - zip -o -9 -r -q "Cemu1.14.0GFXPacks-$TRAVIS_BUILD_NUMBER"".zip" ./*
 
 deploy:
   provider: releases
