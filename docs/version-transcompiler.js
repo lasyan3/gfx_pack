@@ -7,15 +7,18 @@ const Calc = require("expression-calculator");
 
 const watchInterval = 4000;
 var watchFlag = false;
+var debugFlag = false;
 buildFolder = "../Build/";
 
 process.argv.slice(2).forEach((val, index) => {
     if (val === "--watch") watchFlag = true;
+    if (val === "--debug") debugFlag = true;
     if (val === "--help") console.log(
         `This graphic pack Cemu version transcompiler has a few optional command line arguments:
         node version-transcompiler.js [--help] [--watch] [file path to a directory]
         --watch: Will watch the folder for any changes and automatically compile everything.
         path to a directory: By default the Build folder in the parent directory, but this let's you point it to your own directory, like your Cemu graphic pack folder.
+        --debug: Shows debug information and makes a massive log.
         --help: Shows this help message.`
     );
     if (val.indexOf(":/") < 2 || val.indexOf(":\\") < 2) {
@@ -125,13 +128,13 @@ function TranscompilePacks() {
                                 if (expression.includes("+") || expression.includes("-") || expression.includes("*") || expression.includes("/") || expression.includes("(") || expression.includes(")") || expression.includes("^")) {
                                     // Calculate the preset value that we need to add to the preset.
                                     for (preset in existingExpressions) {
-                                        console.group(`Converting ${expression.trim()} to ${expression.replace(/\$/g, "").trim()} and calculating it with these variables ${JSON.stringify(existingExpressions[preset])}.`);
+                                        if (debugFlag) console.group(`Converting ${expression.trim()} to ${expression.replace(/\$/g, "").trim()} and calculating it with these variables ${JSON.stringify(existingExpressions[preset])}.`);
                                         let result = calc.compile(expression.replace(/\$/g, "")).calc(existingExpressions[preset]);
                                         if (graphicPacks[pack][file] === "rules.txt") result = Math.ceil(result);
-                                        console.log(`New preset line for "${preset}" that will be added to line ${existingExpressions[preset].additionsLine} will hold ${result}.`);
+                                        if (debugFlag) console.log(`New preset line for "${preset}" that will be added to line ${existingExpressions[preset].additionsLine} will hold ${result}.`);
                                         let newLine = textContent[i].split("=")[0].trim() + " = $exprFile" + file + "Line" + i + (graphicPacks[pack][file] === "rules.txt" ? "" : ";");
-                                        console.log(`New line at ${i} will be resolved to '${newLine}' and replaces '${textContent[i]}'.`);
-                                        console.groupEnd();
+                                        if (debugFlag) console.log(`New line at ${i} will be resolved to '${newLine}' and replaces '${textContent[i]}'.`);
+                                        if (debugFlag) console.groupEnd();
 
                                         existingExpressions[preset].queue = existingExpressions[preset].queue || [];
                                         existingExpressions[preset].queue.push("$exprFile" + file + "Line" + i + " = " + result);
