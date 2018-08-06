@@ -2,7 +2,7 @@
 #extension GL_ARB_texture_gather : enable
 // shader 0f2b9ee517917425
 
-#define preset $preset
+#define preset $preset:int
 
 #if (preset == 0)
 layout(binding = 0) uniform sampler2D textureUnitPS0;

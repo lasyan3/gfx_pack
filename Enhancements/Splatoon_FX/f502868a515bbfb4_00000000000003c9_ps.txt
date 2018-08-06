@@ -2,7 +2,7 @@
 #extension GL_ARB_texture_gather : enable
 // shader f502868a515bbfb4
 //##########################################################
-#define Preset $preset
+#define Preset $preset:int
 														// User Defined 0
 														// Bruz Option 1
 														// BSOD Option 2             

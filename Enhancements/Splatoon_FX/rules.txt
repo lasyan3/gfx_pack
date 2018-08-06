@@ -2,7 +2,7 @@
 titleIds = 0005000010176900,0005000010176A00,0005000010162B00
 name = SplatFX
 path = "Splatoon/SplatFX"
-#description = 
+description = This version of SplatFX only works with Cemu 1.13.0e! These packs don't work on the Cemu 1.14.0 WIP builds using the version-transcompiler (use the old SplatFX pack instead). They also don't work on Cemu 1.13.0d.
 version = 3
 
 [Preset]
