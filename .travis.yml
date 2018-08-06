@@ -17,4 +17,11 @@ script: node version-transcompiler.js
 after_success:
   - cd ../Build/
   - zip -o -9 -r -q "Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./*
-  - github-release upload --owner=slashiee --repo=gfx_pack --tag="Travis$TRAVIS_BUILD_NUMBER" --name="Cemu 1.14.0 WIP: version $TRAVIS_BUILD_NUMBER" --body="$(git log -1 --format='Commited at %ci by **%cn** in commit %h%n### %s%n```%n%b%n```%n')" "Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip"
+  - |
+    github-release upload \
+      --owner=slashiee \
+      --repo=gfx_pack \
+      --tag="Travis$TRAVIS_BUILD_NUMBER" \
+      --name="Cemu 1.14.0 WIP: version $TRAVIS_BUILD_NUMBER" \
+      --body="$(git log -1 --format='Commited at %ci by **%cn** in commit %h%n### %s%n```%n%b%n```%n')" \
+      "Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip"
