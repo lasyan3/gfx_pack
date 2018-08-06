@@ -2,117 +2,28 @@
 titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
 name = Shadow Resolution
 path = "Mario Kart 8/Shadow Resolution"
-description = Note: Increasing shadow resolution is known to increase VRAM usage directly. Lowering this increases performance but makes shadows blockier.
+description = Note: Increasing shadow resolution is known to increase VRAM usage directly. Lowering this increases performance but makes shadows blockier. Medium is the original resolution.
 version = 3
 
-// Performance
+[Preset]
+name = Low (0.50x)
+$shadowRes = 0.5
 
 [Preset]
-name = 256x144
-$width = 256
-$height = 144
-$gameWidth = 1280
-$gameHeight = 720
+name = Medium (1.00x)
+$shadowRes = 1
 
 [Preset]
-name = 427x240
-$width = 427
-$height = 240
-$gameWidth = 1280
-$gameHeight = 720
+name = High (2.00x)
+$shadowRes = 2
 
 [Preset]
-name = 640x360
-$width = 640
-$height = 360
-$gameWidth = 1280
-$gameHeight = 720
+name = Ultra (4.00x)
+$shadowRes = 4
 
-[Preset]
-name = 854x480
-$width = 854
-$height = 480
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 960x540
-$width = 960
-$height = 540
-$gameWidth = 1280
-$gameHeight = 720
-
-// Quality
-
-[Preset]
-name = 1600x900
-$width = 1600
-$height = 900
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 1920x1080
-$width = 1920
-$height = 1080
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 2560x1440
-$width = 2560
-$height = 1440
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 2732x1536
-$width = 2732
-$height = 1536
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 3200x1800
-$width = 3200
-$height = 1800
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 3840x2160
-$width = 3840
-$height = 2160
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 5120x2880
-$width = 5120
-$height = 2880
-$gameWidth = 1280
-$gameHeight = 720
-
-// Enthusiast
-
-[Preset]
-name = 7680x4320
-$width = 7680
-$height = 4320
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 10240x5760
-$width = 10240
-$height = 5760
-$gameWidth = 1280
-$gameHeight = 720
-
-
-[TextureRedefine] # Shadows
+[TextureRedefine]
 width = 1024
 height = 1024
 formats = 0x005
-overwriteWidth = ($width/$gameWidth) * 1024
-overwriteHeight = ($height/$gameHeight) * 1024
+overwriteWidth = $shadowRes * 1024
+overwriteHeight = $shadowRes * 1024

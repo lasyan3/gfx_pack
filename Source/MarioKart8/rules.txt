@@ -119,6 +119,30 @@ tileModesExcluded = 0x001
 overwriteWidth = ($width/$gameWidth) * 1280
 overwriteHeight = ($height/$gameHeight) * 720
 
+# Screen thumbnail on gamepad, other viewports
+[TextureRedefine]
+width = 640
+height = 368
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 640
+overwriteHeight = ($height/$gameHeight) * 368
+
+# Bloom mipmap (?)
+[TextureRedefine]
+width = 128
+height = 64
+formats = 0x035
+overwriteWidth = ($width/$gameWidth) * 128
+overwriteHeight = ($height/$gameHeight) * 64
+
+# Bloom (?)
+[TextureRedefine]
+width = 128
+height = 64
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 128
+overwriteHeight = ($height/$gameHeight) * 64
+
 # Blur in menu's
 [TextureRedefine]
 width = 320
@@ -135,18 +159,18 @@ overwriteWidth = ($width/$gameWidth) * 320
 overwriteHeight = ($height/$gameHeight) * 192
 
 
-# Menu HUD
+# Menu HUD and Gamepad Res
 [TextureRedefine]
 width = 854
 height = 480
-formats = 0x816
+formats = 0x019
 overwriteWidth = ($width/$gameWidth) * 854
 overwriteHeight = ($height/$gameHeight) * 480
 
 [TextureRedefine]
 width = 864
 height = 480
-formats = 0x816
+formats = 0x019
 overwriteWidth = ($width/$gameWidth) * 864
 overwriteHeight = ($height/$gameHeight) * 480
 
