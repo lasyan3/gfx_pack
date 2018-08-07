@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
 name = Resolution
-path = "The Legend of Zelda: Breath of the Wild/Resolution"
+path = "The Legend of Zelda: Breath of the Wild/Graphics/Resolution"
 description = Changes the game's resolution.
 version = 3
 

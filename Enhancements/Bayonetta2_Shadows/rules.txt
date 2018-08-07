@@ -1,7 +1,7 @@
 [Definition]
-titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
+titleIds = 0005000010172600,0005000010172700,000500001011B900
 name = Shadow Resolution
-path = "The Legend of Zelda: Breath of the Wild/Graphics/Shadow Resolution"
+path = "Bayonetta 2/Graphics/Shadow Resolution"
 description = Note: Increasing shadow resolution is known to increase VRAM usage directly. Lowering this increases performance but makes shadows blockier. Medium is the original resolution.
 version = 3
 
@@ -22,15 +22,8 @@ name = Ultra (4.00x)
 $shadowRes = 4
 
 [TextureRedefine] # Shadows
-width = 720
-height = 720
-formats = 0x005
-overwriteWidth = $shadowRes * 720
-overwriteHeight = $shadowRes * 720
-
-[TextureRedefine] # Performance Shadows
-width = 360
-height = 360
-formats = 0x005
-overwriteWidth = $shadowRes * 360
-overwriteHeight = $shadowRes * 360
+width = 1024
+height = 2048
+formats = 0x5
+overwriteWidth = $shadowRes * 1024
+overwriteHeight = $shadowRes * 2048

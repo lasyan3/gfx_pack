@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 00050000101DF400,00050002101DF401,00050000101DF500
 name = Resolution
-path = "Pokken Tournament/Resolution"
+path = "Pokken Tournament/Graphics/Resolution"
 description = Changes the resolution of the game.
 version = 3
 
@@ -239,10 +239,3 @@ height = 2
 formats = 0x816
 overwriteWidth = ($width / $gameWidth) * 8
 overwriteHeight = ($height / $gameHeight) * 8
-
-[TextureRedefine] # Shadows
-width = 512
-height = 512
-formats = 0x5
-overwriteWidth = ($height / $gameHeight) * 512
-overwriteHeight = ($height / $gameHeight) * 512

@@ -1,8 +1,8 @@
 [Definition]
 titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
-name = Mario Kart 8/Resolution
-path = "Mario Kart 8/Resolution"
-#description =
+name = Resolution
+path = "Mario Kart 8/Graphics/Resolution"
+description = Changes the resolution of the game.
 version = 3
 
 // Performance
@@ -108,7 +108,6 @@ $width = 10240
 $height = 5760
 $gameWidth = 1280
 $gameHeight = 720
-
 
 # Full Res
 [TextureRedefine]

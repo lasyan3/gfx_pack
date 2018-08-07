@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 0005000010176900,0005000010176A00,0005000010162B00
 name = Resolution
-path = "Splatoon/Resolution"
+path = "Splatoon/Graphics/Resolution"
 description = Changes the resolution of the game.
 version = 3
 
@@ -310,17 +310,3 @@ width = 13
 height = 7
 overwriteWidth = ($width / $gameWidth) * 13
 overwriteHeight = ($height / $gameHeight) * 7
-
-[TextureRedefine] # Shadows
-width = 2048
-height = 2048
-formats = 0x5
-overwriteWidth = ($height / $gameHeight) * 2048
-overwriteHeight = ($height / $gameHeight) * 2048
-
-[TextureRedefine] # Performance Shadows
-width = 1024
-height = 1024
-formats = 0x5
-overwriteWidth = ($height / $gameHeight) * 1024
-overwriteHeight = ($height / $gameHeight) * 1024

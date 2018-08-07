@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 0005000010101F00,0005000010102000,0005000010102100
 name = Resolution
-path = "Nintendo Land/Resolution"
+path = "Nintendo Land/Graphics/Resolution"
 description = Changes the resolution of the game.
 version = 3
 
@@ -269,24 +269,3 @@ width = 26
 height = 15
 overwriteWidth = ($width / $gameWidth) * 26
 overwriteHeight = ($height / $gameHeight) * 15
-
-[TextureRedefine] # Shadows
-width = 2048
-height = 2048
-formats = 0x5
-overwriteWidth = ($height / $gameHeight) * 2048
-overwriteHeight = ($height / $gameHeight) * 2048
-
-[TextureRedefine] # Performance Shadows
-width = 896
-height = 864
-formats = 0x5
-overwriteWidth = ($height / $gameHeight) * 896
-overwriteHeight = ($height / $gameHeight) * 864
-
-[TextureRedefine] # Performance Shadows
-width = 856
-height = 856
-formats = 0x5
-overwriteWidth = ($height / $gameHeight) * 856
-overwriteHeight = ($height / $gameHeight) * 856
