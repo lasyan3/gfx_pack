@@ -5,6 +5,7 @@
 // shader dumped from BotW v1.4.0, using Cemu 1.11.1
 const float resXScale = $shadowRes;
 const float resYScale = $shadowRes;
+
 layout(binding = 33, std140) uniform uniformBlockPS1
 {
 vec4 uf_blockPS1[1024];

@@ -7,19 +7,19 @@ version = 3
 
 [Preset]
 name = Low (0.50x)
-$shadowRes:int = 0.5
+$shadowRes = 0.5
 
 [Preset]
 name = Medium (1.00x)
-$shadowRes:int = 1
+$shadowRes = 1
 
 [Preset]
 name = High (2.00x)
-$shadowRes:int = 2
+$shadowRes = 2
 
 [Preset]
 name = Ultra (4.00x)
-$shadowRes:int = 4
+$shadowRes = 4
 
 [TextureRedefine] # Shadows
 width = 720
