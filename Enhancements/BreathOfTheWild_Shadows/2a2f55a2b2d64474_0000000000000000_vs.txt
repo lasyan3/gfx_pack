@@ -4,8 +4,8 @@
 // shader 2a2f55a2b2d64474
 // Fixed radius blur
 // shadow pass blur h
-const float resXScale = $width/1280;
-const float resYScale = $height/720;
+const float resXScale = $shadowRes;
+const float resYScale = $shadowRes;
 
 uniform ivec4 uf_remappedVS[1];
 uniform vec2 uf_windowSpaceToClipSpaceTransform;
