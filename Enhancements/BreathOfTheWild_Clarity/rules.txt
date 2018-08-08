@@ -14,7 +14,7 @@ name = Bruz Option
 $preset:int = 1
 
 [Preset]
-name = BSOD Option
+name = BSoD Option
 $preset:int = 2
 
 [Preset]
