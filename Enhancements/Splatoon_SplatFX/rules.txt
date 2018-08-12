@@ -2,7 +2,7 @@
 titleIds = 0005000010176900,0005000010176A00,0005000010162B00
 name = SplatFX
 path = "Splatoon/Enhancements/SplatFX"
-description = This version of SplatFX only works with Cemu 1.13.0e! These packs don't work on the Cemu 1.14.0 WIP builds using the version-transcompiler (use the old SplatFX pack instead). They also don't work on Cemu 1.13.0d.
+description = Select the visual look of the game that you'll like with these hand-made presets that adjusts saturation, vibrance, colors and more. You can select a preset. Selecting "User Defined" requires having made your own preset, check the "Splatoon_SplatFX/4a377a50eda82af8_0000000000001e51_ps.txt" and the "Splatoon_SplatFX/f502868a515bbfb4_00000000000003c9_ps.txt" file in your graphicPack folder to create one.
 version = 3
 
 [Preset]

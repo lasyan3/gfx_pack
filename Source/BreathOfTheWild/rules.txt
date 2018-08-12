@@ -2,7 +2,7 @@
 titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
 name = Resolution
 path = "The Legend of Zelda: Breath of the Wild/Graphics/Resolution"
-description = Changes the game's resolution.
+description = Changes the game's resolution. Not compatible with 1.14.0 yet, however you can use this with 1.13.0.
 version = 3
 
 // Performance

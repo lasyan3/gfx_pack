@@ -6,12 +6,12 @@ description = Note: Increasing shadow resolution is known to increase VRAM usage
 version = 3
 
 [Preset]
-name = Low (0.50x)
-$shadowRes = 0.5
+name = (Default)Medium (1.00x)
+$shadowRes = 1
 
 [Preset]
-name = Medium (1.00x)
-$shadowRes = 1
+name = Low (0.50x)
+$shadowRes = 0.5
 
 [Preset]
 name = High (2.00x)

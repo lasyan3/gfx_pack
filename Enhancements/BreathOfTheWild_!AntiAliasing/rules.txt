@@ -2,8 +2,12 @@
 titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
 name = Anti-Aliasing
 path = "The Legend of Zelda: Breath of the Wild/Graphics/Anti-Aliasing"
-description = This version of Anti-Aliasing only works with Cemu 1.13.0e! These packs don't work on the Cemu 1.14.0 WIP builds using the version-transcompiler (use the old Anti-Aliasing pack instead). They also don't work on Cemu 1.13.0d.
+description = It's recommended to have this pack disabled and just use the resolution pack which ships with a fixed Anti-Aliasing version. FXAA: Uses a custom FXAA variant which is customizable. Check the "GameTitleHere_!Anti-Aliasing/rules.txt" file in your graphicPack folder for info about the individual settings. ENABLED: Restores the game's 720p Anti-Aliasing, but will look broken when using any other resolution. DISABLED: Removes any Anti-Aliasing for experimenting or external injecting, which will result in jaggy lines (aliasing) on the screen.
 version = 3
+
+[Preset]
+name = FXAA
+$preset:int = 2
 
 [Preset]
 name = Disabled
@@ -12,10 +16,6 @@ $preset:int = 0
 [Preset]
 name = Enabled
 $preset:int = 1
-
-[Preset]
-name = FXAA
-$preset:int = 2
 
 # Subpix:
 # Choose the amount of sub-pixel aliasing removal.
