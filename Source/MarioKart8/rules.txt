@@ -2,7 +2,7 @@
 titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
 name = Resolution
 path = "Mario Kart 8/Graphics/Resolution"
-description = Changes the resolution of the game. Note: 3-4P crashes pretty early into the race, upscaling works but misses shadows (also has a weird problem with the initial stage cinematic).
+description = Changes the resolution of the game. Known issues: 3-4P upscaling works but misses shadows.
 version = 3
 
 // Performance
@@ -144,6 +144,13 @@ formats = 0x816
 tileModesExcluded = 0x001
 overwriteWidth = ($width/$gameWidth) * 640
 overwriteHeight = ($height/$gameHeight) * 360
+
+[TextureRedefine]
+width = 512
+height = 256
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 512
+overwriteHeight = ($height/$gameHeight) * 256
 
 
 # Blur in menu's
