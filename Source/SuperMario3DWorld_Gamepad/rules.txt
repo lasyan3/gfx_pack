@@ -1,7 +1,7 @@
 [Definition]
-titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
+titleIds = 0005000010145D00,0005000010145C00,0005000010106100
 name = Gamepad Resolution
-path = "Mario Kart 8/Graphics/Gamepad Resolution"
+path = "Super Mario 3D World/Graphics/Gamepad Resolution"
 description = Changes the gamepad resolution of the game.
 version = 3
 
@@ -110,7 +110,7 @@ $gameWidth = 1280
 $gameHeight = 720
 
 
-[TextureRedefine] # Gamepad Menu Scaling
+[TextureRedefine]
 width = 864
 height = 480
 formats = 0x019
