@@ -18,6 +18,7 @@ install: npm install -g github-release-cli@0.4.1
 script:
   - cd Enhancements && zip -r -q -9 "../Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
   - cd Source && zip -r -q -9 "../Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
+  - cd Modifications && zip -r -q -9 "../Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
   - |
     github-release upload \
       --owner=slashiee \
