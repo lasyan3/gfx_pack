@@ -5,6 +5,13 @@ path = "Super Mario 3D World/Graphics/Resolution"
 description = Changes the resolution of the game. Known issues: Depth of field isn't upscaled yet, "zoom-transitions" are also not upscaled yet.
 version = 3
 
+[Preset]
+name = 1280x720 (Default)
+$width = 1280
+$height = 720
+$gameWidth = 1280
+$gameHeight = 720
+
 // Performance
 
 [Preset]

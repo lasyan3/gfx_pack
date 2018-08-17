@@ -5,6 +5,13 @@ path = "Pokken Tournament/Graphics/Resolution"
 description = Changes the resolution of the game.
 version = 3
 
+[Preset]
+name = 1280x720 (Default)
+$width = 1280
+$height = 720
+$gameWidth = 1280
+$gameHeight = 720
+
 // Performance
 
 [Preset]

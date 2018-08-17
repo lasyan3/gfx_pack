@@ -6,7 +6,7 @@ description = Note: Increasing shadow resolution is known to increase VRAM usage
 version = 3
 
 [Preset]
-name = (Default)Medium (1.00x)
+name = Medium (1.00x, Default)
 $shadowRes = 1
 
 [Preset]
@@ -20,6 +20,10 @@ $shadowRes = 2
 [Preset]
 name = Ultra (4.00x)
 $shadowRes = 4
+
+[Preset]
+name = Extreme (8.00x)
+$shadowRes = 8
 
 [TextureRedefine] # Shadows
 width = 2048

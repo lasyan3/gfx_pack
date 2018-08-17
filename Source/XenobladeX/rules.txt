@@ -4,14 +4,15 @@ name = Resolution
 path = "Xenoblade Chronicles X/Graphics/Resolution"
 description = Changes the resolution of the game.
 version = 3
-// Performance
 
 [Preset]
-name = 1280x720 (Native)
+name = 1280x720 (Default)
 $width = 1280
 $height = 720
 $gameWidth = 1280
 $gameHeight = 720
+
+// Performance
 
 [Preset]
 name = 256x144
@@ -50,14 +51,6 @@ $gameHeight = 720
 
 // Quality
 
-
-[Preset]
-name = 1920x1080 (HD)
-$width = 1920
-$height = 1080
-$gameWidth = 1280
-$gameHeight = 720
-
 [Preset]
 name = 1600x900
 $width = 1600
@@ -73,7 +66,7 @@ $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = 2560x1440 (Native x2)
+name = 2560x1440
 $width = 2560
 $height = 1440
 $gameWidth = 1280
@@ -94,7 +87,7 @@ $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = 3840x2160 (4k - Native x3)
+name = 3840x2160
 $width = 3840
 $height = 2160
 $gameWidth = 1280
@@ -122,8 +115,6 @@ $width = 10240
 $height = 5760
 $gameWidth = 1280
 $gameHeight = 720
-
-
 
 [TextureRedefine]
 width = 1280

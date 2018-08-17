@@ -5,6 +5,13 @@ path = "Mario Kart 8/Graphics/Gamepad Resolution"
 description = Changes the gamepad resolution of the game.
 version = 3
 
+[Preset]
+name = 1280x720 (Default)
+$width = 1280
+$height = 720
+$gameWidth = 1280
+$gameHeight = 720
+
 // Performance
 
 [Preset]
