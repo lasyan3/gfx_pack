@@ -2,7 +2,7 @@
 titleIds = 0005000010110E00,0005000010145000,0005000010144F00
 name = Resolution
 path = "Super Smash Bros. for Wii U/Graphics/Resolution"
-description = Changes the resolution of the game. Known issues: 2880p displaying nothing in-game, results runner-ups not displaying properly.
+description = Changes the resolution of the game. Known issues: Game displaying nothing in 8 player smash, 4th place runner-up not showing in results.
 version = 3
 
 [Preset]
@@ -165,6 +165,12 @@ overwriteWidth = ($width / $gameWidth) * 820
 overwriteHeight = ($height / $gameHeight) * 410
 
 [TextureRedefine]
+width = 768
+height = 368
+overwriteWidth = ($width / $gameWidth) * 768
+overwriteHeight = ($height / $gameHeight) * 368
+
+[TextureRedefine]
 width = 736
 height = 368
 overwriteWidth = ($width / $gameWidth) * 736
@@ -283,7 +289,7 @@ overwriteHeight = ($height / $gameHeight) * 80
 [TextureRedefine]
 width = 128
 height = 128
-formats = 0x21f
+formats = 0x21f,0x219,0x80e
 overwriteWidth = ($width / $gameWidth) * 128
 overwriteHeight = ($height / $gameHeight) * 128
 
