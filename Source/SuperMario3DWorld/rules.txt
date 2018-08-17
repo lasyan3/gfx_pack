@@ -2,11 +2,11 @@
 titleIds = 0005000010145D00,0005000010145C00,0005000010106100
 name = Resolution
 path = "Super Mario 3D World/Graphics/Resolution"
-description = Changes the resolution of the game. Known issues: Depth of field isn't upscaled yet, "zoom-transitions" are also not upscaled yet.
+description = Changes the resolution of the game. "zoom-transitions" are also not upscaled yet.
 version = 3
 
 [Preset]
-name = 1280x720 (Default)
+name = 1280x720 (Native)
 $width = 1280
 $height = 720
 $gameWidth = 1280
@@ -52,6 +52,13 @@ $gameHeight = 720
 // Quality
 
 [Preset]
+name = 1920x1080 (HD)
+$width = 1920
+$height = 1080
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
 name = 1600x900
 $width = 1600
 $height = 900
@@ -59,14 +66,7 @@ $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = 1920x1080
-$width = 1920
-$height = 1080
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 2560x1440
+name = 2560x1440 (Native x2)
 $width = 2560
 $height = 1440
 $gameWidth = 1280
@@ -87,7 +87,7 @@ $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = 3840x2160
+name = 3840x2160 (4k - Native x3)
 $width = 3840
 $height = 2160
 $gameWidth = 1280
@@ -116,30 +116,101 @@ $height = 5760
 $gameWidth = 1280
 $gameHeight = 720
 
-
-# Full Res
 [TextureRedefine]
 width = 1280
 height = 720
-formatsExcluded = 0x008,0x41A,0x034,0x035 # exclude obvious textures
-#formats = 0x01a,0x019,0x80e,0x816
+formatsExcluded = 0x008,0x41A,0x034,0x035 0x008
 overwriteWidth = ($width/$gameWidth) * 1280
 overwriteHeight = ($height/$gameHeight) * 720
 
-# Bloom
+[TextureRedefine] #shadow
+width = 1024
+height = 1024
+formats = 0x005
+overwriteWidth = ($width/$gameWidth) * 1024
+overwriteHeight = ($height/$gameHeight) * 1024
+
 [TextureRedefine]
-width = 320
-height = 180
+width = 864
+height = 480
+overwriteWidth = ($width/$gameWidth) * 864
+overwriteHeight = ($height/$gameHeight) * 480
+
+[TextureRedefine]
+width = 854
+height = 480
+overwriteWidth = ($width/$gameWidth) * 854
+overwriteHeight = ($height/$gameHeight) * 480
+
+[TextureRedefine] #Depth 8
+width = 640
+height = 368
+#formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 640
+overwriteHeight = ($height/$gameHeight) * 368
+
+[TextureRedefine] #Depth
+width = 640
+height = 360
+#formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 640
+overwriteHeight = ($height/$gameHeight) * 360
+
+#[TextureRedefine] #Looks like it's texture formats only, verify 0x80e
+#width = 512
+#height = 512
+#formatsExcluded = 0x431,0x235,0x80e,0x034
+#overwriteWidth = ($width/$gameWidth) * 512
+#overwriteHeight = ($height/$gameHeight) * 512
+
+[TextureRedefine] 
+width = 512
+height = 256
 formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight = ($height/$gameHeight) * 180
+overwriteWidth = ($width/$gameWidth) * 512
+overwriteHeight = ($height/$gameHeight) * 256
+
+[TextureRedefine] #
+width = 480
+height = 272
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 480
+overwriteHeight = ($height/$gameHeight) * 272
+
+[TextureRedefine]
+width = 480
+height = 270
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 480
+overwriteHeight = ($height/$gameHeight) * 270
 
 [TextureRedefine]
 width = 320
 height = 192
-formats = 0x816
+#formats = 
 overwriteWidth = ($width/$gameWidth) * 320
 overwriteHeight = ($height/$gameHeight) * 192
+
+[TextureRedefine]
+width = 320
+height = 180
+#formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 320
+overwriteHeight = ($height/$gameHeight) * 180
+
+[TextureRedefine]
+width = 256
+height = 256
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 256
+overwriteHeight = ($height/$gameHeight) * 256
+
+[TextureRedefine]
+width = 256
+height = 144
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 256
+overwriteHeight = ($height/$gameHeight) * 144
 
 [TextureRedefine]
 width = 256
@@ -149,18 +220,39 @@ overwriteWidth = ($width/$gameWidth) * 256
 overwriteHeight = ($height/$gameHeight) * 128
 
 [TextureRedefine]
+width = 240
+height = 135
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 240
+overwriteHeight = ($height/$gameHeight) * 135
+
+[TextureRedefine]
 width = 160
 height = 96
-formats = 0x816
+#formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 160
 overwriteHeight = ($height/$gameHeight) * 96
 
 [TextureRedefine]
 width = 160
-height = 96
-formats = 0x816
+height = 90
+#formats = 
 overwriteWidth = ($width/$gameWidth) * 160
-overwriteHeight = ($height/$gameHeight) * 96
+overwriteHeight = ($height/$gameHeight) * 90
+
+[TextureRedefine]
+width = 128
+height = 128
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 128
+overwriteHeight = ($height/$gameHeight) * 128
+
+[TextureRedefine]
+width = 128
+height = 80
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 128
+overwriteHeight = ($height/$gameHeight) * 80
 
 [TextureRedefine]
 width = 128
@@ -170,10 +262,38 @@ overwriteWidth = ($width/$gameWidth) * 128
 overwriteHeight = ($height/$gameHeight) * 64
 
 [TextureRedefine]
+width = 120
+height = 67
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 120
+overwriteHeight = ($height/$gameHeight) * 67
+
+[TextureRedefine]
 width = 96
 height = 48
-formats = 0x816
+#formats = 
 overwriteWidth = ($width/$gameWidth) * 96
+overwriteHeight = ($height/$gameHeight) * 48
+
+[TextureRedefine]
+width = 80
+height = 45
+#formats = 
+overwriteWidth = ($width/$gameWidth) * 80
+overwriteHeight = ($height/$gameHeight) * 45
+
+[TextureRedefine]
+width = 64
+height = 64
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 64
+overwriteHeight = ($height/$gameHeight) * 64
+
+[TextureRedefine]
+width = 64
+height = 48
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 64
 overwriteHeight = ($height/$gameHeight) * 48
 
 [TextureRedefine]
@@ -183,19 +303,16 @@ formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 64
 overwriteHeight = ($height/$gameHeight) * 32
 
+[TextureRedefine]
+width = 60
+height = 33
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 60
+overwriteHeight = ($height/$gameHeight) * 33
 
-# Depth of field, enabling breaks game
-#[TextureRedefine]
-#width = 640
-#height = 368
-#formats = 0x816
-#overwriteWidth = ($width/$gameWidth) * 640
-#overwriteHeight = ($height/$gameHeight) * 368
-
-#[TextureRedefine]
-#width = 512
-#height = 256
-#formats = 0x816
-#overwriteWidth = ($width/$gameWidth) * 512
-#overwriteHeight = ($height/$gameHeight) * 256
-
+[TextureRedefine]
+width = 40
+height = 22
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 40
+overwriteHeight = ($height/$gameHeight) * 22
