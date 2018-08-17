@@ -1,0 +1,25 @@
+[Definition]
+titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
+name = Bloom Adjustment
+path = "Mario Kart 8/Modifications/Speed Adjustment"
+description = Allows you to adjust the game speed.
+version = 3
+
+[Preset]
+name = 100% Speed (Default)
+$FPS = 60
+
+[Preset]
+name = 125% Speed
+$FPS = 75
+
+[Preset]
+name = 150% Speed
+$FPS = 90
+
+[Preset]
+name = 200% Speed
+$FPS = 120
+
+[Control]
+vsyncFrequency = $FPS
