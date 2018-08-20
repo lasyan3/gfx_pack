@@ -2,8 +2,7 @@
 #extension GL_ARB_texture_gather : enable
 #extension GL_ARB_shading_language_packing : enable
 // shader 5c1761d13feccdff
-// Fixed radius blur
-// fullscreen blur 1-pass h+v
+// Used for: Vertical+Horizontal Fullscreen Blur
 const float resXScale = $width/1280;
 const float resYScale = $height/720;
 

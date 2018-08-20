@@ -2,8 +2,7 @@
 #extension GL_ARB_texture_gather : enable
 #extension GL_ARB_shading_language_packing : enable
 // shader 75a85b0cbcab764b
-// Fixed radius blur
-// reflection blur h
+// Used for: Horizontal Reflection Blur
 const float resXScale = $width/1280;
 const float resYScale = $height/720;
 
