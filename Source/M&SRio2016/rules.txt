@@ -228,7 +228,7 @@ overwriteHeight = ($height / $gameHeight) * 48
 [TextureRedefine]
 width = 48
 height = 48
-formatsExcluded = 0x1a
+formatsExcluded = 0x1a,0x33
 overwriteWidth = ($width / $gameWidth) * 48
 overwriteHeight = ($height / $gameHeight) * 48
 
