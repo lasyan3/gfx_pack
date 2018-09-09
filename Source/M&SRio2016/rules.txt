@@ -125,6 +125,30 @@ overwriteWidth = ($width / $gameWidth) * 1280
 overwriteHeight = ($height / $gameHeight) * 720
 
 [TextureRedefine]
+width = 768
+height = 480
+overwriteWidth = ($width / $gameWidth) * 768
+overwriteHeight = ($height / $gameHeight) * 480
+
+[TextureRedefine]
+width = 746
+height = 470
+overwriteWidth = ($width / $gameWidth) * 746
+overwriteHeight = ($height / $gameHeight) * 470
+
+[TextureRedefine]
+width = 768
+height = 432
+overwriteWidth = ($width / $gameWidth) * 768
+overwriteHeight = ($height / $gameHeight) * 432
+
+[TextureRedefine]
+width = 746
+height = 420
+overwriteWidth = ($width / $gameWidth) * 746
+overwriteHeight = ($height / $gameHeight) * 420
+
+[TextureRedefine]
 width = 704
 height = 512
 overwriteWidth = ($width / $gameWidth) * 704
@@ -140,14 +164,26 @@ overwriteHeight = ($height / $gameHeight) * 508
 [TextureRedefine]
 width = 576
 height = 432
-overwriteWidth = ($width / $gameWidth) * 570
-overwriteHeight = ($height / $gameHeight) * 420
+overwriteWidth = ($width / $gameWidth) * 576
+overwriteHeight = ($height / $gameHeight) * 432
 
 [TextureRedefine]
 width = 570
 height = 420
 overwriteWidth = ($width / $gameWidth) * 570
 overwriteHeight = ($height / $gameHeight) * 420
+
+[TextureRedefine]
+width = 512
+height = 480
+overwriteWidth = ($width / $gameWidth) * 512
+overwriteHeight = ($height / $gameHeight) * 480
+
+[TextureRedefine]
+width = 490
+height = 476
+overwriteWidth = ($width / $gameWidth) * 490
+overwriteHeight = ($height / $gameHeight) * 476
 
 [TextureRedefine]
 width = 320
@@ -188,15 +224,15 @@ overwriteHeight = ($height / $gameHeight) * 90
 
 [TextureRedefine]
 width = 128
-height = 48
-overwriteWidth = ($width / $gameWidth) * 128
-overwriteHeight = ($height / $gameHeight) * 48
-
-[TextureRedefine]
-width = 128
 height = 112
 overwriteWidth = ($width / $gameWidth) * 128
 overwriteHeight = ($height / $gameHeight) * 112
+
+[TextureRedefine]
+width = 128
+height = 48
+overwriteWidth = ($width / $gameWidth) * 128
+overwriteHeight = ($height / $gameHeight) * 48
 
 [TextureRedefine]
 width = 100
