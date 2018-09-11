@@ -146,6 +146,12 @@ height = 368
 overwriteWidth = ($width / $gameWidth) * 960
 overwriteHeight = ($height / $gameHeight) * 368
 
+[TextureRedefine]
+width = 960
+height = 360
+overwriteWidth = ($width / $gameWidth) * 960
+overwriteHeight = ($height / $gameHeight) * 360
+
 [TextureRedefine] # Gamepad Resolution
 width = 864
 height = 480
@@ -205,6 +211,12 @@ width = 480
 height = 192
 overwriteWidth = ($width / $gameWidth) * 480
 overwriteHeight = ($height / $gameHeight) * 192
+
+[TextureRedefine]
+width = 480
+height = 180
+overwriteWidth = ($width / $gameWidth) * 480
+overwriteHeight = ($height / $gameHeight) * 180
 
 [TextureRedefine]
 width = 448
