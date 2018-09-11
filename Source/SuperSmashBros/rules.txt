@@ -2,7 +2,7 @@
 titleIds = 0005000010110E00,0005000010145000,0005000010144F00
 name = Resolution
 path = "Super Smash Bros. for Wii U/Graphics/Resolution"
-description = Changes the resolution of the game. Known issues: Game displaying nothing in 8 player smash, 4th place runner-up not showing in results.
+description = Changes the resolution of the game. Known issues: 4th place runner-up not showing in results
 version = 3
 
 [Preset]

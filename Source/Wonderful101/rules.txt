@@ -144,7 +144,7 @@ overwriteHeight = ($height / $gameHeight) * 192
 
 [TextureRedefine] # Bloom Pass
 width = 320
-height = 192
+height = 180
 overwriteWidth = ($width / $gameWidth) * 320
 overwriteHeight = ($height / $gameHeight) * 180
 
@@ -156,7 +156,7 @@ overwriteHeight = ($height / $gameHeight) * 96
 
 [TextureRedefine] # Bloom Pass Mip
 width = 160
-height = 96
+height = 90
 overwriteWidth = ($width / $gameWidth) * 160
 overwriteHeight = ($height / $gameHeight) * 90
 
