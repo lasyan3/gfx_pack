@@ -122,6 +122,20 @@ height = 720
 overwriteWidth = ($width / $gameWidth) * 1280
 overwriteHeight = ($height / $gameHeight) * 720
 
+[TextureRedefine] # Light Shafts Pass
+width = 1024
+height = 512
+formats = 0x1
+overwriteWidth = ($width / $gameWidth) * 1024
+overwriteHeight = ($height / $gameHeight) * 512
+
+[TextureRedefine] # Light Shafts Pass Mip
+width = 512
+height = 256
+formats = 0x1
+overwriteWidth = ($width / $gameWidth) * 512
+overwriteHeight = ($height / $gameHeight) * 256
+
 [TextureRedefine] # Bloom Pass
 width = 640
 height = 368
