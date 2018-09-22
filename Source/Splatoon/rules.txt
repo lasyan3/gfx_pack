@@ -270,6 +270,12 @@ height = 480
 overwriteWidth = ($width / $gameWidth) * 854
 overwriteHeight = ($height / $gameHeight) * 480
 
+[TextureRedefine] # Gamepad Resolution
+width = 848
+height = 480
+overwriteWidth = ($width / $gameWidth) * 848
+overwriteHeight = ($height / $gameHeight) * 480
+
 [TextureRedefine] # Gamepad Blur Map
 width = 448
 height = 240
