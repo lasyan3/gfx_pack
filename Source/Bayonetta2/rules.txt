@@ -178,10 +178,3 @@ width = 48
 height = 32
 overwriteWidth = ($width / $gameWidth) * 48
 overwriteHeight = ($height / $gameHeight) * 32
-
-[TextureRedefine] # Color Grading?
-width = 8
-height = 8
-formats = 0x1a
-overwriteWidth = ($width / $gameWidth) * 8
-overwriteHeight = ($height / $gameHeight) * 8
