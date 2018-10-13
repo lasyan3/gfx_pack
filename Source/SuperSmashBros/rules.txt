@@ -2,7 +2,7 @@
 titleIds = 0005000010110E00,0005000010145000,0005000010144F00
 name = Resolution
 path = "Super Smash Bros. for Wii U/Graphics/Resolution"
-description = Changes the resolution of the game. Known issues: 4th place runner-up not showing in results
+description = Changes the resolution of the game.
 version = 3
 
 [Preset]
@@ -221,7 +221,7 @@ overwriteHeight = ($height / $gameHeight) * 180
 [TextureRedefine]
 width = 448
 height = 224
-overwriteWidth = ($width / $gameWidth) * 480
+overwriteWidth = ($width / $gameWidth) * 448
 overwriteHeight = ($height / $gameHeight) * 224
 
 [TextureRedefine]
