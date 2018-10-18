@@ -278,3 +278,33 @@ height = 48
 formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 96
 overwriteHeight = ($height/$gameHeight) * 48
+
+
+# Underwater effect
+[TextureRedefine] # 1P
+width = 640
+height = 368
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 640
+overwriteHeight = ($height/$gameHeight) * 368
+
+[TextureRedefine] # 1P
+width = 640
+height = 360
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 640
+overwriteHeight = ($height/$gameHeight) * 360
+
+[TextureRedefine] # 2P
+width = 320
+height = 368
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 320
+overwriteHeight = ($height/$gameHeight) * 368
+
+[TextureRedefine] # 2P
+width = 320
+height = 360
+formats = 0x01a
+overwriteWidth = ($width/$gameWidth) * 320
+overwriteHeight = ($height/$gameHeight) * 360
