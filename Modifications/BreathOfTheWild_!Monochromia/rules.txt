@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
 name = "Monochromia"
-path = "The Legend of Zelda: Breath of the Wild/Enhancements/Monochromia"
+path = "The Legend of Zelda: Breath of the Wild/Modifications/Monochromia"
 description = "Inspired by Sin City, this turns the game black and white."
 version = 3
 
