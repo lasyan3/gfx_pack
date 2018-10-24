@@ -16,15 +16,15 @@ if: tag IS blank
 install: npm install -g github-release-cli@0.4.1
 
 script:
-  - cd Enhancements && zip -r -q -9 "../Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
-  - cd Source && zip -r -q -9 "../Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
-  - cd Modifications && zip -r -q -9 "../Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
-  - cd Workarounds && zip -r -q -9 "../Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
+  - cd Enhancements && zip -r -q -9 "../graphicPacks$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
+  - cd Source && zip -r -q -9 "../graphicPacks$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
+  - cd Modifications && zip -r -q -9 "../graphicPacks$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
+  - cd Workarounds && zip -r -q -9 "../graphicPacks$TRAVIS_BUILD_NUMBER"".zip" ./* && cd ..
   - |
     github-release upload \
       --owner=slashiee \
       --repo=gfx_pack \
       --tag="Travis$TRAVIS_BUILD_NUMBER" \
-      --name="Cemu 1.14.0 WIP: version $TRAVIS_BUILD_NUMBER" \
+      --name="Graphic Packs: version $TRAVIS_BUILD_NUMBER" \
       --body="$(git log -1 --format='Commited at %ci by **%cn** in commit %h%n### %s%n```%n%b%n```%n')" \
-      "Cemu1.14.0_GFXPacks_$TRAVIS_BUILD_NUMBER"".zip"
+      "graphicPacks$TRAVIS_BUILD_NUMBER"".zip"
