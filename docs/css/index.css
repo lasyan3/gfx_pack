@@ -1,0 +1,8 @@
+.notification .jumbotron > p {
+	font-size: 16px;
+	margin: 0;
+}
+
+.notification .jumbotron p .btn-primary {
+	margin-top: 14px;
+}

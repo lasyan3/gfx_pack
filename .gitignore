@@ -6,3 +6,5 @@ docs/node_modules/
 docs/\.idea/
 
 docs/package-lock\.json
+
+docs/Gemfile\.lock
