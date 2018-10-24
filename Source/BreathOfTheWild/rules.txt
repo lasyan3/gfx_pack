@@ -456,3 +456,11 @@ depth = 1
 formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 512
 overwriteHeight = ($height/$gameHeight) * 512
+
+# Top-view to bottom depth
+[TextureRedefine]
+width = 2048
+height = 2048
+formats = 0x005
+overwriteWidth = $shadowRes * 2048
+overwriteHeight = $shadowRes * 2048

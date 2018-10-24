@@ -27,13 +27,6 @@ $shadowRes = 8
 
 # Uniform shadow maps
 
-[TextureRedefine] # Top-view to bottom
-width = 2048
-height = 2048
-formats = 0x005
-overwriteWidth = $shadowRes * 2048
-overwriteHeight = $shadowRes * 2048
-
 [TextureRedefine]
 width = 768
 height = 720
