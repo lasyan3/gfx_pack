@@ -7,41 +7,33 @@ version = 3
 
 
 [Preset]
-name = Serfrost Option (Default)
+name = Serfrost (Bright Display)
+$preset:int = 7
+
+[Preset]
+name = Serfrost (Dim Display)
+$preset:int = 6
+
+[Preset]
+name = Bruz 
+$preset:int = 1
+
+[Preset]
+name = BSoD Gaming
+$preset:int = 2
+
+[Preset]
+name = Jamie 
+$preset:int = 3
+
+[Preset]
+name = The Complaining Gamer
+$preset:int = 4
+
+[Preset]
+name = CellHunter
 $preset:int = 5
 
 [Preset]
 name = User Defined
 $preset:int = 0
-
-[Preset]
-name = Bruz Option
-$preset:int = 1
-
-[Preset]
-name = BSoD Option
-$preset:int = 2
-
-[Preset]
-name = Jamie Option
-$preset:int = 3
-
-[Preset]
-name = Contrasty Option
-$preset:int = 4
-
-[Preset]
-name = Sharpen Only Option
-$preset:int = 6
-
-[Preset]
-name = The Complaining Gamer Option
-$preset:int = 7
-
-[Preset]
-name = Filmic Preset Option
-$preset:int = 8
-
-[Preset]
-name = CellHunter Option
-$preset:int = 9
