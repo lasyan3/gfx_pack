@@ -462,5 +462,5 @@ overwriteHeight = ($height/$gameHeight) * 512
 width = 2048
 height = 2048
 formats = 0x005
-overwriteWidth = $shadowRes * 2048
-overwriteHeight = $shadowRes * 2048
+overwriteWidth = ($width/$gameWidth) * 2048
+overwriteHeight = ($height/$gameHeight) * 2048
