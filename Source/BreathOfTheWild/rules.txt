@@ -105,7 +105,8 @@ $gameHeight = 720
 [TextureRedefine] 
 width = 1280
 height = 720
-formats = 0x001,0x005,0x007,0x008,0x019,0x01a,0x41a,0x80e,0x806,0x816,0x820
+formats = 0x001,0x005,0x007,0x019,0x01a,0x41a,0x80e,0x806,0x816,0x820
+formatsExcluded = 0x008 # Game Load Opening Background Image
 tileModesExcluded = 0x001 # For Memories Video Playback
 overwriteWidth = ($width/$gameWidth)* 1280
 overwriteHeight = ($height/$gameHeight)* 720
@@ -127,6 +128,7 @@ formats = 0x019
 formatsExcluded = 0x034 # Exclude 0x034 which is used for large album thumbnails
 overwriteWidth = ($width/$gameWidth)* 854
 overwriteHeight = ($height/$gameHeight)* 480
+
 
 # All 1/2, 1/4 textures:
 # - 0x001=World Lighting - Red
@@ -327,6 +329,7 @@ formats = 0x806
 overwriteWidth = ($width/$gameWidth) * 128
 overwriteHeight = ($height/$gameHeight) * 48
 
+
 # 0x816 - Blooms & Effects
 
 # Heat wave effect
@@ -457,10 +460,60 @@ formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 512
 overwriteHeight = ($height/$gameHeight) * 512
 
-# Top-view to bottom depth
-[TextureRedefine]
+# Depth 
+[TextureRedefine] # Top-view to bottom Depth
 width = 2048
 height = 2048
 formats = 0x005
 overwriteWidth = ($width/$gameWidth) * 2048
 overwriteHeight = ($height/$gameHeight) * 2048
+
+# Disabled since they break stuff
+
+# Minimap
+#[TextureRedefine]
+#width = 560
+#height = 560
+#formats = 0x431
+#overwriteWidth = 560
+#overwriteHeight = 560
+
+# Album images
+#[TextureRedefine] 
+#width = 854
+#height = 480
+#formats = 0x034
+#overwriteWidth = ($width/$gameWidth) * 854
+#overwriteHeight = ($height/$gameHeight) * 480
+
+# Start Menu Controller Mapping Screen Controller Image - Top
+#[TextureRedefine]
+#width = 480
+#height = 250
+#formats = 0x007
+#overwriteWidth = ($width/$gameWidth) * 480
+#overwriteHeight = ($height/$gameHeight) * 250
+
+# Start Menu Controller Mapping Screen Controller Image - Bottom
+#[TextureRedefine]
+#width = 480
+#height = 125
+#formats = 0x007
+#overwriteWidth = ($width/$gameWidth) * 480
+#overwriteHeight = ($height/$gameHeight) * 125
+
+# Save images
+#[TextureRedefine]
+#width = 256
+#height = 144
+#formats = 0x01a,0x41a
+#overwriteWidth = ($width/$gameWidth) * 256
+#overwriteHeight = ($height/$gameHeight) * 144
+
+# Scope interface; already scaled
+#[TextureRedefine] 
+#width = 1280
+#height = 608
+#formats = 0x019
+#overwriteWidth = ($width/$gameWidth) * 1280
+#overwriteHeight = ($height/$gameHeight) * 608
