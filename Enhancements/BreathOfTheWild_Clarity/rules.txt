@@ -6,45 +6,41 @@ description = Select the visual look of the game that you'll like with these han
 version = 3
 
 [Preset]
-name = Serfrost (Bright Display)
-$preset:int = 5
-
-[Preset]
-name = Serfrost (Dim Display)
-$preset:int = 10
-
-[Preset]
-name = Bruz Option
-$preset:int = 1
-
-[Preset]
-name = BSoD Option
-$preset:int = 2
-
-[Preset]
-name = Jamie Option
-$preset:int = 3
-
-[Preset]
-name = Contrasty Option
-$preset:int = 4
-
-[Preset]
-name = Sharpen Only Option
-$preset:int = 6
-
-[Preset]
-name = The Complaining Gamer Option
-$preset:int = 7
-
-[Preset]
-name = Filmic Preset Option
+name = Serfrost Preset (Bright Display)
 $preset:int = 8
 
 [Preset]
-name = CellHunter Option
+name = Serfrost Preset (Dim Display)
 $preset:int = 9
 
 [Preset]
-name = User Defined
+name = Bruz Preset
+$preset:int = 1
+
+[Preset]
+name = CellHunter Preset
+$preset:int = 7
+
+[Preset]
+name = Jamie Preset
+$preset:int = 3
+
+[Preset]
+name = BSoD Gaming Preset
+$preset:int = 2
+
+[Preset]
+name = The Complaining Gamer Preset
+$preset:int = 5
+
+[Preset]
+name = Contrasty Preset
+$preset:int = 4
+
+[Preset]
+name = Filmic Preset Preset
+$preset:int = 6
+
+[Preset]
+name = User Defined Preset
 $preset:int = 0

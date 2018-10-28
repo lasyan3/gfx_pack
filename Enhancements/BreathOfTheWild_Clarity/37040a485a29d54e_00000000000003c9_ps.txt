@@ -2,21 +2,28 @@
 #extension GL_ARB_texture_gather : enable
 // shader 37040a485a29d54e
 //##########################################################
+
 #define Preset $preset
-														// User Defined 0
-														// Bruz Option 1
-														// BSOD Option 2             
-														// Jamie Option 3
-														// Contrasty Option 4  
-														// Serfrost Option 5 
-														// Sharpen Only Option 6	    
-														// The Complaining Gamer Option 7             
-														// Filmic Preset Option 8 
-														// CellHunter Option 9
+
+	// User Defined Preset 0
+	// Bruz Preset 1
+	// BSOD Gaming Preset 2
+	// Jamie Preset 3
+	// Contrasty Preset 4
+	// The Complaining Gamer Preset 5
+	// Filmic Preset Preset 6
+	// CellHunter Preset 7
+	// Serfrost Preset (Bright Display) 8
+	// Serfrost Preset (Dim Display) 9
+	
 //##########################################################													   
+
 #if (Preset == 0)
-// User Defined 	
+
+// User Defined, values to change are below.
+
 //##########################################################
+
 #define adjust_bloom 1 // 0: disable, 1: enable.
 //BloomFactor
 const float bloomFactor = 0.020;                       // Default is 0.020 (rough estimate based on Switch)
@@ -129,9 +136,13 @@ float Colorfulness = 2.5;
 
 float DPX_Strength = 0.20;
 //###########################################################
-//Do not edit under this line.
+
+//Do not edit under this line, unless explicitly desired.  Keep backups!
+
 //Presets
-#elif (Preset == 1)	
+
+#elif (Preset == 1)	//Bruz
+
 	#define adjust_bloom 1 
 	const float bloomFactor = 0.30;
 	#define HDRpassing 0
@@ -197,7 +208,9 @@ float DPX_Strength = 0.20;
 	float DPX_Saturation = 3.0;
 	float Colorfulness = 2.5;
 	float DPX_Strength = 0.20;
-#elif (Preset == 2)
+	
+#elif (Preset == 2) //BSoD Gaming
+
 	#define adjust_bloom 1 
 	const float bloomFactor = 0.010;
 	#define HDRpassing 1 													 
@@ -263,7 +276,9 @@ float DPX_Strength = 0.20;
 	float DPX_Saturation = 3.0;
 	float Colorfulness = 2.5;
 	float DPX_Strength = 0.20;
-#elif (Preset == 3)
+	
+#elif (Preset == 3) //Jamie
+
 	#define adjust_bloom 1 
 	const float bloomFactor = 0.020;
 	#define HDRpassing 1
@@ -329,7 +344,9 @@ float DPX_Strength = 0.20;
 	float DPX_Saturation = 0.0;
 	float Colorfulness = 1.0;
 	float DPX_Strength = 0.20;
-#elif (Preset == 4)
+	
+#elif (Preset == 4) //Contrasty
+
 	#define adjust_bloom 1 
 	const float bloomFactor = 0.020;
 	#define HDRpassing 0 													 
@@ -395,139 +412,9 @@ float DPX_Strength = 0.20;
 	float DPX_Saturation = 3.0;
 	float Colorfulness = 2.5;
 	float DPX_Strength = 0.20;
-#elif (Preset == 5)
-	#define adjust_bloom 1 
-	const float bloomFactor = 0.40;
-	#define HDRpassing 1 													 
-	const float HDRPower = 1.20;
-	const float radius1 = 0.793;
-	const float radius2 = 0.87;
-	#define lumapassing 0 													   
-	const float sharp_strength = 0.45;
-	const float sharp_clamp = 0.85;
-	const float offset_bias = 1.0;
-	#define Tone_map 8                                     
-	const float Exposure = 1.17;
-	const float Bleach = 0.0;
-	const float Gamma = 0.98;
-	const float defog = 1.00;
-	vec3 FogColor = vec3(1.0, 1.0, 1.0);
-	const float sat = 0.00;
-	const float crushContrast = 0.00;
-	#define post_process 0
-	const float satFactor = 0.07;
-	#define blacknwhitepass 1                    
-	const int BlackPoint = 2;
-	const int WhitePoint = 300;
-	#define lggpass 1 
-	vec3 RGB_Lift = vec3(1.027, 1.027, 1.027);
-	vec3 RGB_Gamma = vec3(0.83, 0.83, 0.83);
-	vec3 RGB_Gain = vec3(1.10, 1.10, 1.10);
-	#define vibpass 1 
-	const float Vibrance = 0.15;
-	vec3 VibranceRGBBalance = vec3(1.0, 1.0, 1.0);
-	#define Tech 0
-	const float Power = 5.0;
-	vec3 RGBNegativeAmount = vec3(0.88, 0.88, 0.88);
-	float Strength = 0.10;
-	#define Techine 1
-	float Technicolor2_Red_Strength = -0.09;
-	float Technicolor2_Green_Strength = -0.09;
-	float Technicolor2_Blue_Strength = -0.00;
-	float Technicolor2_Brightness = 0.4;
-	float Technicolor2_Strength = 1.2;
-	float Technicolor2_Saturation = 1.1;
-	#define cmatrix 0
-	vec3 ColorMatrix_Red = vec3(0.817, 0.183, 0.000);
-	vec3 ColorMatrix_Green = vec3(0.333, 0.667, 0.000);
-	vec3 ColorMatrix_Blue = vec3(0.000, 0.125, 0.875);
-	float CM_Strength = 1.0;
-	#define CurvesPss 0
-	const float Contrast = 0.0;
-	#define Filmicpass 1 
-	const float Filmic_Contrast = 1.0;
-	const float Filmic_Bleach = 0.0;
-	const float Saturation = -0.17;
-	const float Filmic_Strength = 0.48;
-	const float Fade = 0.08;
-	const float Linearization = 1.0;
-	const float BaseCurve = 1.0;
-	const float BaseGamma = 1.0;
-	const float EffectGamma = 1.68;
-	#define dpxpass 0
-	vec3 RGB_Curve = vec3(8.0, 8.0, 8.0);
-	vec3 RGB_C = vec3(0.36, 0.36, 0.34);
-	float DPX_Contrast = 0.1;
-	float DPX_Saturation = 3.0;
-	float Colorfulness = 1.0;
-	float DPX_Strength = 0.20;
-#elif (Preset == 6)
-	#define adjust_bloom 0 
-	const float bloomFactor = 0.20;
-	#define HDRpassing 0 													 
-	const float HDRPower = 1.00;
-	const float radius1 = 1.00;
-	const float radius2 = 0.80;
-	#define lumapassing 1 													   
-	const float sharp_strength = 1.70;
-	const float sharp_clamp = 0.35;
-	const float offset_bias = 1.0;
-	#define Tone_map 0                                     
-	const float Exposure = 1.17;
-	const float Bleach = 0.4;
-	const float Gamma = 1.00;
-	const float defog = 0.00;
-	vec3 FogColor = vec3(1.0, 1.0, 1.0);
-	const float sat = 0.000;
-	const float crushContrast = 0.000;
-	#define post_process 0
-	const float satFactor = 0.25;
-	#define blacknwhitepass 0                        
-	const int BlackPoint = 16;
-	const int WhitePoint = 235;
-	#define lggpass 0 
-	vec3 RGB_Lift = vec3(1.000, 1.000, 1.000);
-	vec3 RGB_Gamma = vec3(1.000, 1.000, 1.000);
-	vec3 RGB_Gain = vec3(1.000, 1.000, 1.000);
-	#define vibpass 0 
-	const float Vibrance = 0.150;
-	vec3 VibranceRGBBalance = vec3(1.0, 1.0, 1.0);
-	#define Tech 0 
-	const float Power = 4.0;
-	vec3 RGBNegativeAmount = vec3(0.88, 0.88, 0.88);
-	float Strength = 0.20;
-	#define Techine 0
-	const float Technicolor2_Red_Strength = 0.02;
-	const float Technicolor2_Green_Strength = 0.02;
-	const float Technicolor2_Blue_Strength = 0.02;
-	const float Technicolor2_Brightness = 1.00;
-	const float Technicolor2_Strength = 1.00;
-	const float Technicolor2_Saturation = 1.00;
-	#define cmatrix 0
-	vec3 ColorMatrix_Red = vec3(0.817, 0.183, 0.000);
-	vec3 ColorMatrix_Green = vec3(0.333, 0.667, 0.000);
-	vec3 ColorMatrix_Blue = vec3(0.000, 0.125, 0.875);
-	float CM_Strength = 1.0;
-	#define CurvesPss 0 
-	const float Contrast = 0.65;
-	#define Filmicpass 0 
-	const float Filmic_Contrast = 1.0;
-	const float Filmic_Bleach = 0.0;
-	const float Saturation = -0.15;
-	const float Filmic_Strength = 0.85;
-	const float Fade = 0.4;
-	const float Linearization = 0.5;
-	const float BaseCurve = 1.5;
-	const float BaseGamma = 1.00;
-	const float EffectGamma = 0.68;
-	#define dpxpass 0
-	vec3 RGB_Curve = vec3(8.0, 8.0, 8.0);
-	vec3 RGB_C = vec3(0.36, 0.36, 0.34);
-	float DPX_Contrast = 0.1;
-	float DPX_Saturation = 3.0;
-	float Colorfulness = 2.5;
-	float DPX_Strength = 0.20;
-#elif (Preset == 7)
+	
+#elif (Preset == 5) //The Complaining Gamer
+
 	#define adjust_bloom 1 
 	const float bloomFactor = 0.33;
 	#define HDRpassing 1 													 
@@ -593,7 +480,9 @@ float DPX_Strength = 0.20;
 	float DPX_Saturation = 3.0;
 	float Colorfulness = 2.5;
 	float DPX_Strength = 0.20;
-#elif (Preset == 8)												   
+	
+#elif (Preset == 6) //Filmic
+
 	#define adjust_bloom 1 
 	const float bloomFactor = 0.020;
 	#define HDRpassing 1
@@ -659,7 +548,8 @@ float DPX_Strength = 0.20;
 	float DPX_Saturation = 2.0;
 	float Colorfulness = 1.5;
 	float DPX_Strength = 0.20;
-#elif (Preset == 9)												   
+	
+#elif (Preset == 7) //CellHunter										   
 	#define adjust_bloom 1 
 	const float bloomFactor = 0.445;
 	#define HDRpassing 1
@@ -725,7 +615,76 @@ float DPX_Strength = 0.20;
 	float DPX_Saturation = 3.0;
 	float Colorfulness = 2.5;
 	float DPX_Strength = 0.20;
-#elif (Preset == 10)
+	
+#elif (Preset == 8) //Serfrost (Bright Display)
+
+	#define adjust_bloom 1 
+	const float bloomFactor = 0.40;
+	#define HDRpassing 1 													 
+	const float HDRPower = 1.20;
+	const float radius1 = 0.793;
+	const float radius2 = 0.87;
+	#define lumapassing 0 													   
+	const float sharp_strength = 0.45;
+	const float sharp_clamp = 0.85;
+	const float offset_bias = 1.0;
+	#define Tone_map 8                                     
+	const float Exposure = 1.17;
+	const float Bleach = 0.0;
+	const float Gamma = 0.98;
+	const float defog = 1.00;
+	vec3 FogColor = vec3(1.0, 1.0, 1.0);
+	const float sat = 0.00;
+	const float crushContrast = 0.00;
+	#define post_process 0
+	const float satFactor = 0.07;
+	#define blacknwhitepass 1                    
+	const int BlackPoint = 2;
+	const int WhitePoint = 300;
+	#define lggpass 1 
+	vec3 RGB_Lift = vec3(1.027, 1.027, 1.027);
+	vec3 RGB_Gamma = vec3(0.83, 0.83, 0.83);
+	vec3 RGB_Gain = vec3(1.10, 1.10, 1.10);
+	#define vibpass 1 
+	const float Vibrance = 0.15;
+	vec3 VibranceRGBBalance = vec3(1.0, 1.0, 1.0);
+	#define Tech 0
+	const float Power = 5.0;
+	vec3 RGBNegativeAmount = vec3(0.88, 0.88, 0.88);
+	float Strength = 0.10;
+	#define Techine 1
+	float Technicolor2_Red_Strength = -0.09;
+	float Technicolor2_Green_Strength = -0.09;
+	float Technicolor2_Blue_Strength = -0.00;
+	float Technicolor2_Brightness = 0.4;
+	float Technicolor2_Strength = 1.2;
+	float Technicolor2_Saturation = 1.1;
+	#define cmatrix 0
+	vec3 ColorMatrix_Red = vec3(0.817, 0.183, 0.000);
+	vec3 ColorMatrix_Green = vec3(0.333, 0.667, 0.000);
+	vec3 ColorMatrix_Blue = vec3(0.000, 0.125, 0.875);
+	float CM_Strength = 1.0;
+	#define CurvesPss 0
+	const float Contrast = 0.0;
+	#define Filmicpass 1 
+	const float Filmic_Contrast = 1.0;
+	const float Filmic_Bleach = 0.0;
+	const float Saturation = -0.17;
+	const float Filmic_Strength = 0.48;
+	const float Fade = 0.08;
+	const float Linearization = 1.0;
+	const float BaseCurve = 1.0;
+	const float BaseGamma = 1.0;
+	const float EffectGamma = 1.68;
+	#define dpxpass 0
+	vec3 RGB_Curve = vec3(8.0, 8.0, 8.0);
+	vec3 RGB_C = vec3(0.36, 0.36, 0.34);
+	float DPX_Contrast = 0.1;
+	float DPX_Saturation = 3.0;
+	float Colorfulness = 1.0;
+	float DPX_Strength = 0.20;
+	
+#elif (Preset == 9) //Serfrost (Dim Display)
 	#define adjust_bloom 1 
 	const float bloomFactor = 0.7;
 	#define HDRpassing 1 													 
@@ -791,7 +750,9 @@ float DPX_Strength = 0.20;
 	float DPX_Saturation = 3.0;
 	float Colorfulness = 1.0;
 	float DPX_Strength = 0.20;
+	
 #endif
+
 //###########################################################
 uniform ivec4 uf_remappedPS[1];
 layout(binding = 0) uniform sampler2D textureUnitPS0; // Bloom 
