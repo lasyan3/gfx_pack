@@ -135,5 +135,5 @@ moduleMatches = 0x113CC316
 
 [WiiULauncher0]
 moduleMatches = 0x90DAC5CE
- 0x02E47174 = nop
+0x02E47174 = nop
 0x02E471E0 = nop
