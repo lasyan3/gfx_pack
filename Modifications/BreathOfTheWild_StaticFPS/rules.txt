@@ -7,8 +7,8 @@ version = 3
 
 // Common
 [Preset]
-name = Static 30FPS
-$fpsTarget:int = 30 (Default)
+name = Static 30FPS (Default)
+$fpsTarget:int = 30
 $fpsDivisor = 1.0
 $derivative = 0.5
 
