@@ -213,7 +213,7 @@ width = 1280
 height = 720
 formats = 0x001,0x005,0x007,0x019,0x01a,0x41a,0x80e,0x806,0x816,0x820
 formatsExcluded = 0x008 # Game Load Opening Background Image
-tileModesExcluded = 0x001 # For Memories Video Playback
+tileModesExcluded = 0x001 # For Video Playback
 overwriteWidth = ($width/$gameWidth)* 1280
 overwriteHeight = ($height/$gameHeight)* 720
 
@@ -261,6 +261,7 @@ width = 640
 height = 360
 formats = 0x001,0x005,0x019,0x01a,0x80e,0x806,0x816,0x820
 formatsExcluded = 0x431
+tileModesExcluded = 0x001 # For Video Playback
 overwriteWidth = ($width/$gameWidth)* 640
 overwriteHeight = ($height/$gameHeight)* 360
 
@@ -521,6 +522,7 @@ overwriteHeight = ($height/$gameHeight)* 11
 width = 960
 height = 540
 formats = 0x816,0x005,0x007,0x019,0x01a,0x41a,0x80e,0x806
+tileModesExcluded = 0x001 # For Video Playback
 overwriteWidth = ($width/$gameWidth) * 960
 overwriteHeight = ($height/$gameHeight) * 540
 
