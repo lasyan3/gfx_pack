@@ -1,0 +1,67 @@
+[Definition]
+titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
+name = Static FPS
+path = "The Legend of Zelda: Breath of the Wild/Modifications/Static FPS"
+description = "Important: Don't enable FPS++ while having Static FPS also enabled! This pack won't work without Cemuhook, make sure to install that! This pack only works when you've properly updated your game (we always recommend the latest updates). Keep in mind that going above 30fps will bring game bugs. You should use FPS++ if your computer doesn't uphold a stable framerate."
+version = 3
+
+// Common
+[Preset]
+name = Static 30FPS
+$fpsTarget:int = 30 (Default)
+$fpsDivisor = 1.0
+$derivative = 0.5
+
+[Preset]
+name = Static 60FPS
+$fpsTarget:int = 60
+$fpsDivisor = 0.5
+$derivative = 1
+
+[Preset]
+name = Static 45FPS
+$fpsTarget:int = 45
+$fpsDivisor = 0.6666666666666667
+$derivative = 0.75
+
+
+// Uncommon
+[Preset]
+name = Static 120FPS
+$fpsTarget:int = 120
+$fpsDivisor = 0.25
+$derivative = 2
+
+[Preset]
+name = Static 75FPS
+$fpsTarget:int = 75
+$fpsDivisor = 0.4
+$derivative = 1.25
+
+[Preset]
+name = Static 50FPS
+$fpsTarget:int = 50
+$fpsDivisor = 0.6
+$derivative = 0.8333333333333333
+
+[Preset]
+name = Static 40FPS
+$fpsTarget:int = 40
+$fpsDivisor = 0.75
+$derivative = 0.6666666666666667
+
+[Preset]
+name = Static 20FPS
+$fpsTarget:int = 20
+$fpsDivisor = 1.5
+$derivative = 0.3333333333333333
+
+[Preset]
+name = Static 15FPS
+$fpsTarget:int = 15
+$fpsDivisor = 2.0
+$derivative = 0.25
+
+
+[Control]
+vsyncFrequency = $fpsTarget

@@ -12,7 +12,7 @@ To use it simply grab one of the provided versions or edit one with these
 changes: a) rules.txt frequency and name b) divide 30 by the target FPS c) use
 the result of that calculation and the target fps in patches.txt. 
 
-This readme was derived from a static 60FPS mod. Additional FPS targets
+This readme was derived from a static 30FPS mod. Additional FPS targets
 and discussion are at https://forum.cemu.info/showthread.php/421. If you do 
 know how to use build.sh at Slashie's repo, it supports arbitrary targets.
 

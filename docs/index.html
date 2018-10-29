@@ -26,14 +26,29 @@ css:
 	</div>
 </div>
 
-<ul class="list-group">
-	{% for gameTitle in site.data.GameTitles %}
-	<li class="list-group-item d-flex justify-content-between align-items-center">
-		<a href="{{gameTitle.compatLink}}">{{ gameTitle.title }}</a>
-		<span class="badge badge-primary badge-pill">{{ gameTitle.nativeRes }}p</span>
-	</li>
-	{% endfor %}
-</ul>
+{% comment %}
+Possible todo's:
+- https://gitreports.com/ (anonymous github issues so that users can report issues).
+- Add/extract additional information from the graphic pack (like showing additional packs besides resolution packs).
+{% endcomment %}
+<div id="gameList" class="panel panel-info panel-default version3-only">
+	<div class="panel-heading">List of graphic pack supported titles</div>
+	<ul class="list-group">
+		{% for gameTitle in site.data.GameTitles %}
+		<li class="list-group-item d-flex justify-content-between align-items-center" {% if gameTitle.version3 == false %}hidden{% endif %}>
+			<a href="{{gameTitle.compatLink}}">{{ gameTitle.title }}</a>
+			<span class="badge badge-primary">{{ gameTitle.nativeRes }}p</span>
+			{% if gameTitle.version3 == true %}
+			<span class="label label-success version-label">Cemu 1.14.0</span>
+			{% endif %}
+		</li>
+		{% endfor %}
+		<div class="panel-footer">
+			<a id="see-more-footer" href="javascript:document.getElementById('gameList').classList.remove('version3-only');">Also see &lt; Cemu 1.13.2 graphic packs...</a>
+			<a id="see-less-footer" href="javascript:document.getElementById('gameList').classList.add('version3-only');">Only show Cemu 1.14.0 graphic packs...</a>
+		</div>
+	</ul>
+</div>
 
 <script defer>
 	notifications = document.getElementsByClassName("notification");

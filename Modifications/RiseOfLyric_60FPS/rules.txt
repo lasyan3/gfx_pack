@@ -1,7 +1,9 @@
 [Definition]
 titleIds = 0005000010175B00,0005000010177800,0005000010191F00
-name = "Sonic Boom: Rise of Lyric - 60FPS" 
-version = 2
+name = "Sonic Boom: Rise of Lyric"
+path = "Sonic Boom: Rise of Lyric/Modifications/60FPS"
+description = "Important: This patches the gameplay to be in 60fps. Getting under 60fps will slow down the game's speed."
+version = 3
 
 #Windows 10 64-bit
 #GeForce GTX 1060 6GB

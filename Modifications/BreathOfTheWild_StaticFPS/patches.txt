@@ -5,13 +5,13 @@ moduleMatches = 0x6267BFD0
 codeCaveSize = 0x1C
 
 _divisor = 0x0 # edit the next line to change the divisor
-0x00000000 = .float 0.66666666666667 # = 30FPS / TARGET FPS, e.g. 30FPS / 18FPS = 1.66667
+0x00000000 = .float $fpsDivisor # = 30FPS / TARGET FPS, e.g. 30FPS / 18FPS = 1.66667
 _targetfps = 0x18 # edit the next line to change the target fps
-0x18 = .float 45 
+0x18 = .float $fpsTarget
 
 #Arrows by Epigramx
-0x1001CCAC = .float 20 # = 30 * divisor 
-0x1001CB18 = .float 0.75 # = 0.5 / divisor
+0x1001CCAC = .float 30 # = 30 * divisor 
+0x1001CB18 = .float $derivative # = 0.5 / divisor
 
 #"Best fence" by Rajkosto
 _fenceNeg1 = 0x00000004
@@ -64,13 +64,13 @@ moduleMatches = 0xFD091F9F,0xD472D8A5
 codeCaveSize = 0x1C
 
 _divisor = 0x0 # edit the next line to change the divisor
-0x00000000 = .float 0.66666666666667 # = 30FPS / TARGET FPS, e.g. 30FPS / 18FPS = 1.66667
+0x00000000 = .float $fpsDivisor # = 30FPS / TARGET FPS, e.g. 30FPS / 18FPS = 1.66667
 _targetfps = 0x18 # edit the next line to change the target fps
-0x18 = .float 45 
+0x18 = .float $fpsTarget
 
 #Arrows by Epigramx
-0x1001CCAC = .float 20 # = 30 * divisor 
-0x1001CB18 = .float 0.75 # = 0.5 / divisor
+0x1001CCAC = .float 30 # = 30 * divisor 
+0x1001CB18 = .float $derivative # = 0.5 / divisor
 
 #"Best fence" by Rajkosto
 _fenceNeg1 = 0x00000004
