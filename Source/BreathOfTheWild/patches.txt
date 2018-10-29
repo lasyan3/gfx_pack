@@ -1,9 +1,9 @@
 [BotwAspectsV33]
 moduleMatches = 0xD91A406D
 # rodata constants
-0x10197FC0 = .float $aspectRatio
-0x102CCFC0 = .float $aspectRatio
-0x10331374 = .float $aspectRatio
+0x10197FC0 = .float $width/$height
+0x102CCFC0 = .float $width/$height
+0x10331374 = .float $width/$height
 _aspectAddr = 0x10197FC0
 
 # menu link aspect (calculated every load)
@@ -17,9 +17,9 @@ _aspectAddr = 0x10197FC0
 [BotwAspectsV48]
 moduleMatches = 0x0F748D9C
 # rodata constants
-0x10197FC0 = .float $aspectRatio
-0x102CCFC8 = .float $aspectRatio
-0x103313A4 = .float $aspectRatio
+0x10197FC0 = .float $width/$height
+0x102CCFC8 = .float $width/$height
+0x103313A4 = .float $width/$height
 _aspectAddr = 0x10197FC0
 
 # menu link aspect (calculated every load)
@@ -33,9 +33,9 @@ _aspectAddr = 0x10197FC0
 [BotwAspectsV64]
 moduleMatches = 0x9A61FF4C
 # rodata constants
-0x10198250 = .float $aspectRatio
-0x102CD450 = .float $aspectRatio
-0x1033182C = .float $aspectRatio
+0x10198250 = .float $width/$height
+0x102CD450 = .float $width/$height
+0x1033182C = .float $width/$height
 _aspectAddr = 0x10198250
 
 # menu link aspect (calculated every load)
@@ -49,9 +49,9 @@ _aspectAddr = 0x10198250
 [BotwAspectsV80]
 moduleMatches = 0x8E3324A9
 # rodata constants
-0x1019A5A8 = .float $aspectRatio
-0x102D4E30 = .float $aspectRatio
-0x103391B4 = .float $aspectRatio
+0x1019A5A8 = .float $width/$height
+0x102D4E30 = .float $width/$height
+0x103391B4 = .float $width/$height
 _aspectAddr = 0x1019A5A8
 
 # menu link aspect (calculated every load)
@@ -65,9 +65,9 @@ _aspectAddr = 0x1019A5A8
 [BotwAspectsV97]
 moduleMatches = 0xD71D859D
 # rodata constants
-0x1019F980 = .float $aspectRatio
-0x102DF8A0 = .float $aspectRatio
-0x1034122C = .float $aspectRatio
+0x1019F980 = .float $width/$height
+0x102DF8A0 = .float $width/$height
+0x1034122C = .float $width/$height
 _aspectAddr = 0x1019F980
 
 # menu link aspect (calculated every load)
@@ -81,9 +81,9 @@ _aspectAddr = 0x1019F980
 [BotwAspectsV112]
 moduleMatches = 0x6FD41A61
 # rodata constants
-0x1019F9A8 = .float $aspectRatio
-0x102DFB38 = .float $aspectRatio
-0x103414D4 = .float $aspectRatio
+0x1019F9A8 = .float $width/$height
+0x102DFB38 = .float $width/$height
+0x103414D4 = .float $width/$height
 _aspectAddr = 0x1019F9A8
 
 # menu link aspect (calculated every load)
@@ -97,9 +97,9 @@ _aspectAddr = 0x1019F9A8
 [BotwAspectsV144]
 moduleMatches = 0x9A2CA0C7
 # rodata constants
-0x101A8A70 = .float $aspectRatio
-0x102ECFD0 = .float $aspectRatio
-0x1034F6CC = .float $aspectRatio
+0x101A8A70 = .float $width/$height
+0x102ECFD0 = .float $width/$height
+0x1034F6CC = .float $width/$height
 _aspectAddr = 0x101A8A70
 
 # menu link aspect (calculated every load)
@@ -113,9 +113,9 @@ _aspectAddr = 0x101A8A70
 [BotwAspectsV160]
 moduleMatches = 0x29DBB52A
 # rodata constants
-0x101A8A70 = .float $aspectRatio
-0x102ECF88 = .float $aspectRatio
-0x1034F684 = .float $aspectRatio
+0x101A8A70 = .float $width/$height
+0x102ECF88 = .float $width/$height
+0x1034F684 = .float $width/$height
 _aspectAddr = 0x101A8A70
 
 # menu link aspect (calculated every load)
@@ -129,9 +129,9 @@ _aspectAddr = 0x101A8A70
 [BotwAspectsV176V192]
 moduleMatches = 0xFD091F9F,0xD472D8A5
 # rodata constants
-0x101BF878 = .float $aspectRatio
-0x1030A3F4 = .float $aspectRatio
-0x1036DBDC = .float $aspectRatio
+0x101BF878 = .float $width/$height
+0x1030A3F4 = .float $width/$height
+0x1036DBDC = .float $width/$height
 _aspectAddr = 0x101BF878
 
 # menu link aspect (calculated every load)
@@ -145,9 +145,9 @@ _aspectAddr = 0x101BF878
 [BotwAspectsV208]
 moduleMatches = 0x6267BFD0
 # rodata constants
-0x101BF8E8 = .float $aspectRatio
-0x1030A57C = .float $aspectRatio
-0x1036DD4C = .float $aspectRatio
+0x101BF8E8 = .float $width/$height
+0x1030A57C = .float $width/$height
+0x1036DD4C = .float $width/$height
 _aspectAddr = 0x101BF8E8
 
 # menu link aspect (calculated every load)
