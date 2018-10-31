@@ -1,37 +1,43 @@
 ---
 layout: page
-use-site-title: false
+use-site-title: true
 css:
   - "css/index.css"
+js:
+  - "js/index.js"
 ---
 
-<div id="cemu-version-announcement" class="notification" hidden>
-	<div class="jumbotron">
-		<h2>Cemu 1.14.0 graphic packs are here!</h2>
-		<p>With the texture cache rework, the graphic packs required a rework for all of our "resolution packs".</p>
-		<p>Just bare with us while we rework the missing 1.14.0 graphic packs. Reporting issues is appriciated!</p>
-		<p class="lead">
-			<a class="btn btn-primary btn-lg" href="javascript:void(0);" onclick="confirmNotification('cemu-version-announcement');" role="button">Okay!</a>
-		</p>
-	</div>
+{% comment %} The javascript is designed to be infinitely scaleable. Just copy-pasting the announcement works. {% endcomment %}
+<div id="cemu-version-announcement" class="jumbotron notification" hidden>
+    <h2>Cemu 1.14.0 graphic packs are here!</h2>
+    <p>With the texture cache rework, the graphic packs required a rework for all of our "resolution packs".</p>
+    <p>Just bare with us while we rework the missing 1.14.0 graphic packs. Reporting on issues is very helpful!</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="javascript:void(0);" onclick="confirmNotification('cemu-version-announcement');" role="button">Okay!</a>
+    </p>
 </div>
 
-<div id="gfx-installation" class="notification" hidden>
-	<div class="jumbotron">
-		<h2>How-to: Installing graphic packs</h2>
-		<p>Have to write some instructions here, soon.</p>
-		<p class="lead">
-			<a class="btn btn-primary btn-lg" href="javascript:void(0);" onclick="confirmNotification('gfx-installation');" role="button">Yeah, I know</a>
-		</p>
-	</div>
+{% comment %} Get the latest release zip {% endcomment %}
+{% capture newReleaseVersion %} {{ site.github.latest_release.assets[0].browser_download_url | slice: 71, 3}} {% endcapture %}
+{% assign newReleaseVersion = newReleaseVersion | plus:1 %}
+
+
+<div id="download-gfx-panel" class="jumbotron">
+    <h2>Downloads</h2>
+    <p>Choose the right download for the Cemu version that you'll use.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" target="_self" href="https://github.com/slashiee/cemu_graphic_packs/releases/download/Travis{{ newReleaseVersion }}/graphicPacks{{ newReleaseVersion }}.zip" role="button">Cemu 1.14.0 (version 3)</a>
+        <a class="btn btn-default btn-lg" href="https://github.com/slashiee/cemu_graphic_packs/releases/download/Travis100/graphicPacks100_Uncommon.zip" role="button">Cemu 1.13.2 and older</a>
+    </p>
 </div>
+
 
 {% comment %}
 Possible todo's:
 - https://gitreports.com/ (anonymous github issues so that users can report issues).
 - Add/extract additional information from the graphic pack (like showing additional packs besides resolution packs).
 {% endcomment %}
-<div id="gameList" class="panel panel-info panel-default version3-only">
+<div id="game-list" class="panel panel-info panel-default version3-only">
 	<div class="panel-heading">List of graphic pack supported titles</div>
 	<ul class="list-group">
 		{% for gameTitle in site.data.GameTitles %}
@@ -44,23 +50,8 @@ Possible todo's:
 		</li>
 		{% endfor %}
 		<div class="panel-footer">
-			<a id="see-more-footer" href="javascript:document.getElementById('gameList').classList.remove('version3-only');">Also see &lt; Cemu 1.13.2 graphic packs...</a>
-			<a id="see-less-footer" href="javascript:document.getElementById('gameList').classList.add('version3-only');">Only show Cemu 1.14.0 graphic packs...</a>
+			<a id="see-more-footer" href="javascript:document.getElementById('game-list').classList.remove('version3-only');">Also see &lt; Cemu 1.13.2 graphic packs...</a>
+			<a id="see-less-footer" href="javascript:document.getElementById('game-list').classList.add('version3-only');">Only show Cemu 1.14.0 graphic packs...</a>
 		</div>
 	</ul>
 </div>
-
-<script defer>
-	notifications = document.getElementsByClassName("notification");
-	if (navigator.doNotTrack != 1) {
-		for (let i=0; i<notifications.length; i++) {
-			let notificationStatus = localStorage.getItem(notifications[i].id);
-			console.debug(`Checked if user has confirmed the ${notifications[i].id} notification, and resulted in ${notificationStatus}.`);
-			if (notificationStatus !=="true") notifications[i].hidden=false;
-		}
-	}
-	function confirmNotification(popupId) {
-		localStorage.setItem(popupId, true);
-		document.getElementById(popupId).hidden=true;
-	}
-</script>
