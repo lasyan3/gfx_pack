@@ -2,66 +2,96 @@
 titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
 name = Static FPS
 path = "The Legend of Zelda: Breath of the Wild/Modifications/Static FPS"
-description = "Important: Don't enable FPS++ while having Static FPS also enabled! This pack won't work without Cemuhook, make sure to install that! This pack only works when you've properly updated your game (we always recommend the latest updates). Keep in mind that going above 30fps will bring game bugs. You should use FPS++ if your computer doesn't uphold a stable framerate."
+description = "Simplified FPS++ to prevent graphics judder and fixed arrow physics at non-30FPS; don't mix FPS++ with static; it requires updated Cemuhook and game; it requires that you can maintain the target FPS; more at readme.txt"
 version = 3
 
-// Common
 [Preset]
-name = Static 30FPS (Default)
-$fpsTarget:int = 30
-$fpsDivisor = 1.0
-$derivative = 0.5
+name = Static 30FPS (most stable; ideal for 240/120/60Hz displays)
+$targetFPS:int = 30
 
 [Preset]
-name = Static 60FPS
-$fpsTarget:int = 60
-$fpsDivisor = 0.5
-$derivative = 1
+name = Static 60FPS (ideal for 240/120/60Hz displays)
+$targetFPS:int = 60
 
 [Preset]
 name = Static 45FPS
-$fpsTarget:int = 45
-$fpsDivisor = 0.6666666666666667
-$derivative = 0.75
-
-
-// Uncommon
-[Preset]
-name = Static 120FPS
-$fpsTarget:int = 120
-$fpsDivisor = 0.25
-$derivative = 2
+$targetFPS:int = 45
 
 [Preset]
-name = Static 75FPS
-$fpsTarget:int = 75
-$fpsDivisor = 0.4
-$derivative = 1.25
+name = Static 144FPS (ideal for 144Hz displays)
+$targetFPS:int = 144
 
 [Preset]
-name = Static 50FPS
-$fpsTarget:int = 50
-$fpsDivisor = 0.6
-$derivative = 0.8333333333333333
+name = Static 120FPS (ideal for 240/120/60Hz displays)
+$targetFPS:int = 120
 
 [Preset]
-name = Static 40FPS
-$fpsTarget:int = 40
-$fpsDivisor = 0.75
-$derivative = 0.6666666666666667
+name = Static 100FPS (ideal for 200/100Hz displays)
+$targetFPS:int = 100
 
 [Preset]
-name = Static 20FPS
-$fpsTarget:int = 20
-$fpsDivisor = 1.5
-$derivative = 0.3333333333333333
+name = Static 85FPS (ideal for 85Hz displays)
+$targetFPS:int = 85
 
 [Preset]
-name = Static 15FPS
-$fpsTarget:int = 15
-$fpsDivisor = 2.0
-$derivative = 0.25
+name = Static 75FPS (ideal for 75Hz displays)
+$targetFPS:int = 75
 
+[Preset]
+name = Static 72FPS (ideal for 144Hz displays)
+$targetFPS:int = 72
+
+[Preset]
+name = Static 50FPS (ideal for 200/100Hz displays)
+$targetFPS:int = 50
+
+[Preset]
+name = Static 48FPS (ideal for 144Hz displays)
+$targetFPS:int = 48
+
+[Preset]
+name = Static 40FPS (ideal for 240/120/60Hz displays)
+$targetFPS:int = 40
+
+[Preset]
+name = Static 36FPS (ideal for 144Hz displays)
+$targetFPS:int = 36
+
+[Preset]
+name = Static 25FPS (ideal for 75Hz displays)
+$targetFPS:int = 25
+
+[Preset]
+name = Static 24FPS (ideal for 144Hz displays)
+$targetFPS:int = 24
+
+[Preset]
+name = Static 20FPS (ideal for 240/120/60Hz displays)
+$targetFPS:int = 20
+
+[Preset]
+name = Static 18FPS (ideal for 144Hz displays)
+$targetFPS:int = 18
+
+[Preset]
+name = Static 17FPS (ideal for 85Hz displays)
+$targetFPS:int = 17
+
+[Preset]
+name = Static 16FPS (ideal for 144Hz displays)
+$targetFPS:int = 16
+
+[Preset]
+name = Static 15FPS (ideal for 240/120/60Hz displays)
+$targetFPS:int = 15
+
+[Preset]
+name = Static 12FPS (ideal for 144Hz displays)
+$targetFPS:int = 12
+
+[Preset]
+name = Static 10FPS (ideal for 240/120/60Hz displays)
+$targetFPS:int = 10
 
 [Control]
-vsyncFrequency = $fpsTarget
+vsyncFrequency = $targetFPS
