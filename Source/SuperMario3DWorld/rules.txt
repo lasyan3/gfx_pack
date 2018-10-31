@@ -6,25 +6,19 @@ description = Changes the resolution of the game. "zoom-transitions" are also no
 version = 3
 
 [Preset]
-name = 1280x720 (Native)
+name = 1280x720 (Default)
 $width = 1280
 $height = 720
 $gameWidth = 1280
 $gameHeight = 720
 
+// For [4:3] resolutions that are multiples of 320x180
 // Performance
 
 [Preset]
-name = 256x144
-$width = 256
-$height = 144
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 427x240
-$width = 427
-$height = 240
+name = 320x180
+$width = 320
+$height = 180
 $gameWidth = 1280
 $gameHeight = 720
 
@@ -32,13 +26,6 @@ $gameHeight = 720
 name = 640x360
 $width = 640
 $height = 360
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 854x480
-$width = 854
-$height = 480
 $gameWidth = 1280
 $gameHeight = 720
 
@@ -52,30 +39,16 @@ $gameHeight = 720
 // Quality
 
 [Preset]
-name = 1920x1080 (HD)
+name = 1920x1080
 $width = 1920
 $height = 1080
 $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = 1600x900
-$width = 1600
-$height = 900
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 2560x1440 (Native x2)
+name = 2560x1440
 $width = 2560
 $height = 1440
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 2732x1536
-$width = 2732
-$height = 1536
 $gameWidth = 1280
 $gameHeight = 720
 
@@ -87,7 +60,7 @@ $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = 3840x2160 (4k - Native x3)
+name = 3840x2160
 $width = 3840
 $height = 2160
 $gameWidth = 1280
@@ -112,6 +85,77 @@ $gameHeight = 720
 [Preset]
 name = 10240x5760
 $width = 10240
+$height = 5760
+$gameWidth = 1280
+$gameHeight = 720
+
+
+// For [21:9] resolutions that are multiples of 420x180
+// Performance
+
+[Preset]
+name = (21:9) 1260x540
+$width = 1260
+$height = 540
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = (21:9) 1680x720
+$width = 1680
+$height = 720
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = (21:9) 2100x900
+$width = 2100
+$height = 900
+$gameWidth = 1280
+$gameHeight = 720
+
+// Quality 
+
+[Preset]
+name = (21:9) 2520x1080
+$width = 2520
+$height = 1080
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = (21:9) 3360x1440
+$width = 3360
+$height = 1440
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = (21:9) 5040x2160
+$width = 5040
+$height = 2160
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = (21:9) 6720x2880
+$width = 6720
+$height = 2880
+$gameWidth = 1280
+$gameHeight = 720
+
+// Enthusiats
+
+[Preset]
+name = (21:9) 10080x4320
+$width = 10080
+$height = 4320
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = (21:9) 13440x5760
+$width = 13440
 $height = 5760
 $gameWidth = 1280
 $gameHeight = 720
