@@ -6,7 +6,7 @@ description = Allows customization of the color of the Divine Beasts's Laser Bea
 version = 3
 
 [Preset]
-name = (Default)Red
+name = Red (Default)
 $hue:int = 0
 $rainbow:int = 0
 $disableBeams:int = 0

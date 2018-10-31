@@ -1,28 +1,45 @@
+---
+layout: null
+---
+
 body {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.notification .jumbotron > p {
+.notification.jumbotron > p {
 	font-size: 16px;
 	margin: 0;
 }
 
-.notification .jumbotron p .btn-primary {
+.notification.jumbotron p .btn-primary {
 	margin-top: 14px;
 }
 
-#gameList.version3-only [hidden] {
+#game-list.version3-only [hidden] {
 	display: none;
 }
 
-#gameList.version3-only :not([hidden]) .version-label {
+#game-list.version3-only :not([hidden]) .version-label {
 	display: none;
 }
 
-#gameList.version3-only .panel-footer #see-less-footer {
+#game-list.version3-only .panel-footer #see-less-footer {
 	display: none;
 }
 
-#gameList:not(.version3-only) .panel-footer #see-more-footer {
+#game-list:not(.version3-only) .panel-footer #see-more-footer {
 	display: none;
+}
+
+#game-list .panel-footer a {
+	text-align: center;
+    display: block;
+}
+
+#game-list .panel-footer {
+    background-color: {{ site.navbar-col }};
+}
+
+#download-gfx-panel {
+    background-color: #dfe7e8;
 }

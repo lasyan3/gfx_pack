@@ -10,7 +10,7 @@ _targetfps = 0x18 # edit the next line to change the target fps
 0x18 = .float $fpsTarget
 
 #Arrows by Epigramx
-0x1001CCAC = .float 30 # = 30 * divisor 
+0x1001CCAC = .float (30 * $fpsDivisor) # = 30 * divisor 
 0x1001CB18 = .float $derivative # = 0.5 / divisor
 
 #"Best fence" by Rajkosto
@@ -69,7 +69,7 @@ _targetfps = 0x18 # edit the next line to change the target fps
 0x18 = .float $fpsTarget
 
 #Arrows by Epigramx
-0x1001CCAC = .float 30 # = 30 * divisor 
+0x1001CCAC = .float (30 * $fpsDivisor) # = 30 * divisor 
 0x1001CB18 = .float $derivative # = 0.5 / divisor
 
 #"Best fence" by Rajkosto
