@@ -1,8 +1,8 @@
 [Definition]
 titleIds = 0005000010194000
-name = "Resolutions"
-path = "Meme Run/Graphics/Resolutions"
-description = "Changes the game's resolutions"
+name = Resolutions
+path = "Meme Run/Graphics/Resolution"
+description = Changes the games resolution. You cannot change resolutions on the fly.
 version = 3
 
 [Preset]
