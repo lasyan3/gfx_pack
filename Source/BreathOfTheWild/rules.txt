@@ -12,7 +12,7 @@ $height = 720
 $gameWidth = 1280
 $gameHeight = 720
 
-// Only works well with resolutions that are multiples of 320x180
+// For [4:3] resolutions that are multiples of 320x180
 // Performance
 
 [Preset]
@@ -90,110 +90,76 @@ $gameWidth = 1280
 $gameHeight = 720
 
 
-// 21:9
-// Only works well with resolutions that are multiples of 320x180
+// For [21:9] resolutions that are multiples of 420x180
+// Performance
 
 [Preset]
-name = (21:9) 1280x540
-$width = 1280
+name = (21:9) 1260x540
+$width = 1260
 $height = 540
 $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = (21:9) 1280x540
-$width = 1280
-$height = 540
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = (21:9) 2100x900
-$width = 2560
-$height = 1080
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = (21:9) 2560x1080
-$width = 2560
-$height = 1080
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = (21:9) 5120x2160
-$width = 5120
-$height = 2160
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = (21:9) 10240x5320
-$width = 10240
-$height = 5320
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = (21:9) 13760x5760
-$width = 13760
-$height = 5760
-$gameWidth = 1280
-$gameHeight = 720
-
-
-// 48:9
-// Only works well with resolutions that are multiples of 320x180
-
-[Preset]
-name = (48:9) 1920x360
-$width = 1920
-$height = 360
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = (48:9) 3840x720
-$width = 3840
+name = (21:9) 1680x720
+$width = 1680
 $height = 720
 $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = (48:9) 4800x900
-$width = 4800
+name = (21:9) 2100x900
+$width = 2100
 $height = 900
 $gameWidth = 1280
 $gameHeight = 720
 
+// Quality 
+
 [Preset]
-name = (48:9) 11520x2160
-$width = 11520
+name = (21:9) 2520x1080
+$width = 2520
+$height = 1080
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = (21:9) 3360x1440
+$width = 3360
+$height = 1440
+$gameWidth = 1280
+$gameHeight = 720
+
+[Preset]
+name = (21:9) 5040x2160
+$width = 5040
 $height = 2160
 $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = (48:9) 15360x2880
-$width = 15360
+name = (21:9) 6720x2880
+$width = 6720
 $height = 2880
 $gameWidth = 1280
 $gameHeight = 720
 
+// Enthusiats
+
 [Preset]
-name = (48:9) 23040x4320
-$width = 23040
+name = (21:9) 10080x4320
+$width = 10080
 $height = 4320
 $gameWidth = 1280
 $gameHeight = 720
 
 [Preset]
-name = (48:9) 30720x5760
-$width = 30720
+name = (21:9) 13440x5760
+$width = 13440
 $height = 5760
 $gameWidth = 1280
 $gameHeight = 720
+
 
 # All 720p textures:
 # - 0x001=World Lighting Red8

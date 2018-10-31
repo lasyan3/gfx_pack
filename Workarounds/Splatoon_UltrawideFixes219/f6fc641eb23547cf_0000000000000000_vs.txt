@@ -4,7 +4,7 @@
 #extension GL_ARB_shading_language_packing : enable
 // shader f6fc641eb23547cf
 // Used for: Some blurred backgrounds
-float scaleAspect = 1.3333333333333;
+float scaleAspect = $width/$height;
 
 uniform ivec4 uf_remappedVS[23];
 uniform vec2 uf_windowSpaceToClipSpaceTransform;
