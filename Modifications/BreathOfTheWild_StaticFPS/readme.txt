@@ -8,7 +8,7 @@ It improves over previous static mods in that it allows ANY positive integer
 as a static fps target and it includes the stamina fix. I've also figured out 
 a fix for the physics of arrow projectiles.
 
-To use it enable the graphic back and choose a preset fps target, or edit
+To use it enable the graphic pack and choose a preset fps target, or edit
 the rules.txt file to add a new preset. 
 
 Original forum thread at https://forum.cemu.info/showthread.php/421
