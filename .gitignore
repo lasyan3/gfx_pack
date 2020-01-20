@@ -1,10 +1,11 @@
+# Repository #
+##############
+.git
 
-Build/
-
-docs/node_modules/
-
-docs/\.idea/
-
-docs/package-lock\.json
-
+# Project #
+###########
 docs/Gemfile\.lock
+
+# Images #
+##########
+*.jpg
