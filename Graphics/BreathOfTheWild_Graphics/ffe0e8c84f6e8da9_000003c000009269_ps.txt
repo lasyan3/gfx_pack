@@ -20,8 +20,7 @@
 // shader ffe0e8c84f6e8da9
 // Shadow 2x2 box blur fix
 // shader dumped from BotW v1.3.1, using Cemu 1.10.0
-const float resXScale = $shadowRes;
-const float resYScale = $shadowRes;
+const float resScale = $shadowRes;
 
 UNIFORM_BUFFER_LAYOUT(33, 1, 7) uniform uniformBlockPS1
 {
@@ -331,10 +330,10 @@ R2i.y = floatBitsToInt(intBitsToFloat(0x3da22222) * intBitsToFloat(PS1i));
 R2i.z = floatBitsToInt(intBitsToFloat(0x3da22222) * intBitsToFloat(PS1i));
 R13i.w = PV1i.y - R127i.x;
 PV0i.w = R13i.w;
-PS0i = floatBitsToInt(uf_blockPS6[53].y/resYScale);
+PS0i = floatBitsToInt(uf_blockPS6[53].y/resScale);
 PS0i = floatBitsToInt(intBitsToFloat(PS0i) / 2.0);
 // 3
-R6i.x = floatBitsToInt(uf_blockPS6[53].x/resXScale);
+R6i.x = floatBitsToInt(uf_blockPS6[53].x/resScale);
 R6i.x = floatBitsToInt(intBitsToFloat(R6i.x) / 2.0);
 PV1i.y = PV0i.w << 0x00000002;
 R6i.z = floatBitsToInt(-(intBitsToFloat(PS0i)));
@@ -450,7 +449,7 @@ PV0i.y = floatBitsToInt(intBitsToFloat(R0i.w) + intBitsToFloat(PV1i.w));
 R127i.z = floatBitsToInt(mul_nonIEEE(intBitsToFloat(PV1i.y), intBitsToFloat(PS1i)));
 PV0i.z = R127i.z;
 // 13
-R7i.x = floatBitsToInt((uf_blockPS6[53].x / resXScale * 0.5 + intBitsToFloat(PV0i.z)));
+R7i.x = floatBitsToInt((uf_blockPS6[53].x / resScale * 0.5 + intBitsToFloat(PV0i.z)));
 R127i.y = floatBitsToInt(intBitsToFloat(PV0i.x) + intBitsToFloat(0xbb03126f));
 R127i.y = clampFI32(R127i.y);
 PV1i.y = R127i.y;
@@ -460,18 +459,18 @@ R8i.x = floatBitsToInt(intBitsToFloat(PV0i.z) + intBitsToFloat(R6i.x));
 PS1i = R8i.x;
 // 14
 R1i.x = floatBitsToInt(intBitsToFloat(R127i.z) + intBitsToFloat(R126i.w));
-R7i.y = floatBitsToInt((uf_blockPS6[53].y / resYScale * 0.5 + intBitsToFloat(PV1i.w)));
+R7i.y = floatBitsToInt((uf_blockPS6[53].y / resScale * 0.5 + intBitsToFloat(PV1i.w)));
 R7i.w = PV1i.y;
 R8i.y = floatBitsToInt(intBitsToFloat(PV1i.w) + intBitsToFloat(R6i.z));
 PS0i = R8i.y;
 // 15
-R9i.x = floatBitsToInt((-(uf_blockPS6[53].x) / resXScale * 0.5 + intBitsToFloat(R127i.z)));
+R9i.x = floatBitsToInt((-(uf_blockPS6[53].x) / resScale * 0.5 + intBitsToFloat(R127i.z)));
 R1i.y = floatBitsToInt(intBitsToFloat(R127i.w) + intBitsToFloat(R2i.w));
 R8i.w = R127i.y;
 R1i.w = R127i.y;
 PS1i = R1i.w;
 // 16
-R9i.y = floatBitsToInt((-(uf_blockPS6[53].y) / resYScale * 0.5 + intBitsToFloat(R127i.w)));
+R9i.y = floatBitsToInt((-(uf_blockPS6[53].y) / resScale * 0.5 + intBitsToFloat(R127i.w)));
 R9i.w = R127i.y;
 }
 if( activeMaskStackC[2] == true ) {

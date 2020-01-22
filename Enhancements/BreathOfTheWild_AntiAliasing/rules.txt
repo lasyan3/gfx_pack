@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
 name = Anti-Aliasing
-path = "The Legend of Zelda: Breath of the Wild/Graphics/Anti-Aliasing"
+path = "The Legend of Zelda: Breath of the Wild/Enhancements/Anti-Aliasing"
 description = Enables or Disables Native Botw Anti-Aliasing. Also includes an alternative FXAA implementation. Check the rules.txt of this pack for info about the individual settings. Made by Skalfate.
 version = 4
 

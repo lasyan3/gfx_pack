@@ -20,8 +20,7 @@
 // shader 22c410044398c7af
 // Fixed radius blur
 // shadow pass blur v
-const float resXScale = $shadowRes;
-const float resYScale = $shadowRes;
+const float resScale = $shadowRes;
 
 #ifdef VULKAN
 layout(set = 0, binding = 0) uniform ufBlock
@@ -86,7 +85,7 @@ R1f.y = backupReg1f;
 R1f.y *= 2.0;
 R1f.z = -(1.0);
 R1f.w = 1.0;
-PS0f = intBitsToFloat(uf_remappedVS[0].y) / resYScale * intBitsToFloat(0x3fae8a72);
+PS0f = intBitsToFloat(uf_remappedVS[0].y) / resScale * intBitsToFloat(0x3fae8a72);
 // 1
 backupReg0f = R2f.y;
 R0f.x = R2f.x;

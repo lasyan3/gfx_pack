@@ -1,331 +1,271 @@
 [Definition]
 titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
-name = Resolution
-path = "The Legend of Zelda: Breath of the Wild/Graphics/Resolution"
-description = Changes the resolution of the game. Made by Kiri, Skalfate, rajkosto and NAVras.
-version = 4
+name = Graphics
+path = "The Legend of Zelda: Breath of the Wild/Graphics"
+description = Allows you to change the game resolution and shadow resolution.|Made by Kiri, Skalfate, rajkosto and NAVras.
+version = 5
 
-[Preset]
-name = 1280x720 (16:9) (Default)
+[Default]
 $width = 1280
 $height = 720
 $gameWidth = 1280
 $gameHeight = 720
 $heightfix = 0
+$shadowRes = 1
+
+[Preset]
+name = 1280x720 (16:9) (Default)
+category = Resolution
 
 # Performance
 
 [Preset]
-name = -----------------------------------
-$width = 1280
-$height = 720
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
-
-[Preset]
 name = 320x180 (16:9)
+category = Resolution
 $width = 320
 $height = 180
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 640x360 (16:9)
+category = Resolution
 $width = 640
 $height = 360
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 960x540 (16:9)
+category = Resolution
 $width = 960
 $height = 540
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 # Common HD Resolutions
 
 [Preset]
-name = -----------------------------------
-$width = 1280
-$height = 720
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
-
-[Preset]
 name = 1600x900 (16:9)
+category = Resolution
 $width = 1600
 $height = 900
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 1920x1080 (16:9)
+category = Resolution
 $width = 1920
 $height = 1080
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 2560x1440 (16:9)
+category = Resolution
 $width = 2560
 $height = 1440
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 3200x1800 (16:9)
+category = Resolution
 $width = 3200
 $height = 1800
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 3840x2160 (16:9)
+category = Resolution
 $width = 3840
 $height = 2160
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 5120x2880 (16:9)
+category = Resolution
 $width = 5120
 $height = 2880
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 7680x4320 (16:9)
+category = Resolution
 $width = 7680
 $height = 4320
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
+
+[Preset]
+name = 10240x5760‬ (16:9)
+category = Resolution
+$width = 10240
+$height = 5760‬
 
 # Common Ultrawide Resolutions
 
 [Preset]
-name = -----------------------------------
-$width = 1280
-$height = 720
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
-
-[Preset]
 name = 2560x1080 (21:9)
+category = Resolution
 $width = 2560
 $height = 1080
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 3440x1440 (21:9)
+category = Resolution
 $width = 3440
 $height = 1440
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 3840x1600 (21:10)
+category = Resolution
 $width = 3840
 $height = 1600
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 4300x1800 (21:9)
+category = Resolution
 $width = 4300
 $height = 1800
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 6880x2880 (21:9)
+category = Resolution
 $width = 6880
 $height = 2880
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 10240x4320 (21:9)
+category = Resolution
 $width = 10240
 $height = 4320
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 # Common 16:10 Resolutions
 
 [Preset]
-name = -----------------------------------
-$width = 1280
-$height = 720
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
-
-[Preset]
 name = 1440x900 (16:10)
+category = Resolution
 $width = 1440
 $height = 900
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 1680x1050 (16:10)
+category = Resolution
 $width = 1680
 $height = 1050
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 1920x1200 (16:10)
+category = Resolution
 $width = 1920
 $height = 1200
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 2560x1600 (16:10)
+category = Resolution
 $width = 2560
 $height = 1600
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 2880x1800 (16:10)
+category = Resolution
 $width = 2880
 $height = 1800
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 3840x2400 (16:10)
+category = Resolution
 $width = 3840
 $height = 2400
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 5120x3200 (16:10)
+category = Resolution
 $width = 5120
 $height = 3200
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 # Other Uncommon Resolutions
 
 [Preset]
-name = -----------------------------------
-$width = 1280
-$height = 720
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
-
-[Preset]
 name = 640x480 (4:3)
+category = Resolution
 $width = 640
 $height = 480
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 1280x960 (4:3)
+category = Resolution
 $width = 1280
 $height = 960
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 1920x1440 (4:3)
+category = Resolution
 $width = 1920
 $height = 1440
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 640x512 (5:4)
+category = Resolution
 $width = 640
 $height = 512
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 1280x1024 (5:4)
+category = Resolution
 $width = 1280
 $height = 1024
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 1920x1536 (5:4)
+category = Resolution
 $width = 1920
 $height = 1536
-$gameWidth = 1280
-$gameHeight = 720
 $heightfix = 1
 
 [Preset]
 name = 5760x1080 (48:9)
+category = Resolution
 $width = 5760
 $height = 1080
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 8640x1620 (48:9)
+category = Resolution
 $width = 8640
 $height = 1620
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 14400x2700 (48:9)
+category = Resolution
 $width = 14400
 $height = 2700
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
 
 [Preset]
 name = 21600x4050 (48:9)
+category = Resolution
 $width = 21600
 $height = 4050
-$gameWidth = 1280
-$gameHeight = 720
-$heightfix = 0
+
+# Shadow Graphics Pack
+
+[Preset]
+name = Medium (100%, Default)
+category = Shadows
+
+[Preset]
+name = Low (50%)
+category = Shadows
+$shadowRes = 0.5
+
+[Preset]
+name = High (200%)
+category = Shadows
+$shadowRes = 2
+
+[Preset]
+name = Ultra (300%)
+category = Shadows
+$shadowRes = 3
+
+[Preset]
+name = Extreme (400%, Unstable)
+category = Shadows
+$shadowRes = 4
 
 # All 720p textures:
 # - 0x001=World Lighting Red8
@@ -873,3 +813,41 @@ formats = 0x1a
 tilemodes = 4
 overwriteWidth = ($width/$gameWidth) * 464
 overwriteHeight = ($height/$gameHeight) * 28
+
+# Shadows Graphic Pack
+
+[TextureRedefine]
+width = 768
+height = 720
+formats = 0x5
+overwriteWidth = $shadowRes * 768
+overwriteHeight = $shadowRes * 720
+
+[TextureRedefine]
+width = 720
+height = 720
+formats = 0x5
+overwriteWidth = $shadowRes * 720
+overwriteHeight = $shadowRes * 720
+
+[TextureRedefine]
+width = 384
+height = 368
+formats = 0x5
+overwriteWidth = $shadowRes * 384
+overwriteHeight = $shadowRes * 368
+
+[TextureRedefine]
+width = 384
+height = 360
+formats = 0x5
+overwriteWidth = $shadowRes * 384
+overwriteHeight = $shadowRes * 360
+
+[TextureRedefine]
+width = 360
+height = 360
+formats = 0x5
+overwriteWidth = $shadowRes * 360
+overwriteHeight = $shadowRes * 360
+
