@@ -82,10 +82,10 @@ $width = 7680
 $height = 4320
 
 [Preset]
-name = 10240x5760‬ (16:9)
+name = 10240x5760 (16:9)
 category = Resolution
 $width = 10240
-$height = 5760‬
+$height = 5760
 
 # Common Ultrawide Resolutions
 
@@ -850,4 +850,3 @@ height = 360
 formats = 0x5
 overwriteWidth = $shadowRes * 360
 overwriteHeight = $shadowRes * 360
-
