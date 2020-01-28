@@ -1,0 +1,174 @@
+[Definition]
+titleIds = 00050000101C9300,00050000101C9400,00050000101C9500
+name = Dynamic Gamespeed (FPS++)
+path = "The Legend of Zelda: Breath of the Wild/Mods/Dynamic Gamespeed"
+description = DO NOT COMBINE THIS MOD WITH STATIC GAMESPEED!|For custom: Don't forget to set the FPS limit if you want to exceed 30 FPS. Lowering the amount of averaged frames, how more reactive the gamespeed becomes to your FPS.|Made by Xalphenos, Crementif, and epigramx.
+version = 5
+
+[Default] # any used variable must be defined here, we also use reasonable defaults for good practice, despite the fact that they all should be overwritten by presets
+$fenceMethod:int = 1 # 1 -> performance, 2 -> accuracy, 3 -> fence skip
+$amount_of_FPS_averaged = 16
+$targetFPS:int = 30
+$isCustom:int = 0
+
+[Preset]
+name = 30 FPS Accuracy
+category = Mode
+$fenceMethod:int = 2
+$amount_of_FPS_averaged = 16
+$targetFPS:int = 30
+
+[Preset]
+name = 60 FPS Accuracy
+category = Mode
+$fenceMethod:int = 2
+$amount_of_FPS_averaged = 16
+$targetFPS:int = 60
+
+[Preset]
+name = 30 FPS Performance
+category = Mode
+$fenceMethod:int = 1
+$amount_of_FPS_averaged = 16
+$targetFPS:int = 30
+
+[Preset]
+name = 60 FPS Performance
+category = Mode
+$fenceMethod:int = 1
+$amount_of_FPS_averaged = 16
+$targetFPS:int = 60
+
+[Preset]
+name = Custom
+category = Mode
+$isCustom:int = 1
+
+[Preset]
+name = Performance Fence
+category = Fence Type
+condition = $isCustom == 1
+$fenceMethod:int = 1
+
+[Preset]
+name = Accurate Fence
+category = Fence Type
+condition = $isCustom == 1
+$fenceMethod:int = 2
+
+[Preset]
+name = Fence Skip
+category = Fence Type
+condition = $isCustom == 1
+$fenceMethod:int = 3
+
+[Preset]
+name = 32 Frames Averaged
+category = Frame Average
+condition = $isCustom == 1
+$amount_of_FPS_averaged = 32
+
+[Preset]
+name = 16 Frames Averaged
+category = Frame Average
+condition = $isCustom == 1
+$amount_of_FPS_averaged = 16
+
+[Preset]
+name = 8 Frames Averaged
+category = Frame Average
+condition = $isCustom == 1
+$amount_of_FPS_averaged = 8
+
+[Preset]
+name = 6 Frames Averaged
+category = Frame Average
+condition = $isCustom == 1
+$amount_of_FPS_averaged = 6
+
+[Preset]
+name = 4 Frames Averaged
+category = Frame Average
+condition = $isCustom == 1
+$amount_of_FPS_averaged = 4
+
+[Preset]
+name = 3 Frames Averaged
+category = Frame Average
+condition = $isCustom == 1
+$amount_of_FPS_averaged = 3
+
+[Preset]
+name = 60FPS (ideal for 240/120/60Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 60
+
+[Preset]
+name = 30FPS (ideal for 240/120/60Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 30
+
+[Preset]
+name = 40FPS (ideal for 240/120/60Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 40
+
+[Preset]
+name = 20FPS (ideal for 240/120/60Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 20
+
+[Preset]
+name = 33FPS (ideal for 165Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 33
+
+[Preset]
+name = 48FPS (ideal for 144Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 48
+
+[Preset]
+name = 55FPS (ideal for 165Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 55
+
+[Preset]
+name = 72FPS (ideal for 144Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 72
+
+[Preset]
+name = 75FPS (ideal for 75Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 75
+
+[Preset]
+name = 120FPS (ideal for 240/120/60Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 120
+
+[Preset]
+name = 144FPS (ideal for 144Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 144
+
+[Preset]
+name = 165FPS (ideal for 165Hz displays)
+category = Max Framerate
+condition = $isCustom == 1
+$targetFPS:int = 165
+
+[Control]
+vsyncFrequency = $targetFPS
