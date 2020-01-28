@@ -1,164 +1,148 @@
 [Definition]
 titleIds = 0005000010176900,0005000010176A00,0005000010162B00
-name = Resolution
-path = "Splatoon/Graphics/Resolution"
-description = Changes the resolution of the game. Made by Slashiee and Xalphenos.
-version = 4
+name = Graphics
+path = "Splatoon/Graphics"
+description = Allows you to change the game resolution and shadow resolution.|Made by Slashiee and Xalphenos.
+version = 5
 
-[Preset]
-name = 1280x720 (Default)
+[Default]
 $width = 1280
 $height = 720
 $gameWidth = 1280
 $gameHeight = 720
+$shadowRes = 1
+
+[Preset]
+name = 1280x720 (Default)
+category = Resolution
 
 # Performance
 
 [Preset]
 name = 320x180
+category = Resolution
 $width = 320
 $height = 180
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 640x360
+category = Resolution
 $width = 640
 $height = 360
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 854x480
+category = Resolution
 $width = 854
 $height = 480
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 960x540
+category = Resolution
 $width = 960
 $height = 540
-$gameWidth = 1280
-$gameHeight = 720
 
 # Common HD Resolutions
 
 [Preset]
 name = 1600x900
+category = Resolution
 $width = 1600
 $height = 900
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 1920x1080
+category = Resolution
 $width = 1920
 $height = 1080
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 2560x1440
+category = Resolution
 $width = 2560
 $height = 1440
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 3200x1800
+category = Resolution
 $width = 3200
 $height = 1800
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 3840x2160
+category = Resolution
 $width = 3840
 $height = 2160
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 5120x2880
+category = Resolution
 $width = 5120
 $height = 2880
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 7680x4320
+category = Resolution
 $width = 7680
 $height = 4320
-$gameWidth = 1280
-$gameHeight = 720
 
 # Common Ultrawide Resolutions
 
 [Preset]
 name = 2560x1080 (Ultrawide)
+category = Resolution
 $width = 2560
 $height = 1080
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
 name = 3440x1440 (Ultrawide)
+category = Resolution
 $width = 3440
 $height = 1440
-$gameWidth = 1280
-$gameHeight = 720
-
-# Common 16:10 Resolutions
 
 [Preset]
-name = 1440x900 (16:10)
-$width = 1440
-$height = 900
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 1680x1050 (16:10)
-$width = 1680
-$height = 1050
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 1920x1200 (16:10)
-$width = 1920
-$height = 1200
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 2560x1600 (16:10)
-$width = 2560
-$height = 1600
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 2880x1800 (16:10)
-$width = 2880
-$height = 1800
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 3840x2400 (16:10)
-$width = 3840
-$height = 2400
-$gameWidth = 1280
-$gameHeight = 720
-
-[Preset]
-name = 5120x3200 (16:10)
+name = 5120x2160 (Ultrawide)
+category = Resolution
 $width = 5120
-$height = 3200
-$gameWidth = 1280
-$gameHeight = 720
+$height = 2160
+
+[Preset]
+name = 6880x2880 (Ultrawide)
+category = Resolution
+$width = 6880
+$height = 2880
+
+[Preset]
+name = 10240x4320 (Ultrawide)
+category = Resolution
+$width = 10240
+$height = 4320
+
+# Shadow Graphics Pack
+
+[Preset]
+name = Medium (100%, Default)
+category = Shadows
+
+[Preset]
+name = Low (50%)
+category = Shadows
+$shadowRes = 0.5
+
+[Preset]
+name = High (200%)
+category = Shadows
+$shadowRes = 2
+
+[Preset]
+name = Ultra (300%)
+category = Shadows
+$shadowRes = 3
+
+[Preset]
+name = Extreme (400%, Unstable)
+category = Shadows
+$shadowRes = 4
 
 # TV
 
@@ -646,3 +630,33 @@ width = 256
 height = 256
 formats = 0x1a
 overwriteFormat = 0x1f
+
+# Shadow Graphics Pack
+
+[TextureRedefine] # Shadows
+width = 2048
+height = 2048
+formats = 0x5
+overwriteWidth = $shadowRes * 2048
+overwriteHeight = $shadowRes * 2048
+
+[TextureRedefine] # Squid Sisters Shadows
+width = 1664
+height = 1648
+formats = 0x5
+overwriteWidth = $shadowRes * 1664
+overwriteHeight = $shadowRes * 1648
+
+[TextureRedefine] # Squid Sisters Shadows
+width = 1640
+height = 1640
+formats = 0x5
+overwriteWidth = $shadowRes * 1640
+overwriteHeight = $shadowRes * 1640
+
+[TextureRedefine] # Performance Shadows
+width = 1024
+height = 1024
+formats = 0x5
+overwriteWidth = $shadowRes * 1024
+overwriteHeight = $shadowRes * 1024

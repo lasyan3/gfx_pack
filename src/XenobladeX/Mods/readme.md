@@ -1,4 +1,5 @@
 # Description of the mods for Xenoblade Chronicles X
+
 ### Battle mods
 
 - **Automatic Soul Challenges**: The Soul Challenges QTE are hidden and automatically successful (only affect ground battles , not the QTE on Skell binding and destroying).
@@ -73,6 +74,8 @@
 ### Weather mods
 - **Force weather**: Force selected weather. Just select a preset and unload/reload the pack.
 
-### Requirements
-The most important requirement is of course Cemuhook. All my mods have been tested and are known to work with Cemuhook **0.5.7.3**.
-All mods are compatibles with Xenoblade versions **1.0.1E** and **1.0.2U** (some of them with 1.0.1U), and are not supposed to impact savegames but be sure to make save backup just in case!
+### Extra Mods
+- **60FPS**: Makes the game run at 60fps. Will require a powerful computer.
+
+### Compatibility
+All mods are compatible with Xenoblade versions **1.0.1E** and **1.0.2U** (some of them with 1.0.1U), and are not supposed to impact savegames but be sure to make save backup just in case!
