@@ -1,0 +1,6 @@
+[Definition]
+titleIds = 000500001010ec00,000500001010ed00,000500001010eb00
+name = Increase Level of Detail Distance
+path = "Mario Kart 8/Mods/Increase Level of Detail Distance"
+description = Increases the overall distance for level of detail to kick in.|Made by theboy181.
+version = 5
