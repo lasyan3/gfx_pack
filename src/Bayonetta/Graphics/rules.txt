@@ -2,8 +2,8 @@
 titleIds = 000500001014DB00,0005000010157E00,0005000010157F00
 name = Graphics
 path = "Bayonetta/Graphics"
-description = Changes the resolution of the game.
-version = 4
+description = Changes the resolution of the game.|Made by getdls
+version = 5
 
 [Default]
 $width = 1280

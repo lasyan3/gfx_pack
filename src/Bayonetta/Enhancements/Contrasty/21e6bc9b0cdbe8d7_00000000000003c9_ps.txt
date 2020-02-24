@@ -34,14 +34,14 @@ uniform vec2 uf_fragCoordScale;
 
 const float hazeFactor = $hazeFactor;
 
-const float gamma = $gamma; // 1.0 is neutral  
+const float gamma = $gamma; // 1.0 is neutral
 const float exposure = $exposure; // 1.0 is neutral
-const float vibrance = $vibrance;  // 0.0 is neutral  
+const float vibrance = $vibrance; // 0.0 is neutral
 const float crushContrast = $crushContrast; // 0.0 is neutral. Use small increments, loss of shadow detail 
 const float contrastCurve = $contrastCurve;
 
 
-vec3 RGB_Lift = vec3($redShadows, $greenShadows , $blueSadows);		// [0.000 to 2.000] Adjust shadows for Red, Green and Blue.
+vec3 RGB_Lift = vec3($redShadows, $greenShadows , $blueShadows);		// [0.000 to 2.000] Adjust shadows for Red, Green and Blue.
 vec3 RGB_Gamma = vec3($redMid ,$greenMid, $blueMid);				// [0.000 to 2.000] Adjust midtones for Red, Green and Blue
 vec3 RGB_Gain = vec3($redHilight, $greenHilight, $blueHilight);		// [0.000 to 2.000] Adjust highlights for Red, Green and Blue
 //lumasharpen
@@ -49,8 +49,8 @@ const float sharp_mix = $sharp_mix;
 const float sharp_strength = 2.0; 
 const float sharp_clamp = 0.75;
 const float offset_bias = 1.0;
-float Sigmoid (float x) {
 
+float Sigmoid (float x) {
 	return 1.0 / (1.0 + (exp(-(x - 0.5) * 5.5))); 
 }
 

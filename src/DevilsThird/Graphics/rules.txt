@@ -3,7 +3,7 @@ titleIds = 0005000010177600,0005000010177700,0005000010197d00
 name = Graphics
 path = "Devil's Third/Graphics"
 description = Changes the resolution of the game.|Made by Crementif.
-version = 4
+version = 5
 
 [Default]
 $width = 1280
