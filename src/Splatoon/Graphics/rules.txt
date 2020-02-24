@@ -2,7 +2,7 @@
 titleIds = 0005000010176900,0005000010176A00,0005000010162B00
 name = Graphics
 path = "Splatoon/Graphics"
-description = Allows you to change the game resolution and shadow resolution.|Made by Slashiee and Xalphenos.
+description = Allows you to change the game resolution and shadow resolution.||Made by Slashiee and Xalphenos.
 version = 5
 
 [Default]
@@ -16,7 +16,8 @@ $gamepadWidth = 854
 $gamepadHeight = 480
 $shadowRes = 1
 
-# TV
+
+# TV Resolution
 
 [Preset]
 name = 1280x720 (Default)
@@ -118,7 +119,8 @@ category = TV Resolution
 $width = 10240
 $height = 4320
 
-# Gamepad
+
+# Gamepad Resolution
 
 [Preset]
 name = 854x480 (Default)
@@ -220,6 +222,7 @@ category = Gamepad Resolution
 $padWidth = 10240
 $padHeight = 4320
 
+
 # Shadows
 
 [Preset]
@@ -245,6 +248,8 @@ $shadowRes = 3
 name = Extreme (400%, Unstable)
 category = Shadows
 $shadowRes = 4
+
+
 
 # Texture Redefines
 

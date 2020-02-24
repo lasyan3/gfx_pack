@@ -1,8 +1,8 @@
 [Definition]
 titleIds = 0005000010177600,0005000010177700,0005000010197d00
-name = Graphics
+name = TV Resolution and Gamepad Resolution
 path = "Devil's Third/Graphics"
-description = Changes the resolution of the game.|Made by Crementif.
+description = Changes the TV and gamepad resolution of the game.||Made by Crementif.
 version = 5
 
 [Default]
@@ -147,14 +147,14 @@ height = 720
 formats = 0x011,0x820,0x01a,0x41a
 tileModesExcluded = 0x1
 overwriteWidth = ($width/$gameWidth) * 1280
-overwriteHeight  = ($height/$gameHeight) * 720
+overwriteHeight = ($height/$gameHeight) * 720
 
 [TextureRedefine]
 width = 864
 height = 480
 formats = 0x820
 overwriteWidth = ($padWidth/$gamePadWidth) * 864
-overwriteHeight  = ($padHeight/$gamePadHeight) * 480
+overwriteHeight = ($padHeight/$gamePadHeight) * 480
 
 # Blur
 
@@ -163,14 +163,14 @@ width = 320
 height = 180
 formats = 0x810,0x820
 overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight  = ($height/$gameHeight) * 180
+overwriteHeight = ($height/$gameHeight) * 180
 
 [TextureRedefine]
 width = 320
 height = 192
 formats = 0x810
 overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight  = ($height/$gameHeight) * 192
+overwriteHeight = ($height/$gameHeight) * 192
 
 # Bloom
 
@@ -179,7 +179,7 @@ width = 640
 height = 368
 formats = 0x820
 overwriteWidth = ($width/$gameWidth) * 640
-overwriteHeight  = ($height/$gameHeight) * 368
+overwriteHeight = ($height/$gameHeight) * 368
 
 [TextureRedefine]
 width = 640
@@ -187,7 +187,7 @@ height = 360
 formats = 0x820
 tileModesExcluded = 0x1
 overwriteWidth = ($width/$gameWidth) * 640
-overwriteHeight  = ($height/$gameHeight) * 360
+overwriteHeight = ($height/$gameHeight) * 360
 
 # Bloom looked broken from my testing (not using the tiled rendering fix or whatever it's called), but it might be a shader that didn't get upscaled correctly.
 
@@ -196,11 +196,11 @@ width = 352
 height = 192
 formats = 0x820
 overwriteWidth = ($width/$gameWidth) * 352
-overwriteHeight  = ($height/$gameHeight) * 192
+overwriteHeight = ($height/$gameHeight) * 192
 
 [TextureRedefine]
 width = 322
 height = 182
 formats = 0x820
 overwriteWidth = ($width/$gameWidth) * 322
-overwriteHeight  = ($height/$gameHeight) * 182
+overwriteHeight = ($height/$gameHeight) * 182

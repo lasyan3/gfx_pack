@@ -1,77 +1,73 @@
 [Definition]
 titleIds = 000500001014DB00,0005000010157E00,0005000010157F00
-name = Graphics
+name = Game Resolution
 path = "Bayonetta/Graphics"
-description = Changes the resolution of the game.|Made by getdls
+description = Changes the resolution of the game.||Made by getdls
 version = 5
 
 [Default]
 $width = 1280
 $height = 720
-$padWidth = 854
-$padHeight = 480
 $gameWidth = 1280
 $gameHeight = 720
-$gamePadWidth = 854
-$gamePadHeight = 480
 
 
 # TV Resolution
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 1280x720 (Default)
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 640x360
 $width = 640
 $height = 360
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 960x540
 $width = 960
 $height = 540
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 1600x900
 $width = 1600
 $height = 900
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 1920x1080
 $width = 1920
 $height = 1080
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 2560x1440
 $width = 2560
 $height = 1440
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 3200x1800
 $width = 3200
 $height = 1800
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 3840x2160
 $width = 3840
 $height = 2160
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 5120x2880
 $width = 5120
 $height = 2880
 
 [Preset]
-category = TV Resolution
+category = Resolution
 name = 7680x4320
 $width = 7680
 $height = 4320
