@@ -18,9 +18,11 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader 37a4ec1a7dbc7391 //AA fix
+// shader 37a4ec1a7dbc7391
+// Used for: Anti-Aliasing
 const float resXScale = float($width)/float($gameWidth);
 const float resYScale = float($height)/float($gameHeight);
+
 #ifdef VULKAN
 layout(set = 1, binding = 2) uniform ufBlock
 {
