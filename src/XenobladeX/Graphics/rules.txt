@@ -2,7 +2,7 @@
 titleIds = 0005000010116100,00050000101C4C00,00050000101C4D00
 name = Graphics
 path = "Xenoblade Chronicles X/Graphics"
-description = Changes the resolution of the game.|Made by getdls and Lemon King.
+description = Changes the resolution of the game.||Made by getdls and Lemon King.
 version = 5
 
 [Default]
@@ -304,29 +304,29 @@ $gamePadWidth = 3840
 $gamePadHeight = 2400
 
 
-# Shadow Resolution
+# Shadow Quality
 
 [Preset]
-category = Shadow Resolution
+category = Shadow Quality
 name = Medium (100%, Default)
 
 [Preset]
-category = Shadow Resolution
+category = Shadow Quality
 name = Low (50%)
 $shadowScale = 0.5
 
 [Preset]
-category = Shadow Resolution
+category = Shadow Quality
 name = High (200%)
 $shadowScale = 2
 
 [Preset]
-category = Shadow Resolution
+category = Shadow Quality
 name = Ultra (300%)
 $shadowScale = 3
 
 [Preset]
-category = Shadow Resolution
+category = Shadow Quality
 name = Extreme (400%, Unstable)
 $shadowScale = 4
 
@@ -395,6 +395,7 @@ $skellViewScale = 1.50
 category = Skell View Scale
 name = 200%
 $skellViewScale = 2.0
+
 
 
 # Texture Redefines

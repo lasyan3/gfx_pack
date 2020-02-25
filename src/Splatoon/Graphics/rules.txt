@@ -20,102 +20,102 @@ $shadowRes = 1
 # TV Resolution
 
 [Preset]
-name = 1280x720 (Default)
 category = TV Resolution
+name = 1280x720 (Default)
 
 [Preset]
-name = 320x180
 category = TV Resolution
+name = 320x180
 $width = 320
 $height = 180
 
 [Preset]
-name = 640x360
 category = TV Resolution
+name = 640x360
 $width = 640
 $height = 360
 
 [Preset]
-name = 854x480
 category = TV Resolution
+name = 854x480
 $width = 854
 $height = 480
 
 [Preset]
-name = 960x540
 category = TV Resolution
+name = 960x540
 $width = 960
 $height = 540
 
 [Preset]
-name = 1600x900
 category = TV Resolution
+name = 1600x900
 $width = 1600
 $height = 900
 
 [Preset]
-name = 1920x1080
 category = TV Resolution
+name = 1920x1080
 $width = 1920
 $height = 1080
 
 [Preset]
-name = 2560x1440
 category = TV Resolution
+name = 2560x1440
 $width = 2560
 $height = 1440
 
 [Preset]
-name = 3200x1800
 category = TV Resolution
+name = 3200x1800
 $width = 3200
 $height = 1800
 
 [Preset]
-name = 3840x2160
 category = TV Resolution
+name = 3840x2160
 $width = 3840
 $height = 2160
 
 [Preset]
-name = 5120x2880
 category = TV Resolution
+name = 5120x2880
 $width = 5120
 $height = 2880
 
 [Preset]
-name = 7680x4320
 category = TV Resolution
+name = 7680x4320
 $width = 7680
 $height = 4320
 
 [Preset]
-name = 2560x1080 (Ultrawide)
 category = TV Resolution
+name = 2560x1080 (Ultrawide)
 $width = 2560
 $height = 1080
 
 [Preset]
-name = 3440x1440 (Ultrawide)
 category = TV Resolution
+name = 3440x1440 (Ultrawide)
 $width = 3440
 $height = 1440
 
 [Preset]
-name = 5120x2160 (Ultrawide)
 category = TV Resolution
+name = 5120x2160 (Ultrawide)
 $width = 5120
 $height = 2160
 
 [Preset]
-name = 6880x2880 (Ultrawide)
 category = TV Resolution
+name = 6880x2880 (Ultrawide)
 $width = 6880
 $height = 2880
 
 [Preset]
-name = 10240x4320 (Ultrawide)
 category = TV Resolution
+name = 10240x4320 (Ultrawide)
 $width = 10240
 $height = 4320
 
@@ -123,130 +123,130 @@ $height = 4320
 # Gamepad Resolution
 
 [Preset]
-name = 854x480 (Default)
 category = Gamepad Resolution
+name = 854x480 (Default)
 
 [Preset]
-name = 320x180
 category = Gamepad Resolution
+name = 320x180
 $padWidth = 320
 $padHeight = 180
 
 [Preset]
-name = 640x360
 category = Gamepad Resolution
+name = 640x360
 $padWidth = 640
 $padHeight = 360
 
 [Preset]
-name = 960x540
 category = Gamepad Resolution
+name = 960x540
 $padWidth = 960
 $padHeight = 540
 
 [Preset]
-name = 1280x720
 category = Gamepad Resolution
+name = 1280x720
 $padWidth = 1280
 $padHeight = 720
 
 [Preset]
-name = 1600x900
 category = Gamepad Resolution
+name = 1600x900
 $padWidth = 1600
 $padHeight = 900
 
 [Preset]
-name = 1920x1080
 category = Gamepad Resolution
+name = 1920x1080
 $padWidth = 1920
 $padHeight = 1080
 
 [Preset]
-name = 2560x1440
 category = Gamepad Resolution
+name = 2560x1440
 $padWidth = 2560
 $padHeight = 1440
 
 [Preset]
-name = 3200x1800
 category = Gamepad Resolution
+name = 3200x1800
 $padWidth = 3200
 $padHeight = 1800
 
 [Preset]
-name = 3840x2160
 category = Gamepad Resolution
+name = 3840x2160
 $padWidth = 3840
 $padHeight = 2160
 
 [Preset]
-name = 5120x2880
 category = Gamepad Resolution
+name = 5120x2880
 $padWidth = 5120
 $padHeight = 2880
 
 [Preset]
-name = 7680x4320
 category = Gamepad Resolution
+name = 7680x4320
 $padWidth = 7680
 $padHeight = 4320
 
 [Preset]
-name = 2560x1080 (Ultrawide)
 category = Gamepad Resolution
+name = 2560x1080 (Ultrawide)
 $padWidth = 2560
 $padHeight = 1080
 
 [Preset]
-name = 3440x1440 (Ultrawide)
 category = Gamepad Resolution
+name = 3440x1440 (Ultrawide)
 $padWidth = 3440
 $padHeight = 1440
 
 [Preset]
-name = 5120x2160 (Ultrawide)
 category = Gamepad Resolution
+name = 5120x2160 (Ultrawide)
 $padWidth = 5120
 $padHeight = 2160
 
 [Preset]
-name = 6880x2880 (Ultrawide)
 category = Gamepad Resolution
+name = 6880x2880 (Ultrawide)
 $padWidth = 6880
 $padHeight = 2880
 
 [Preset]
-name = 10240x4320 (Ultrawide)
 category = Gamepad Resolution
+name = 10240x4320 (Ultrawide)
 $padWidth = 10240
 $padHeight = 4320
 
 
-# Shadows
+# Shadow Quality
 
 [Preset]
+category = Shadow Quality
 name = Medium (100%, Default)
-category = Shadows
 
 [Preset]
+category = Shadow Quality
 name = Low (50%)
-category = Shadows
 $shadowRes = 0.5
 
 [Preset]
+category = Shadow Quality
 name = High (200%)
-category = Shadows
 $shadowRes = 2
 
 [Preset]
+category = Shadow Quality
 name = Ultra (300%)
-category = Shadows
 $shadowRes = 3
 
 [Preset]
+category = Shadow Quality
 name = Extreme (400%, Unstable)
-category = Shadows
 $shadowRes = 4
 
 

@@ -12,7 +12,7 @@ $gameWidth = 1280
 $gameHeight = 720
 
 
-# TV Resolution
+# Resolution
 
 [Preset]
 category = Resolution

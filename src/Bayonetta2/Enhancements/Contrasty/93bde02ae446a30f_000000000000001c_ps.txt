@@ -18,9 +18,12 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader 93bde02ae446a30f//lens dirt
+// shader 93bde02ae446a30f
+// Used for: Lens Dirt
 
 const float lensDirt = 1.0;
+
+// TODO: Find a place for this graphic pack to be tweaked. Contrasty isn't really a fitting place for this either.
 
 #ifdef VULKAN
 layout(set = 1, binding = 1) uniform ufBlock
