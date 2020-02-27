@@ -27,11 +27,11 @@ $aspectRatio = (43.0/18.0)
 
 Base resolution is 2560x1440 -> Uw patch res 3440
 
-AO needs to be 2160  = 1440 * $lightSource = 1.5
+AO needs to be 2160 = 1440 * $lightSource = 1.5
 
 We then need to scale back ultrawide to original aspect for all viewports using AO / light sources
 
-2560 = 3440 *$scaleShader  (2560.0/3440.0)  
+2560 = 3440 *$scaleShader (2560.0/3440.0)
 
 ```
 [TextureRedefine]

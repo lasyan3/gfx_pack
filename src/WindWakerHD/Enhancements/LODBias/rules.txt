@@ -1,0 +1,95 @@
+[Definition]
+titleIds = 0005000010143400,0005000010143600,0005000010143500
+name = LOD Bias
+path = "The Legend of Zelda: The Wind Waker HD/Enhancements/LOD Bias"
+description = Setting your Level Of Detail bias changes the detail level of the textures that are used.|Increasing the distant texture detail will make textures in the distance look sharper. Lowering the texture detail might improve performance however. Might introduce graphical bugs.
+version = 5
+
+[Default]
+$0x031 = 0
+$0x033 = 0
+$0x034 = 0
+$0x035 = 0
+$0x431 = 0
+$0x432 = 0
+$0x433 = 0
+$0x434 = 0
+
+
+# Note: Making the AF too high will make textures like the ocean appear too sharp and not make them fade out in the distance.
+
+[Preset]
+name = Normal
+
+[Preset]
+category = LOD Bias Preset
+name = Higher texture detail (-1)
+$0x031 = -1
+$0x033 = -1
+$0x034 = -1
+$0x035 = -1
+$0x431 = -1
+$0x432 = -1
+$0x433 = -1
+$0x434 = -1
+
+[Preset]
+category = LOD Bias Preset
+name = Lower texture detail (+1)
+$0x031 = +1
+$0x033 = +1
+$0x034 = +1
+$0x035 = +1
+$0x431 = +1
+$0x432 = +1
+$0x433 = +1
+$0x434 = +1
+
+[Preset]
+category = LOD Bias Preset
+name = Decrease ocean detail (for smoothness)
+$0x034 = +2
+
+[Preset]
+category = LOD Bias Preset
+name = Screenshot-only LOD (-4, Unstable)
+$0x031 = -4
+$0x033 = -4
+$0x034 = -4
+$0x035 = -4
+$0x431 = -4
+$0x432 = -4
+$0x433 = -4
+$0x434 = -4
+
+[TextureRedefine]
+formats = 0x031
+overwriteRelativeLodBias = $0x031 
+
+[TextureRedefine]
+formats = 0x033 
+overwriteRelativeLodBias = $0x033 
+
+[TextureRedefine]
+formats = 0x034
+overwriteRelativeLodBias = $0x034 
+
+[TextureRedefine]
+formats = 0x035
+overwriteRelativeLodBias = $0x035
+
+[TextureRedefine]
+formats = 0x431
+overwriteRelativeLodBias = $0x431
+
+[TextureRedefine]
+formats = 0x432
+overwriteRelativeLodBias = $0x432
+
+[TextureRedefine]
+formats = 0x433
+overwriteRelativeLodBias = $0x433
+
+[TextureRedefine]
+formats = 0x434
+overwriteRelativeLodBias = $0x434

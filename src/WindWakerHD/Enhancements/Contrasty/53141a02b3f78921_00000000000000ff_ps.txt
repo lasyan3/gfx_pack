@@ -18,7 +18,7 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 53141a02b3f78921
-//make gradient more white blue 
+//Used for: Make gradient, more white blue 
 const float skyboxRed = float($skyboxRed);
 const float skyboxGreen = float($skyboxGreen); 
 const float skyboxBlue = float($skyboxBlue);

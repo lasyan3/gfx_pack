@@ -19,12 +19,11 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 4ffa96d07cd53c34
-
+// Used for: Box Low-res Bloom?
 const float resXScale = (float($height)/float($gameHeight)); 
 const float resYScale = (float($height)/float($gameHeight)); 
 
 
-//box low res (bloom?)
 #ifdef VULKAN
 layout(set = 0, binding = 0) uniform ufBlock
 {

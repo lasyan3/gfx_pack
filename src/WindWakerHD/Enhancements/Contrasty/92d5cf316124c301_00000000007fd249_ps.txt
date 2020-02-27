@@ -19,7 +19,9 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 92d5cf316124c301
-//beach cooking
+// Used for: Beach Cooking
+
+
 #ifdef VULKAN
 layout(set = 1, binding = 5) uniform ufBlock
 {

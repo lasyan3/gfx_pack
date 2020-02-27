@@ -18,6 +18,12 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader b77c717f243c0b08
+const float skyboxRed = float($skyboxRed);
+const float skyboxGreen = float($skyboxGreen); 
+const float skyboxBlue = float($skyboxBlue);
+const float skyboxMix = float($skyboxMix);
+
+
 #ifdef VULKAN
 layout(set = 1, binding = 5) uniform ufBlock
 {
@@ -28,11 +34,6 @@ uniform vec4 uf_fragCoordScale;
 uniform ivec4 uf_remappedPS[9];
 uniform vec2 uf_fragCoordScale;
 #endif
-const float skyboxRed = float($skyboxRed);
-const float skyboxGreen = float($skyboxGreen); 
-const float skyboxBlue = float($skyboxBlue);
-const float skyboxMix = float($skyboxMix);
-
 
 TEXTURE_LAYOUT(1, 1, 0) uniform sampler2D textureUnitPS1;
 TEXTURE_LAYOUT(2, 1, 1) uniform sampler2D textureUnitPS2;

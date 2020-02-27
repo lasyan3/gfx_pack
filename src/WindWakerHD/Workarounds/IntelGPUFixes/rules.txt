@@ -1,0 +1,8 @@
+[Definition]
+titleIds = 0005000010143400,0005000010143600,0005000010143500
+name= Graphical fixes for Intel Integrated GPUs
+path = "The Legend of Zelda: The Wind Waker HD/Workarounds/Intel Integrated GPU Fixes (OpenGL)"
+description = Fixes graphical bugs while using an Intel iGPU and OpenGL. Don't use this if you're using a Nvidia or AMD GPU.||Made by BenjaminLSR and Slashiee
+version = 5
+vendorFilter=intel
+rendererFilter=opengl

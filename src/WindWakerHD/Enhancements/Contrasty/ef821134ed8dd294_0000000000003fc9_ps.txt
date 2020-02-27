@@ -18,11 +18,13 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader ef821134ed8dd294 // horizon 2 missing shader
+// shader ef821134ed8dd294
+// Used for: Horizon 2 missing shader
 const float skyboxRed = float($skyboxRed);
 const float skyboxGreen = float($skyboxGreen); 
 const float skyboxBlue = float($skyboxBlue);
 const float skyboxMix = float($skyboxMix);
+
 
 #ifdef VULKAN
 layout(set = 1, binding = 2) uniform ufBlock

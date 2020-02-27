@@ -19,7 +19,9 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader c2cae30e906be2d5
-//Ao scale 
+// Used for: Removing SSAO
+
+
 #ifdef VULKAN
 layout(set = 1, binding = 3) uniform ufBlock
 {
@@ -72,7 +74,7 @@ vec3 cubeMapSTM;
 int cubeMapFaceId;
 R0f = passParameterSem1;
 R2f.x = (texture(textureUnitPS0, R0f.xy).x);
-R1f.xy = (texture(textureUnitPS2, R0f.zw).xy)*$AO;
+R1f.xy = (texture(textureUnitPS2, R0f.zw).xy);
 // 0
 R4f.x = (R1f.y * 2.0 + -(1.0));
 PV0f.x = R4f.x;
@@ -319,4 +321,5 @@ PV0f.z = clamp(PV0f.z, 0.0, 1.0);
 R5f.x = -(PV0f.z) + 1.0;
 // export
 passPixelColor0 = vec4(R5f.x, R5f.y, R5f.y, R5f.w);
+passPixelColor0.x = 1.0;
 }
