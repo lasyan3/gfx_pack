@@ -79,6 +79,18 @@ $height = 4320
 
 [Preset]
 category = TV Resolution
+name = 1680x1050 (16:10)
+$width = 1680
+$height = 1050
+
+[Preset]
+category = TV Resolution
+name = 1920x1200 (16:10)
+$width = 1920
+$height = 1200
+
+[Preset]
+category = TV Resolution
 name = 2560x1080 (21:9)
 $width = 2560
 $height = 1080
@@ -167,6 +179,18 @@ category = Gamepad Resolution
 name = 7680x4320
 $padWidth = 7680
 $padHeight = 4320
+
+[Preset]
+category = Gamepad Resolution
+name = 1680x1050 (16:10)
+$padWidth = 1680
+$padHeight = 1050
+
+[Preset]
+category = Gamepad Resolution
+name = 1920x1200 (16:10)
+$padWidth = 1920
+$padHeight = 1200
 
 [Preset]
 category = Gamepad Resolution
