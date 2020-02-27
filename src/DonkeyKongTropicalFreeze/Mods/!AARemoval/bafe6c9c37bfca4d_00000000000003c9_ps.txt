@@ -17,7 +17,10 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader bafe6c9c37bfca4d // AA removal cemu 1.8 version
+// shader bafe6c9c37bfca4d
+// Used for: Anti-Aliasing
+
+
 #ifdef VULKAN
 layout(set = 1, binding = 2) uniform ufBlock
 {

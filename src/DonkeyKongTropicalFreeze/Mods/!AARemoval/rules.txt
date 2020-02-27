@@ -1,0 +1,6 @@
+[Definition]
+titleIds = 0005000010137F00,0005000010138300,0005000010144800
+name = Remove Anti-Aliasing
+path = "Donkey Kong Country: Tropical Freeze/Mods/Remove Anti-Aliasing"
+description = Removes Anti-Aliasing from the game. Use this when you want a sharper image (with aliasing) or because you want to use your own kind of anti-aliasing like SSAA using the resolution packs or another external kind of AA.
+version = 5
