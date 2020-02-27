@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 0005000010110E00,0005000010145000,0005000010144F00
 name = Resolution
-path = "Super Smash Bros. for Wii U/Graphics/Resolution"
+path = "Super Smash Bros. for Wii U/Graphics"
 description = Changes the resolution of the game. Made by Slashiee.
 version = 4
 

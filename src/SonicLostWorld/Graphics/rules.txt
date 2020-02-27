@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 0005000010135700,000500001012B100,0005000010128F00
 name = Resolution
-path = "Sonic Lost World/Graphics/Resolution"
+path = "Sonic Lost World/Graphics"
 description = Changes the resolution of the game. Made by Slashiee.
 version = 4
 
