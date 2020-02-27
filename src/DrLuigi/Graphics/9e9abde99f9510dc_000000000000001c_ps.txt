@@ -19,6 +19,11 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 9e9abde99f9510dc
+// Used for: Anti-Aliasing
+
+// TODO: Scale anti-aliasing since the current shader is a placeholder.
+
+
 #ifdef VULKAN
 layout(set = 1, binding = 1) uniform ufBlock
 {
