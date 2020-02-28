@@ -1,0 +1,49 @@
+[Definition]
+titleIds = 00050000101D0300,00050000101D0600,000500001014D200,00050000101D3F00
+name = Film Grain
+path = "Fatal Frame - Project Zero: Maiden of Black Water/Mods/Film Grain"
+description = Allows you to adjust how strong the film grain effect is.
+version = 5
+
+[Default]
+$size = 1
+
+
+# Film Grain Size
+
+[Preset]
+category = Film Grain Size
+name = Normal Size (100%, Default)
+
+[Preset]
+category = Film Grain Size
+name = Medium Size (75%)
+$size = 0.75
+
+[Preset]
+category = Film Grain Size
+name = Medium Size (50%)
+$size = 0.5
+
+[Preset]
+category = Film Grain Size
+name = Disabled
+$size = 0.0
+
+
+
+# Texture Redefines
+
+[TextureRedefine]
+width = 320
+height = 192
+formats = 0x806
+overwriteWidth = $size*320
+overwriteHeight = $size*192
+
+[TextureRedefine]
+width = 320
+height = 180
+formats = 0x806
+overwriteWidth = $size*320
+overwriteHeight = $size*180
