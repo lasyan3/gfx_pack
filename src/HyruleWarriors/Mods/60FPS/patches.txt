@@ -1,4 +1,4 @@
-[HW60FPSFixv208]
+[HW60FPSv208]
 moduleMatches = 0xE159AE91
 
 # CInterMission::UpdateFrameCount() patch to halve the number of frames added, keeps the story intermission text + images in sync with the audio

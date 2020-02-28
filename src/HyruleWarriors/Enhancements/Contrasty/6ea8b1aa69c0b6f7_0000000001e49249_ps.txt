@@ -19,7 +19,8 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 6ea8b1aa69c0b6f7
-//cutscene contrasty
+// Used for: Cutscene Contrasty
+
 
 #ifdef VULKAN
 layout(set = 1, binding = 7) uniform ufBlock

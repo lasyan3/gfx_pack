@@ -1,0 +1,9 @@
+[HyruleWarriors_219v208]
+moduleMatches = 0xE159AE91
+
+# rodata constants
+
+0x1009609C = .float ($width/$height) 
+0x10096124 = .float ($width/$height)  
+0x10096948 = .float ($width/$height)
+0x10096974 = .float ($width/$height)

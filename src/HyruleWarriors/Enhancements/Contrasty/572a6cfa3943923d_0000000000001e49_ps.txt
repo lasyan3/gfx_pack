@@ -19,7 +19,8 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 572a6cfa3943923d
-//ingame contrasty
+// Used for: In-Game Contrasty
+
 
 #ifdef VULKAN
 layout(set = 1, binding = 3) uniform ufBlock
