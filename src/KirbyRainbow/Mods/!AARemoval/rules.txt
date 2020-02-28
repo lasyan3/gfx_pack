@@ -1,0 +1,6 @@
+[Definition]
+titleIds = 00050000101ABC00,00050000101B5100
+name = Remove Anti-Aliasing
+path = "Kirby and the Rainbow Curse & Paintbrush/Mods/Remove Anti-Aliasing"
+description = Removes Anti-Aliasing from the game. Use this when you want a sharper image (with aliasing) or because you want to use your own kind of anti-aliasing like SSAA using the resolution packs or another external kind of AA.
+version = 5

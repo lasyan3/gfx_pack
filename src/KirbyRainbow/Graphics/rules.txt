@@ -1,95 +1,85 @@
 [Definition]
 titleIds = 00050000101ABC00,00050000101B5100
-name = Resolution
-path = "Kirby and the Rainbow Curse & Paintbrush/Graphics/Resolution"
-description = Changes the resolution of the game. Made by Crementif.
-version = 4
+name = Game Resolution
+path = "Kirby and the Rainbow Curse & Paintbrush/Graphics"
+description = Changes the resolution of the game.||Made by Crementif.
+version = 5
 
-[Preset]
-name = 1280x720 (Default)
+[Default]
 $width = 1280
 $height = 720
 $gameWidth = 1280
 $gameHeight = 720
 
-# Performance
+
+# TV Resolution
 
 [Preset]
+category = Resolution
+name = 1280x720 (Default)
+
+[Preset]
+category = Resolution
 name = 640x360
 $width = 640
 $height = 360
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
+category = Resolution
 name = 960x540
 $width = 960
 $height = 540
-$gameWidth = 1280
-$gameHeight = 720
-
-# Common HD Resolutions
 
 [Preset]
+category = Resolution
 name = 1600x900
 $width = 1600
 $height = 900
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
+category = Resolution
 name = 1920x1080
 $width = 1920
 $height = 1080
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
+category = Resolution
 name = 2560x1440
 $width = 2560
 $height = 1440
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
+category = Resolution
 name = 3200x1800
 $width = 3200
 $height = 1800
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
+category = Resolution
 name = 3840x2160
 $width = 3840
 $height = 2160
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
+category = Resolution
 name = 5120x2880
 $width = 5120
 $height = 2880
-$gameWidth = 1280
-$gameHeight = 720
 
 [Preset]
+category = Resolution
 name = 7680x4320
 $width = 7680
 $height = 4320
-$gameWidth = 1280
-$gameHeight = 720
 
-[TextureRedefine] # TV Resolution
-width = 1280
-height = 720
-formats = 0x816
-overwriteFormat = 0x820
+
+# Texture Redefines
 
 [TextureRedefine] # TV Resolution
 width = 1280
 height = 720
 tileModesExcluded = 0x001
-formatsExcluded = 0x431,0x034,0x41a # boot, background 
+formatsExcluded = 0x431,0x034,0x41a # Exclude boot screen background
 overwriteWidth = ($width/$gameWidth) * 1280
 overwriteHeight = ($height/$gameHeight) * 720
 
@@ -267,28 +257,28 @@ formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 64
 overwriteHeight = ($height/$gameHeight) * 48
 
-# Fxaa (?)
-
-[TextureRedefine] #level screen 8 round
+[TextureRedefine] # TV Resolution variants
 width = 1408
 height = 736
 formats = 0x001,0x41a
 overwriteWidth = ($width/$gameWidth) * 1408
 overwriteHeight = ($height/$gameHeight) * 736
 
-[TextureRedefine] #level screen
+[TextureRedefine]
 width = 1312
 height = 736
 formats = 0x001,0x41a
 overwriteWidth = ($width/$gameWidth) * 1312
 overwriteHeight = ($height/$gameHeight) * 736
 
-[TextureRedefine] #level screen
+[TextureRedefine]
 width = 1281
 height = 721
 formats = 0x001,0x41a
 overwriteWidth = ($width/$gameWidth) * 1281
 overwriteHeight = ($height/$gameHeight) * 721
+
+# Fxaa (?)
 
 [TextureRedefine]
 width = 1152
@@ -304,7 +294,7 @@ formats = 0x001
 overwriteWidth = ($width/$gameWidth) * 1025
 overwriteHeight = ($height/$gameHeight) * 577
 
-[TextureRedefine] # Gamepad variant
+[TextureRedefine] # Gamepad Resolution variants
 width = 896
 height = 480
 formats = 0x001
@@ -318,9 +308,15 @@ formats = 0x001,0x41a
 overwriteWidth = ($width/$gameWidth) * 896
 overwriteHeight = ($height/$gameHeight) * 496
 
-[TextureRedefine] #41a scales res level screen
+[TextureRedefine] # 0x41a scales level screen resolution
 width = 855
 height = 481
 formats = 0x001,0x41a
-overwriteWidth = ($width/$gameWidth) * 855
-overwriteHeight = ($height/$gameHeight) * 481
+overwriteWidth = ($padWidth/$gamePadWidth) * 855
+overwriteHeight = ($padHeight/$gamePadHeight) * 481
+
+[TextureRedefine] # Use more accurate texture format
+width = 1280
+height = 720
+formats = 0x816
+overwriteFormat = 0x820
