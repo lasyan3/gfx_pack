@@ -73,6 +73,7 @@ $width = 7680
 $height = 4320
 
 
+
 # Texture Redefines
 
 [TextureRedefine] # TV Resolution
