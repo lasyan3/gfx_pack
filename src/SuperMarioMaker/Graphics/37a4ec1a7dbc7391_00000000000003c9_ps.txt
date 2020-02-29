@@ -19,7 +19,7 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 37a4ec1a7dbc7391
-// Used for: Scaling Anti-Aliasing solution of game
+// Used for: Scaling Anti-Aliasing
 
 
 #ifdef VULKAN
@@ -38,7 +38,7 @@ layout(location = 0) in vec4 passParameterSem2;
 layout(location = 0) out vec4 passPixelColor0;
 
 // uf_fragCoordScale was moved to the ufBlock
-float scaleAA = uf_fragCoordScale.x;
+float scaleAA = GET_FRAGCOORD().x;
 
 int clampFI32(int v)
 {

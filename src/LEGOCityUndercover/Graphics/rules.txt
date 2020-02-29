@@ -3,7 +3,7 @@ titleIds = 0005000010101A00,0005000010101B00
 name = Game Resolution
 path = "LEGO City: Undercover/Graphics"
 description = Changes the game resolution of the game.||Made by bloodmc and Xalphenos.
-version = 4
+version = 5
 
 [Default]
 $width = 1280
