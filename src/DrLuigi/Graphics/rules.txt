@@ -81,4 +81,4 @@ width = 1280
 height = 720
 formatsExcluded = 0x031
 overwriteWidth = ($width/$gameWidth) * 1280
-overwriteHeight  = ($height/$gameHeight) * 720
+overwriteHeight = ($height/$gameHeight) * 720

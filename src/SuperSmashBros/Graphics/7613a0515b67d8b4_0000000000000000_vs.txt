@@ -19,7 +19,10 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 7613a0515b67d8b4
+// Used for: Shadows
 const float shadowRes = $shadowRes;
+
+
 #ifdef VULKAN
 layout(set = 0, binding = 0) uniform ufBlock
 {
