@@ -1,0 +1,6 @@
+[Definition]
+titleIds = 0005000010116300,000500001012DC00,0005000010135300
+name = Remove Shadows
+path = "The Wonderful 101/Workarounds/Remove Shadows"
+description = Removes the dynamic shadows which are normally very distracting due to them being glitched.
+version = 5
