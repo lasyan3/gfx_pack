@@ -18,10 +18,11 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader be99d80628d31127 //AA PS
+// shader be99d80628d31127
 // Used for: Another vertical blur
-const float resXScale =  float($width)/float($gameWidth);
-const float resYScale = float($height)/float($gameHeight); 
+const float resXScale = float($width)/float($gameWidth);
+const float resYScale = float($height)/float($gameHeight);
+
 
 #ifdef VULKAN
 layout(set = 1, binding = 2) uniform ufBlock

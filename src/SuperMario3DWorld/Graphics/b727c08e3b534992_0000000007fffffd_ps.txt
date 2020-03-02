@@ -19,8 +19,9 @@
 
 // shader b727c08e3b534992
 // Used for: Second glitter bloom pass
-const float resXScale =  float($width)/float($gameWidth);
-const float resYScale = float($height)/float($gameHeight); 
+const float resXScale = float($width)/float($gameWidth);
+const float resYScale = float($height)/float($gameHeight);
+
 
 #ifdef VULKAN
 layout(set = 1, binding = 1) uniform ufBlock
