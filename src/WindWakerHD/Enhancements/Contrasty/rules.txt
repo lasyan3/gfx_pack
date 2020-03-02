@@ -2,7 +2,7 @@
 titleIds = 0005000010143400,0005000010143600,0005000010143500
 name = Contrasty
 path = "The Legend of Zelda: The Wind Waker HD/Enhancements/Contrasty"
-description = This pack tweaks the colors and contrast to whatever preset you set it as. You can also make your own preset by editing the Normal preset in the Contrasty folder from the game's graphic packs. Enabling will ignore your other AA settings.||Made by getdls.
+description = This pack tweaks the colors and contrast to whatever preset you set it as.|You can also make your own preset by editing the Normal preset in the Contrasty folder from the game's graphic packs. Enabling will ignore your Anti-Aliasing settings.||Made by getdls.
 version = 5
 
 [Default]
@@ -44,7 +44,7 @@ $redMid = 1.0
 $greenMid = 1.0
 $blueMid = 1.0
 $redHilight = 1.0
-$greenHilight =1.0
+$greenHilight = 1.0
 $blueHilight = 1.0
 
 $contrastCurve = 0.0
@@ -74,7 +74,7 @@ $redMid = 1.0
 $greenMid = 1.0
 $blueMid = 1.0
 $redHilight = 1.0
-$greenHilight =1.0
+$greenHilight = 1.0
 $blueHilight = 1.0
 
 $contrastCurve = 0.2
@@ -104,7 +104,7 @@ $redMid = 0.99
 $greenMid = 0.99
 $blueMid = 0.99
 $redHilight = 1.1
-$greenHilight =1.0
+$greenHilight = 1.0
 $blueHilight = 1.0
 
 $contrastCurve = 0.4
@@ -134,7 +134,7 @@ $redMid = 1.0
 $greenMid = 0.99
 $blueMid = 1.0
 $redHilight = 1.0
-$greenHilight =0.99
+$greenHilight = 0.99
 $blueHilight = 1.0
 
 $contrastCurve = 0.275
@@ -164,7 +164,7 @@ $redMid = 1.0
 $greenMid = 1.0
 $blueMid = 1.0
 $redHilight = 0.99
-$greenHilight =0.99
+$greenHilight = 0.99
 $blueHilight = 0.99
 
 $contrastCurve = 0.25
@@ -194,7 +194,7 @@ $redMid = 1.4
 $greenMid = 1.0
 $blueMid = 1.3
 $redHilight = 0.99
-$greenHilight =0.99
+$greenHilight = 0.99
 $blueHilight = 0.99
 
 $contrastCurve = 1.0

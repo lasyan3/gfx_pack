@@ -1,4 +1,4 @@
-[DS60fps]
+[DarksidersFPS]
 moduleMatches = 0x6F862934
 
 #0x057429D4 = srwi r11, r12, 1

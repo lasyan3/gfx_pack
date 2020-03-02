@@ -21,16 +21,8 @@
 // shader be99d80628d31127
 // Used for: Another vertical blur
 
-#ifdef VULKAN
-layout(set = 1, binding = 2) uniform ufBlock
-{
-uniform ivec4 uf_remappedPS[4];
-uniform vec4 uf_fragCoordScale;
-};
-#else
-uniform ivec4 uf_remappedPS[4];
-uniform vec2 uf_fragCoordScale;
-#endif
+// TODO: Change the shader that Contrasty's shader is housed in to not conflict with the resolution pack.
+
 
 const float hazeFactor = 0.1;
 
@@ -52,10 +44,19 @@ const float sharp_clamp = 0.75;
 const float offset_bias = 1.0;
 
 float Sigmoid (float x) {
-
 	return 1.0 / (1.0 + (exp(-(x - 0.5) * 5.5))); 
 }
 
+#ifdef VULKAN
+layout(set = 1, binding = 2) uniform ufBlock
+{
+uniform ivec4 uf_remappedPS[4];
+uniform vec4 uf_fragCoordScale;
+};
+#else
+uniform ivec4 uf_remappedPS[4];
+uniform vec2 uf_fragCoordScale;
+#endif
 
 #define px (1.0/1280.0*uf_fragCoordScale.x)
 #define py (1.0/720.0*uf_fragCoordScale.y)

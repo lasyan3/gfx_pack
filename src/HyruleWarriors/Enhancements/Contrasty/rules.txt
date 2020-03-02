@@ -26,7 +26,9 @@ $crushContrast = 0.0
 $bleach = 1.0
 $sharp_mix = 0.0
 
+
 [Preset]
+category = Preset
 name = Normal
 $redShadows = 1.0
 $greenShadows = 1.0
@@ -49,6 +51,7 @@ $bleach = 1.0
 $sharp_mix = 0.0
 
 [Preset]
+category = Preset
 name = Clear as Day
 $redShadows = 1.0
 $greenShadows = 1.0
@@ -71,6 +74,7 @@ $bleach = 0.85
 $sharp_mix = 0.3
 
 [Preset]
+category = Preset
 name = High Contrasty
 $redShadows = 1.02
 $greenShadows = 1.01
@@ -88,11 +92,12 @@ $bloom = 0.85
 $gamma = 1.0
 $exposure = 1.5
 $vibrance = 0.35
-$crushContrast = 0.00
+$crushContrast = 0.0
 $bleach = 0.85
 $sharp_mix = 0.35
 
 [Preset]
+category = Preset
 name = Colorful
 $redShadows = 0.999
 $greenShadows = 0.99
@@ -101,7 +106,7 @@ $redMid = 1.0
 $greenMid = 0.99
 $blueMid = 0.99
 $redHilight = 0.99
-$greenHilight =0.99
+$greenHilight = 0.99
 $blueHilight = 0.99
 
 $contrastCurve = 0.1
@@ -110,7 +115,7 @@ $bloom = 0.85
 $gamma = 1.05
 $exposure = 1.1
 $vibrance = 0.5
-$crushContrast = 0.00
+$crushContrast = 0.0
 $bleach = 0.85
 $sharp_mix = 0.3
 
@@ -123,7 +128,7 @@ $redMid = 1.0
 $greenMid = 1.0
 $blueMid = 1.0
 $redHilight = 0.99
-$greenHilight =0.99
+$greenHilight = 0.99
 $blueHilight = 0.99
 
 $contrastCurve = 0.25
@@ -132,6 +137,6 @@ $bloom = 0.85
 $gamma = 1.075
 $exposure = 1.25
 $vibrance = 0.15
-$crushContrast = 0.00
+$crushContrast = 0.0
 $bleach = 0.85
 $sharp_mix = 0.25

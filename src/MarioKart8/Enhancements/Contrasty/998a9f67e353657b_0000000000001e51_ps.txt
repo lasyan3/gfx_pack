@@ -18,6 +18,27 @@
 #endif
 // This shaders was auto-converted from OpenGL to Cemu.
 
+// shader 998a9f67e353657b
+
+const float hazeFactor = 0.1;
+
+const float gamma = $gamma; // 1.0 is neutral  Botw is already colour graded at this stage
+const float exposure = $exposure; // 1.0 is neutral
+const float vibrance = $vibrance;  // 0.0 is neutral  
+const float crushContrast = $crushContrast; // 0.0 is neutral. Use small increments, loss of shadow detail 
+const float contrastCurve = $contrastCurve;
+
+
+vec3 RGB_Lift = vec3($redShadows, $greenShadows, $blueShadows);		// [0.000 to 2.000] Adjust shadows for Red, Green and Blue.
+vec3 RGB_Gamma = vec3($redMid, $greenMid, $blueMid);				// [0.000 to 2.000] Adjust midtones for Red, Green and Blue
+vec3 RGB_Gain = vec3($redHilight, $greenHilight, $blueHilight);		// [0.000 to 2.000] Adjust highlights for Red, Green and Blue
+
+//lumasharpen
+const float sharp_mix = $sharp_mix;
+const float sharp_strength = 2.0; 
+const float sharp_clamp = 0.75;
+const float offset_bias = 1.0;
+
 
 #ifdef VULKAN
 layout(set = 1, binding = 3) uniform ufBlock
@@ -30,25 +51,7 @@ uniform ivec4 uf_remappedPS[1];
 uniform vec2 uf_fragCoordScale;
 #endif
 
-const float hazeFactor = 0.1;
-
-const float gamma = $gamma; // 1.0 is neutral  Botw is already colour graded at this stage
-const float exposure = $exposure; // 1.0 is neutral
-const float vibrance = $vibrance;  // 0.0 is neutral  
-const float crushContrast = $crushContrast; // 0.0 is neutral. Use small increments, loss of shadow detail 
-const float contrastCurve = $contrastCurve;
-
-
-vec3 RGB_Lift = vec3($redShadows, $greenShadows , $blueSadows);		// [0.000 to 2.000] Adjust shadows for Red, Green and Blue.
-vec3 RGB_Gamma = vec3($redMid ,$greenMid, $blueMid);				// [0.000 to 2.000] Adjust midtones for Red, Green and Blue
-vec3 RGB_Gain = vec3($redHilight, $greenHilight, $blueHilight);		// [0.000 to 2.000] Adjust highlights for Red, Green and Blue
-//lumasharpen
-const float sharp_mix = $sharp_mix;
-const float sharp_strength = 2.0; 
-const float sharp_clamp = 0.75;
-const float offset_bias = 1.0;
 float Sigmoid (float x) {
-
 	return 1.0 / (1.0 + (exp(-(x - 0.5) * 5.5))); 
 }
 
@@ -117,8 +120,6 @@ vec3 contrasty(vec3 colour){
 	return fColour;
 }
 
-
-// shader 998a9f67e353657b
 // uf_remappedPS[1] was moved to the ufBlock
 TEXTURE_LAYOUT(0, 1, 0) uniform sampler2D textureUnitPS0;
 TEXTURE_LAYOUT(1, 1, 1) uniform sampler3D textureUnitPS1;

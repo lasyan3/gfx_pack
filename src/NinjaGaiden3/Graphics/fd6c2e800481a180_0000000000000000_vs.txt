@@ -18,10 +18,10 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader fd6c2e800481a180 //Cinematic bloom
-
-const float resXScale =  float($width)/float($gameWidth);
-const float resYScale = float($height)/float($gameHeight); 
+// shader fd6c2e800481a180
+// Used for: Cinematic Bloom
+const float resXScale = float($width)/float($gameWidth);
+const float resYScale = float($height)/float($gameHeight);
 
 
 #ifdef VULKAN
