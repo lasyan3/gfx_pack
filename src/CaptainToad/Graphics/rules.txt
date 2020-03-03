@@ -253,49 +253,28 @@ $shadowRes = 4
 
 # Texture Redefines
 
-[TextureRedefine]
+[TextureRedefine] # TV Resolution
 width = 1280
 height = 720
 formatsExcluded = 0x008,0x41A,0x034,0x035 0x008
 overwriteWidth = ($width/$gameWidth) * 1280
 overwriteHeight = ($height/$gameHeight) * 720
 
-[TextureRedefine] # Heat haze
-width = 1152
-height = 720
-#formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 1152
-overwriteHeight = ($height/$gameHeight) * 720
-
-[TextureRedefine] # Heat haze
-width = 1128
-height = 720
-#formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 1128
-overwriteHeight = ($height/$gameHeight) * 720
-
-[TextureRedefine] # Zoom
+[TextureRedefine] # Zoom View
 width = 1024
 height = 608
 #formats = 0x80e,0x810
 overwriteWidth = ($width/$gameWidth) * 1024
 overwriteHeight = ($height/$gameHeight) * 608
 
-[TextureRedefine] # Heat haze
-width = 1024
-height = 512
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 1024
-overwriteHeight = ($height/$gameHeight) * 512
-
-[TextureRedefine] # Zoom
+[TextureRedefine] # Zoom View
 width = 1000
 height = 600
 #formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 1000
 overwriteHeight = ($height/$gameHeight) * 600
 
-[TextureRedefine] # Depth 8
+[TextureRedefine] # Depth Padded
 width = 640
 height = 368
 #formats = 0x816
@@ -309,19 +288,40 @@ height = 360
 overwriteWidth = ($width/$gameWidth) * 640
 overwriteHeight = ($height/$gameHeight) * 360
 
-[TextureRedefine] # Heat haze zoomed
+[TextureRedefine] # Heat Haze
+width = 1152
+height = 720
+#formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 1152
+overwriteHeight = ($height/$gameHeight) * 720
+
+[TextureRedefine] # Heat Haze
+width = 1128
+height = 720
+#formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 1128
+overwriteHeight = ($height/$gameHeight) * 720
+
+[TextureRedefine] # Heat Haze
+width = 1024
+height = 512
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 1024
+overwriteHeight = ($height/$gameHeight) * 512
+
+[TextureRedefine] # Heat Haze
+width = 288
+height = 192
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 288
+overwriteHeight = ($height/$gameHeight) * 192
+
+[TextureRedefine] # Heat Haze Zoomed
 width = 576
 height = 368
 formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 576
 overwriteHeight = ($height/$gameHeight) * 368
-
-[TextureRedefine] # 816 Fire transition, ?
-width = 512
-height = 512
-formats = 0x816 #0x431,0x235,0x034
-overwriteWidth = ($width/$gameWidth) * 512
-overwriteHeight = ($height/$gameHeight) * 512
 
 [TextureRedefine]
 width = 512
@@ -369,20 +369,6 @@ width = 320
 height = 180
 #formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 320
-overwriteHeight = ($height/$gameHeight) * 180
-
-[TextureRedefine] # Heat haze
-width = 288
-height = 192
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 288
-overwriteHeight = ($height/$gameHeight) * 192
-
-[TextureRedefine] # Transition fire
-width = 282
-height = 180
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 282
 overwriteHeight = ($height/$gameHeight) * 180
 
 [TextureRedefine]
@@ -447,13 +433,6 @@ formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 128
 overwriteHeight = ($height/$gameHeight) * 128
 
-[TextureRedefine] # Transition fire
-width = 141
-height = 90
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 141
-overwriteHeight = ($height/$gameHeight) * 90
-
 [TextureRedefine]
 width = 128
 height = 80
@@ -492,13 +471,6 @@ overwriteHeight = ($height/$gameHeight) * 48
 width = 80
 height = 45
 overwriteWidth = ($width/$gameWidth) * 80
-overwriteHeight = ($height/$gameHeight) * 45
-
-[TextureRedefine] # Transition fire
-width = 70
-height = 45
-formats = 0x816
-overwriteWidth = ($width/$gameWidth) * 70
 overwriteHeight = ($height/$gameHeight) * 45
 
 [TextureRedefine]
@@ -558,7 +530,35 @@ formats = 0x816
 overwriteWidth = ($width/$gameWidth) * 213
 overwriteHeight = ($height/$gameHeight) * 120
 
-# Transition fire
+# Transition Fire = 0x816
+
+[TextureRedefine]
+width = 512
+height = 512
+formats = 0x816 #,0x431,0x235,0x034
+overwriteWidth = ($width/$gameWidth) * 512
+overwriteHeight = ($height/$gameHeight) * 512
+
+[TextureRedefine]
+width = 282
+height = 180
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 282
+overwriteHeight = ($height/$gameHeight) * 180
+
+[TextureRedefine]
+width = 141
+height = 90
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 141
+overwriteHeight = ($height/$gameHeight) * 90
+
+[TextureRedefine]
+width = 70
+height = 45
+formats = 0x816
+overwriteWidth = ($width/$gameWidth) * 70
+overwriteHeight = ($height/$gameHeight) * 45
 
 [TextureRedefine]
 width = 40

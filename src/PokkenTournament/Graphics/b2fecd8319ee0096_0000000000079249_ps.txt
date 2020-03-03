@@ -19,9 +19,10 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader b2fecd8319ee0096
-// Used for: DoF In-game
+// Used for: DoF In-Game
 const float resXScale = float($width)*(float($gameWidth)/float($renderWidth))/float($gameWidth); 
 const float resYScale = float($height)/float($gameHeight);
+
 
 #ifdef VULKAN
 layout(set = 1, binding = 5) uniform ufBlock
