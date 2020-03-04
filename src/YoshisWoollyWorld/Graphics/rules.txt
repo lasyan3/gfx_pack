@@ -86,6 +86,55 @@ $width = 7680
 $height = 4320
 $ditherRecommended = 5
 
+[Preset]
+category = Resolution
+name = 1680x1050 (16:10)
+$width = 1680
+$height = 1050
+$ditherRecommended = 1
+
+[Preset]
+category = Resolution
+name = 1920x1200 (16:10)
+$width = 1920
+$height = 1200
+$ditherRecommended = 2
+
+[Preset]
+category = Resolution
+name = 2560x1080 (21:9)
+$width = 2560
+$height = 1080
+$ditherRecommended = 2
+
+[Preset]
+category = Resolution
+name = 3440x1440 (21:9)
+$width = 3440
+$height = 1440
+$ditherRecommended = 3
+
+[Preset]
+category = Resolution
+name = 5120x2160 (21:9)
+$width = 5120
+$height = 2160
+$ditherRecommended = 4
+
+[Preset]
+category = Resolution
+name = 3840x1080 (32:9)
+$width = 3840
+$height = 1080
+$ditherRecommended = 5
+
+[Preset]
+category = Resolution
+name = 5120×1440 (32:9)
+$width = 5120
+$height = 1440
+$ditherRecommended = 5
+
 
 # Shadow Quality
 

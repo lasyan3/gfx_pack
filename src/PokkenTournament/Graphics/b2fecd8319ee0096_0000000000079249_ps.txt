@@ -20,7 +20,7 @@
 
 // shader b2fecd8319ee0096
 // Used for: DoF In-Game
-const float resXScale = float($width)*(float($gameWidth)/float($renderWidth))/float($gameWidth); 
+const float resXScale = float($width)*(float($gameWidth)/float($renderWidth))/float($gameWidth);
 const float resYScale = float($height)/float($gameHeight);
 
 

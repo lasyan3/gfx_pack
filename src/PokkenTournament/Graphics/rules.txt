@@ -11,6 +11,7 @@ $height = 720
 $gameWidth = 1280
 $gameHeight = 720
 $nativeAspectRatio = 1.0
+$renderWidth = 1280
 $shadowRes = 1
 
 
@@ -85,6 +86,7 @@ name = Disabled (Default)
 category = Native Rendering
 name = Enabled
 $nativeAspectRatio = (960/1280)
+$renderWidth = 960
 
 
 # Shadow Quality
