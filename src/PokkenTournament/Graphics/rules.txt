@@ -131,13 +131,6 @@ height = 720
 overwriteWidth = (($width/$gameWidth) * 960) * $nativeAspectRatio
 overwriteHeight = ($height/$gameHeight) * 720
 
-[TextureRedefine] # Shadows
-width = 512
-height = 512
-formats = 0x005
-overwriteWidth = $shadowRes * 512
-overwriteHeight = $shadowRes * 512
-
 [TextureRedefine] # Blur Map
 width = 640
 height = 368
@@ -254,3 +247,10 @@ height = 2
 formats = 0x816
 overwriteWidth = (($width/$gameWidth) * 4) * $nativeAspectRatio
 overwriteHeight = ($height/$gameHeight) * 2
+
+[TextureRedefine] # Shadows
+width = 512
+height = 512
+formats = 0x005
+overwriteWidth = $shadowRes * 512
+overwriteHeight = $shadowRes * 512
