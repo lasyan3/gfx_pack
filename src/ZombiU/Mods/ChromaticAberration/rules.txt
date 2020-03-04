@@ -1,0 +1,33 @@
+[Definition]
+titleIds = 000500001010DD00,000500001010EF00,0005000010112300,000500001011A700,0005000E1010DD00,0005000E10112300
+name = Chromatic Aberration
+path = "ZombiU/Mods/Chromatic Aberration"
+description = Changes the intensity of chromatic aberration seen on the edges of the screen which will separate into blue, green and red edges.
+version = 5
+
+[Default]
+$redHz = 1.0
+$blueHz = 1.0
+
+
+[Preset]
+category = Chromatic Aberration
+name = 100%
+
+[Preset]
+category = Chromatic Aberration
+name = 75%
+$redHz = 1.00125
+$blueHz = 1.0025
+
+[Preset]
+category = Chromatic Aberration
+name = 50%
+$redHz = 1.0025
+$blueHz = 1.005
+
+[Preset]
+category = Chromatic Aberration
+name = None
+$redHz = 1.005
+$blueHz = 1.01

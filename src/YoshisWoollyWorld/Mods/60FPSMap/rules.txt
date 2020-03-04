@@ -1,0 +1,6 @@
+[Definition]
+titleIds = 0005000010131F00,0005000010184E00,0005000010184D00
+name = 60FPS World Map
+path = "Yoshi's Woolly World/Mods/60FPS World Map"
+description = Makes the level selection map run at 60FPS instead of the usual 30FPS. The game already runs 60FPS when you're in the levels.||Made by Xalphenos.
+version = 5

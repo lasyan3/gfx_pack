@@ -1,0 +1,64 @@
+[Definition]
+titleIds = 000500001010DD00,000500001010EF00,0005000010112300,000500001011A700,0005000E1010DD00,0005000E10112300
+name = Lens Dirt
+path = "ZombiU/Mods/Lens Dirt"
+description = Allows you to change the opacity of the lens dirt effect.
+version = 5
+
+[Default]
+$dirtOpacity = 1.0
+
+
+[Preset]
+category = Opacity
+name = 100% (Default)
+
+[Preset]
+category = Opacity
+name = 90%
+$dirtOpacity = 0.90
+
+[Preset]
+category = Opacity
+name = 80%
+$dirtOpacity = 0.80
+
+[Preset]
+category = Opacity
+name = 70%
+$dirtOpacity = 0.70
+
+[Preset]
+category = Opacity
+name = 60%
+$dirtOpacity = 0.60
+
+[Preset]
+category = Opacity
+name = 50%
+$dirtOpacity = 0.50
+
+[Preset]
+category = Opacity
+name = 40%
+$dirtOpacity = 0.40
+
+[Preset]
+category = Opacity
+name = 30%
+$dirtOpacity = 0.30
+
+[Preset]
+category = Opacity
+name = 20%
+$dirtOpacity = 0.20
+
+[Preset]
+category = Opacity
+name = 10%
+$dirtOpacity = 0.10
+
+[Preset]
+category = Opacity
+name = No Lens Dirt
+$dirtOpacity = 0.01
