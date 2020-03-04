@@ -21,6 +21,8 @@
 // shader 79183302695ea935
 const float resXScale = float($width)/float($gameWidth);
 const float resYScale = float($height)/float($gameHeight);
+
+
 #ifdef VULKAN
 layout(set = 1, binding = 1) uniform ufBlock
 {
