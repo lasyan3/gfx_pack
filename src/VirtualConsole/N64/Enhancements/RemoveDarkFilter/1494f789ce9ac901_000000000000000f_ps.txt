@@ -19,6 +19,8 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 1494f789ce9ac901
+
+
 #ifdef VULKAN
 layout(set = 1, binding = 0) uniform ufBlock
 {
