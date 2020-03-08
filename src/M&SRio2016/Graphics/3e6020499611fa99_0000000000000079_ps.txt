@@ -81,7 +81,7 @@ PS1f = R2f.x;
 R3f.x = R0f.x + R127f.x;
 R2f.y = R0f.y + -(R127f.y);
 R3f.z = R0f.y + R127f.y;
-PV0f.w = intBitsToFloat(uf_remappedPS[0].y) * intBitsToFloat(0x4084b060);
+PV0f.w = intBitsToFloat(uf_remappedPS[0].y) / resYScale * intBitsToFloat(0x4084b060);
 R4f.x = R0f.x + -(R127f.w);
 PS0f = R4f.x;
 // 3

@@ -68,11 +68,11 @@ R2f.x = R0f.x + PV0f.w;
 R2f.y = R0f.y + PV0f.z;
 PV1f.z = intBitsToFloat(uf_remappedPS[0].y);
 R3f.w = R0f.x + PS0f;
-R3f.x = R0f.x + intBitsToFloat(uf_remappedPS[0].x);
+R3f.x = R0f.x + intBitsToFloat(uf_remappedPS[0].x) / resXScale;
 PS1f = R3f.x;
 // 2
 R3f.y = R0f.y + PV1f.z;
-R3f.z = R0f.y + intBitsToFloat(uf_remappedPS[0].y);
+R3f.z = R0f.y + intBitsToFloat(uf_remappedPS[0].y) / resYScale;
 R1f.xyzw = (texture(textureUnitPS0, R1f.xy).xyzw);
 R2f.xyzw = (texture(textureUnitPS0, R2f.xy).xyzw);
 R0f.xyzw = (texture(textureUnitPS0, R3f.wy).xyzw);
