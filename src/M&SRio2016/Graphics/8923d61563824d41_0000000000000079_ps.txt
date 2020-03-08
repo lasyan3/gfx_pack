@@ -91,8 +91,8 @@ PS0f = R4f.x;
 R5f.x = R0f.x + R127f.w;
 R4f.y = R0f.y + -(PV0f.w);
 R5f.z = R0f.y + PV0f.w;
-PV1f.w = intBitsToFloat(uf_remappedPS[0].x) * intBitsToFloat(0x40c6ee78);
-PS1f = intBitsToFloat(uf_remappedPS[0].y) * intBitsToFloat(0x40c6ee78);
+PV1f.w = intBitsToFloat(uf_remappedPS[0].x) / resXScale * intBitsToFloat(0x40c6ee78);
+PS1f = intBitsToFloat(uf_remappedPS[0].y) / resYScale * intBitsToFloat(0x40c6ee78);
 // 4
 backupReg0f = R0f.x;
 backupReg1f = R0f.y;
