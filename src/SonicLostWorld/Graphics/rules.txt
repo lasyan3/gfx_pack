@@ -24,9 +24,21 @@ name = 1280x720 (Default)
 
 [Preset]
 category = TV Resolution
+name = 320x180
+$width = 320
+$height = 180
+
+[Preset]
+category = TV Resolution
 name = 640x360
 $width = 640
 $height = 360
+
+[Preset]
+category = TV Resolution
+name = 854x480
+$width = 854
+$height = 480
 
 [Preset]
 category = TV Resolution
@@ -127,6 +139,12 @@ category = Gamepad Resolution
 
 [Preset]
 category = Gamepad Resolution
+name = 320x180
+$padWidth = 320
+$padHeight = 180
+
+[Preset]
+category = Gamepad Resolution
 name = 640x360
 $padWidth = 640
 $padHeight = 360
@@ -136,6 +154,12 @@ category = Gamepad Resolution
 name = 960x540
 $padWidth = 960
 $padHeight = 540
+
+[Preset]
+category = Gamepad Resolution
+name = 1280x720
+$padWidth = 1280
+$padHeight = 720
 
 [Preset]
 category = Gamepad Resolution
