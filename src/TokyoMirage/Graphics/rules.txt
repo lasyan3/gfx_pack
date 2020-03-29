@@ -120,7 +120,7 @@ $height = 1440
 # Ultrawide Cutscene Scaling
 
 [Preset]
-category = Ultrawide GUI Scaling
+category = Ultrawide Cutscene Scaling
 name = N/A
 condition = 0
 $ultrawideCutsceneMode:int = 0

@@ -166,14 +166,14 @@ $shadowRes = 4
 [TextureRedefine] # Game Resolution
 width = 1920
 height = 1088
-formatsExcluded = 0x219,0x1a
+formatsExcluded = 0x219,0x01a
 overwriteWidth = ($width/$gameWidth) * 1920
 overwriteHeight = ($height/$gameHeight) * 1088
 
 [TextureRedefine] # Game Resolution
 width = 1920
 height = 1080
-formatsExcluded = 0x219,0x1a
+formatsExcluded = 0x219,0x01a
 overwriteWidth = ($width/$gameWidth) * 1920
 overwriteHeight = ($height/$gameHeight) * 1080
 
@@ -292,7 +292,7 @@ overwriteHeight = ($height/$gameHeight) * 210
 [TextureRedefine]
 width = 256
 height = 256
-formats = 0x5,0x19
+formats = 0x005,0x019
 overwriteWidth = ($width/$gameWidth) * 256
 overwriteHeight = ($height/$gameHeight) * 256
 
@@ -402,7 +402,7 @@ overwriteHeight = ($height/$gameHeight) * 1088
 width = 1920
 height = 1088
 formats = 0x1a
-overwriteFormat = 0x1f
+overwriteFormat = 0x01f
 overwriteWidth = ($width/$gameWidth) * 1920
 overwriteHeight = ($height/$gameHeight) * 1088
 
@@ -418,7 +418,7 @@ overwriteHeight = ($height/$gameHeight) * 1080
 width = 1920
 height = 1080
 formats = 0x1a
-overwriteFormat = 0x1f
+overwriteFormat = 0x01f
 overwriteWidth = ($width/$gameWidth) * 1920
 overwriteHeight = ($height/$gameHeight) * 1080
 
