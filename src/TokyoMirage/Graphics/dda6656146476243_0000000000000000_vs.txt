@@ -19,9 +19,11 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader dda6656146476243
-//Video aspect
-const float UI = $UIAspectX;
-const float UIY = $UIAspectY;
+// Used for: Cutscene Videos
+const float calcYScale = (float($width)/float($height))/(float($gameWidth)/float($gameHeight));
+const float calcXScale = (float($gameWidth)/float($gameHeight))/(float($width)/float($height));
+
+
 #ifdef VULKAN
 layout(set = 0, binding = 0) uniform ufBlock
 {
@@ -109,8 +111,23 @@ R0f.w = tempf.x;
 // 4
 R1f.xyz = vec3(intBitsToFloat(uf_remappedVS[4].x),intBitsToFloat(uf_remappedVS[4].y),intBitsToFloat(uf_remappedVS[4].z));
 R1f.w = intBitsToFloat(uf_remappedVS[4].w);
-// export
-SET_POSITION(vec4(R0f.x*UI, R0f.y*UIY, R0f.z, R0f.w));
+
+
+
+#if ($ultrawideCutsceneMode == 0)
+// Keeps the cutscenes stretched
+SET_POSITION(vec4(intBitsToFloat(R0i.x), intBitsToFloat(R0i.y), intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+#elif ($ultrawideCutsceneMode == 1)
+// Squeeze the cutscenes back
+if (calcXScale < 1.0) SET_POSITION(vec4(intBitsToFloat(R0i.x)*calcXScale, intBitsToFloat(R0i.y), intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+if (calcYScale < 1.0) SET_POSITION(vec4(intBitsToFloat(R0i.x), intBitsToFloat(R0i.y)*calcYScale, intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+#elif ($ultrawideCutsceneMode == 2)
+// Cut the black bars of the video by zooming in. Extends the side of the video that didn't get stretched.
+if (calcXScale < 1.0) SET_POSITION(vec4(intBitsToFloat(R0i.x), intBitsToFloat(R0i.y)*calcXScale, intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+if (calcYScale < 1.0) SET_POSITION(vec4(intBitsToFloat(R0i.x)*calcYScale, intBitsToFloat(R0i.y), intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+#endif
+
+
 // export
 passParameterSem131 = vec4(R1f.x, R1f.y, R1f.z, R1f.w);
 // export

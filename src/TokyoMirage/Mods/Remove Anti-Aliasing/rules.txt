@@ -1,0 +1,6 @@
+[Definition]
+titleIds = 00050000101ED700,00050000101ED800,0005000010131D00
+name = Remove Anti-Aliasing
+path = "Tokyo Mirage Sessions FE/Mods/Remove Anti-Aliasing"
+description = Removes Anti-Aliasing from the game. Use this when you want a sharper image (with aliasing) or because you want to use your own kind of anti-aliasing like SSAA using the resolution packs or another external kind of AA.||Made by getdls.
+version = 5

@@ -18,9 +18,10 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader 4d96f8f88575bcab -- Used to blur out the main frame in various cutscenes
+// shader 4d96f8f88575bcab
+// Used for: Blurs in various cutscenes
+const float blurAmount = float($blurAmount);
 
-float blur = $Blur;
 
 #ifdef VULKAN
 layout(set = 1, binding = 2) uniform ufBlock
@@ -121,5 +122,5 @@ PV0i.w = floatBitsToInt(min(intBitsToFloat(PV1i.x), 1.0));
 R0i.w = ((R127i.x == 0)?(PV0i.x):(PV0i.w));
 }
 // export
-passPixelColor0 = vec4(intBitsToFloat(R0i.x), intBitsToFloat(R0i.y), intBitsToFloat(R0i.z), intBitsToFloat(R0i.w) * blur );
+passPixelColor0 = vec4(intBitsToFloat(R0i.x), intBitsToFloat(R0i.y), intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)*blurAmount);
 }

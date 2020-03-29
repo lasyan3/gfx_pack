@@ -19,9 +19,11 @@
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
 // shader 61b51be479ffa5dc
-//text aspect
-const float UI = $UIAspectX;
-const float UIY = $UIAspectY;
+// Used for: Text Rendering
+const float calcYScale = (float($width)/float($height))/(float($gameWidth)/float($gameHeight));
+const float calcXScale = (float($gameWidth)/float($gameHeight))/(float($width)/float($height));
+
+
 #ifdef VULKAN
 layout(set = 0, binding = 0) uniform ufBlock
 {
@@ -126,8 +128,17 @@ PS0i = R4i.y;
 R5i.x = ((R127i.y == 0)?(R2i.x):(R2i.x));
 R5i.y = ((R127i.y == 0)?(R2i.y):(R2i.y));
 R4i.z = ((R127i.y == 0)?(R1i.z):(R1i.z));
-// export
-SET_POSITION(vec4(intBitsToFloat(R0i.x)*UI, intBitsToFloat(R0i.y)*UIY, intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+
+
+
+#if ($ultrawideGUIScaling == 0)
+SET_POSITION(vec4(intBitsToFloat(R0i.x), intBitsToFloat(R0i.y), intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+#elif ($ultrawideGUIScaling == 1)
+if (calcXScale < 1.0) SET_POSITION(vec4(intBitsToFloat(R0i.x)*calcXScale, intBitsToFloat(R0i.y), intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+if (calcYScale < 1.0) SET_POSITION(vec4(intBitsToFloat(R0i.x), intBitsToFloat(R0i.y)*calcYScale, intBitsToFloat(R0i.z), intBitsToFloat(R0i.w)));
+#endif
+
+
 // export
 passParameterSem131 = vec4(intBitsToFloat(R4i.x), intBitsToFloat(R4i.y), intBitsToFloat(R4i.z), intBitsToFloat(R4i.w));
 // export
