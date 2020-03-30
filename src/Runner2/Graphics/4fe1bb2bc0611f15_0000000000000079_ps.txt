@@ -20,7 +20,8 @@
 
 // shader 4fe1bb2bc0611f15
 // Used for: Horizontal and vertical background blur
-float resScale = float($width)/float($gameWidth);
+const float resScale = float($width)/float($gameWidth);
+
 
 #ifdef VULKAN
 layout(set = 1, binding = 1) uniform ufBlock

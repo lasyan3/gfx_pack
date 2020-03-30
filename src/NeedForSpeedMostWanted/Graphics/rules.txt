@@ -1,6 +1,6 @@
 [Definition]
 titleIds = 0005000010128800,0005000010128400,000500001012B700
-name = Resolution
+name = TV Resolution, Gamepad Resolution and Shadow Quality
 path = "Need for Speed Most Wanted U/Graphics"
 description = Changes the resolution of the game.||Made by getdls.
 version = 5
