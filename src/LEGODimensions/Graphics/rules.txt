@@ -1,7 +1,7 @@
 [Definition]
 titleIds = 5000010194200, 0005000010195d00
 name = Game Resolution
-path = "Lego Dimensions/Graphics"
+path = "LEGO Dimensions/Graphics"
 description = Changes the game resolution of the game.||Made by bloodmc and Xalphenos.
 version = 5
 
