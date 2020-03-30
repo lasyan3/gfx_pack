@@ -1,7 +1,7 @@
-[ken260Ver0]
+[FOTNS_60FPS_v0]
 moduleMatches = 0x68342797
 
-#0x020edabc = NOP #always 30fps
+0x021352e0 = li r0, 1 # Change vsync to 60FPS in comic screens
+0x02134f3d = li r9, 1 # Change vsync to 60FPS in cutscenes
 
-0x021352e0 = li r0,1 #comic 60fps
-0x02134f3d = li r9,1 #cutscenes 60fps
+#0x020edabc = nop # always 30fps

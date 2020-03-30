@@ -1,19 +1,27 @@
-[LMA60fpsVer0]
+[LMA_60FPS_v0]
 moduleMatches = 0x266BB956
+
 0x024d22d8 = addi r11,r12,1
 
-[LMAfpsVer16]
+
+[LMA_60FPS_v16]
 moduleMatches = 0x11FA1ECB
+
 0x024d3548 = addi r11,r12,1
 
-[LMAfpsVer32]
+
+[LMA_60FPS_v32]
 moduleMatches = 0x69B4BA3C
+
 0x024e6ce0 = addi r11,r12,1
 
-[LMAfpsVer48]
+[LMA_60FPS_v48]
 moduleMatches = 0xFAB53F77
+
 0x024eb414 = addi r11,r12,1
 
-[LMAfpsVer64]
+
+[LMA_60FPS_v64]
 moduleMatches = 0x004C6B8C
+
 0x024eb5d8 = addi r11,r12,1

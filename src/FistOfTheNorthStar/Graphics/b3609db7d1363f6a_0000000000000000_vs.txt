@@ -18,10 +18,11 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader f9feadb214b483b7
-// Used for: First horizontal and vertical bloom blur pass
-float resXScale = float($width)/float($gameWidth);
-float resYScale = float($height)/float($gameHeight);
+// shader b3609db7d1363f6a
+// Used for: Horizontal and vertical blur
+const float resXScale = float($width)/float($gameWidth);
+const float resYScale = float($height)/float($gameHeight);
+
 
 #ifdef VULKAN
 layout(set = 0, binding = 0) uniform ufBlock
@@ -38,13 +39,14 @@ out gl_PerVertex
 	vec4 gl_Position;
 	float gl_PointSize;
 };
+layout(location = 0) out vec4 passParameterSem128;
 layout(location = 1) out vec4 passParameterSem129;
 layout(location = 2) out vec4 passParameterSem130;
 layout(location = 3) out vec4 passParameterSem131;
 layout(location = 4) out vec4 passParameterSem132;
 layout(location = 5) out vec4 passParameterSem133;
 layout(location = 6) out vec4 passParameterSem134;
-layout(location = 0) out vec4 passParameterSem128;
+layout(location = 7) out vec4 passParameterSem135;
 int clampFI32(int v)
 {
 if( v == 0x7FFFFFFF )
@@ -225,14 +227,14 @@ PS1i = Ri[1].x;
 // 2
 Ri[1].y = floatBitsToInt(intBitsToFloat(PV1i.x) * -(1.0));
 // 3
-Ri[16].xyz = ivec3(Ri[1].x,Ri[1].y,Ri[1].z);
-Ri[16].w = Ri[1].w;
+Ri[20].xyz = ivec3(Ri[1].x,Ri[1].y,Ri[1].z);
+Ri[20].w = Ri[1].w;
 }
 while( activeMaskStackC[1] == true )
 {
 if( activeMaskStackC[1] == true ) {
 // 0
-Ri[0].z = (0x00000006 > Ri[3].y)?int(0xFFFFFFFF):int(0x0);
+Ri[0].z = (0x00000008 > Ri[3].y)?int(0xFFFFFFFF):int(0x0);
 // 1
 predResult = (Ri[0].z != 0);
 if( predResult == false ) break;
@@ -241,7 +243,7 @@ if( activeMaskStackC[1] == true ) {
 // 0
 backupReg0i = Ri[3].y;
 backupReg0i = Ri[3].y;
-Ri[1].x = Ri[3].y + 0x00000008;
+Ri[1].x = Ri[3].y + 0x00000009;
 Ri[3].y = backupReg0i + int(1);
 Ri[127].z = floatBitsToInt(float(backupReg0i));
 PS0i = Ri[127].z;
@@ -270,75 +272,77 @@ tempResulti = clamp(tempResulti, -256, 255);
 ARi.x = tempResulti;
 PV1i.x = tempResulti;
 // 6
-Ri[10+ARi.x].x = Ri[0].x;
-Ri[10+ARi.x].y = Ri[0].y;
-Ri[10+ARi.x].z = Ri[0].z;
-Ri[10+ARi.x].w = Ri[0].w;
+Ri[12+ARi.x].x = Ri[0].x;
+Ri[12+ARi.x].y = Ri[0].y;
+Ri[12+ARi.x].z = Ri[0].z;
+Ri[12+ARi.x].w = Ri[0].w;
 }
 }
 if( activeMaskStackC[1] == true ) {
 // 0
-PV0i.x = floatBitsToInt(intBitsToFloat(Ri[2].y) + intBitsToFloat(uf_uniformRegisterVS[8].y));
-PV0i.y = floatBitsToInt(intBitsToFloat(Ri[2].x) + intBitsToFloat(uf_uniformRegisterVS[8].x));
+Ri[0].xyz = ivec3(Ri[20].x,Ri[20].y,Ri[20].z);
+Ri[0].w = Ri[20].w;
 // 1
-PV1i.z = floatBitsToInt(mul_nonIEEE(intBitsToFloat(PV0i.x), intBitsToFloat(uf_uniformRegisterVS[1].y)));
-PV1i.w = floatBitsToInt(mul_nonIEEE(intBitsToFloat(PV0i.y), intBitsToFloat(uf_uniformRegisterVS[1].x)));
+Ri[1].xyz = ivec3(Ri[21].x,Ri[21].y,Ri[21].z);
+Ri[1].w = Ri[21].w;
 // 2
-Ri[7].x = floatBitsToInt(intBitsToFloat(PV1i.w) + intBitsToFloat(uf_uniformRegisterVS[1].z));
-Ri[7].y = floatBitsToInt(intBitsToFloat(PV1i.z) + intBitsToFloat(uf_uniformRegisterVS[1].w));
+Ri[12].xyz = ivec3(Ri[1].x,Ri[1].y,Ri[1].z);
+Ri[12].w = Ri[1].w;
 // 3
-Ri[17].x = Ri[7].x;
-Ri[17].y = Ri[7].y;
+Ri[2].xyz = ivec3(Ri[22].x,Ri[22].y,Ri[22].z);
+Ri[2].w = Ri[22].w;
 // 4
-Ri[2].xyz = ivec3(Ri[16].x,Ri[16].y,Ri[16].z);
-Ri[2].w = Ri[16].w;
+Ri[13].xyz = ivec3(Ri[2].x,Ri[2].y,Ri[2].z);
+Ri[13].w = Ri[2].w;
 // 5
-Ri[0].xyz = ivec3(Ri[18].x,Ri[18].y,Ri[18].z);
-Ri[0].w = Ri[18].w;
+Ri[3].xyz = ivec3(Ri[23].x,Ri[23].y,Ri[23].z);
+Ri[3].w = Ri[23].w;
 // 6
-Ri[10].xyz = ivec3(Ri[0].x,Ri[0].y,Ri[0].z);
-Ri[10].w = Ri[0].w;
+Ri[14].xyz = ivec3(Ri[3].x,Ri[3].y,Ri[3].z);
+Ri[14].w = Ri[3].w;
 // 7
-Ri[1].xyz = ivec3(Ri[19].x,Ri[19].y,Ri[19].z);
-Ri[1].w = Ri[19].w;
+Ri[4].xyz = ivec3(Ri[24].x,Ri[24].y,Ri[24].z);
+Ri[4].w = Ri[24].w;
 // 8
-Ri[11].xyz = ivec3(Ri[1].x,Ri[1].y,Ri[1].z);
-Ri[11].w = Ri[1].w;
+Ri[15].xyz = ivec3(Ri[4].x,Ri[4].y,Ri[4].z);
+Ri[15].w = Ri[4].w;
 // 9
-Ri[3].xyz = ivec3(Ri[20].x,Ri[20].y,Ri[20].z);
-Ri[3].w = Ri[20].w;
+Ri[5].xyz = ivec3(Ri[25].x,Ri[25].y,Ri[25].z);
+Ri[5].w = Ri[25].w;
 // 10
-Ri[12].xyz = ivec3(Ri[3].x,Ri[3].y,Ri[3].z);
-Ri[12].w = Ri[3].w;
+Ri[16].xyz = ivec3(Ri[5].x,Ri[5].y,Ri[5].z);
+Ri[16].w = Ri[5].w;
 // 11
-Ri[4].xyz = ivec3(Ri[21].x,Ri[21].y,Ri[21].z);
-Ri[4].w = Ri[21].w;
+Ri[6].xyz = ivec3(Ri[26].x,Ri[26].y,Ri[26].z);
+Ri[6].w = Ri[26].w;
 // 12
-Ri[13].xyz = ivec3(Ri[4].x,Ri[4].y,Ri[4].z);
-Ri[13].w = Ri[4].w;
+Ri[17].xyz = ivec3(Ri[6].x,Ri[6].y,Ri[6].z);
+Ri[17].w = Ri[6].w;
 // 13
-Ri[5].xyz = ivec3(Ri[22].x,Ri[22].y,Ri[22].z);
-Ri[5].w = Ri[22].w;
+Ri[7].xyz = ivec3(Ri[27].x,Ri[27].y,Ri[27].z);
+Ri[7].w = Ri[27].w;
 // 14
-Ri[6].xyz = ivec3(Ri[23].x,Ri[23].y,Ri[23].z);
-Ri[6].w = Ri[23].w;
+Ri[8].xyz = ivec3(Ri[28].x,Ri[28].y,Ri[28].z);
+Ri[8].w = Ri[28].w;
 }
 // export
-SET_POSITION(vec4(intBitsToFloat(Ri[2].x), intBitsToFloat(Ri[2].y), intBitsToFloat(Ri[2].z), intBitsToFloat(Ri[2].w)));
+SET_POSITION(vec4(intBitsToFloat(Ri[0].x), intBitsToFloat(Ri[0].y), intBitsToFloat(Ri[0].z), intBitsToFloat(Ri[0].w)));
 // export
-passParameterSem129 = vec4(intBitsToFloat(Ri[0].x), intBitsToFloat(Ri[0].y), intBitsToFloat(Ri[0].z), intBitsToFloat(Ri[0].w));
+passParameterSem128 = vec4(intBitsToFloat(Ri[1].x), intBitsToFloat(Ri[1].y), intBitsToFloat(Ri[1].z), intBitsToFloat(Ri[1].w));
 // export
-passParameterSem130 = vec4(intBitsToFloat(Ri[1].x), intBitsToFloat(Ri[1].y), intBitsToFloat(Ri[1].z), intBitsToFloat(Ri[1].w));
+passParameterSem129 = vec4(intBitsToFloat(Ri[2].x), intBitsToFloat(Ri[2].y), intBitsToFloat(Ri[2].z), intBitsToFloat(Ri[2].w));
 // export
-passParameterSem131 = vec4(intBitsToFloat(Ri[3].x), intBitsToFloat(Ri[3].y), intBitsToFloat(Ri[3].z), intBitsToFloat(Ri[3].w));
+passParameterSem130 = vec4(intBitsToFloat(Ri[3].x), intBitsToFloat(Ri[3].y), intBitsToFloat(Ri[3].z), intBitsToFloat(Ri[3].w));
 // export
-passParameterSem132 = vec4(intBitsToFloat(Ri[4].x), intBitsToFloat(Ri[4].y), intBitsToFloat(Ri[4].z), intBitsToFloat(Ri[4].w));
+passParameterSem131 = vec4(intBitsToFloat(Ri[4].x), intBitsToFloat(Ri[4].y), intBitsToFloat(Ri[4].z), intBitsToFloat(Ri[4].w));
 // export
-passParameterSem133 = vec4(intBitsToFloat(Ri[5].x), intBitsToFloat(Ri[5].y), intBitsToFloat(Ri[5].z), intBitsToFloat(Ri[5].w));
+passParameterSem132 = vec4(intBitsToFloat(Ri[5].x), intBitsToFloat(Ri[5].y), intBitsToFloat(Ri[5].z), intBitsToFloat(Ri[5].w));
 // export
-passParameterSem134 = vec4(intBitsToFloat(Ri[6].x), intBitsToFloat(Ri[6].y), intBitsToFloat(Ri[6].z), intBitsToFloat(Ri[6].w));
+passParameterSem133 = vec4(intBitsToFloat(Ri[6].x), intBitsToFloat(Ri[6].y), intBitsToFloat(Ri[6].z), intBitsToFloat(Ri[6].w));
 // export
-passParameterSem128 = vec4(intBitsToFloat(Ri[7].x), intBitsToFloat(Ri[7].y), intBitsToFloat(Ri[7].z), intBitsToFloat(Ri[7].z));
+passParameterSem134 = vec4(intBitsToFloat(Ri[7].x), intBitsToFloat(Ri[7].y), intBitsToFloat(Ri[7].z), intBitsToFloat(Ri[7].w));
+// export
+passParameterSem135 = vec4(intBitsToFloat(Ri[8].x), intBitsToFloat(Ri[8].y), intBitsToFloat(Ri[8].z), intBitsToFloat(Ri[8].w));
 if( activeMaskStackC[1] == true ) {
 // 0
 }

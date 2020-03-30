@@ -1,11 +1,16 @@
-[LSW60fpsVer0]
+[LSW_60FPS_v0]
 moduleMatches = 0x311EE639
+
 0x0284e80c = addi r11,r12,1
 
-[LSWfpsVer16]
+
+[LSW_60FPS_v16]
 moduleMatches = 0x185FB31C
+
 0x02860014 = addi r11,r12,1
 
-[LSWfpsVer32]
+
+[LSW_60FPS_v32]
 moduleMatches = 0xAF503338
+
 0x0287fb34 = addi r11,r12,1

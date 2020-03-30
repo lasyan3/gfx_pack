@@ -1,0 +1,7 @@
+[LD_AR_USv320EUv352]
+moduleMatches = 0x8A9D0373,0x8EEE187
+
+0x101408C0 = .float ($width/$height) # Menu aspect ratio
+0x1041F294 = .float (1/($width/$height)) # Gameplay aspect ratio scale
+0x10477DF4 = .float (1/($width/$height)) # Event aspect ratio scale
+0x10147788 = .float 10240
