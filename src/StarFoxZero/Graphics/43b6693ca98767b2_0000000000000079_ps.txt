@@ -18,7 +18,10 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader 43b6693ca98767b2 - Gamepad AA
+// shader 43b6693ca98767b2
+// Used for: Gamepad Anti-Aliasing
+
+
 TEXTURE_LAYOUT(0, 1, 0) uniform sampler2D textureUnitPS0;
 layout(location = 0) in vec4 passParameterSem133;
 layout(location = 0) out vec4 passPixelColor0;

@@ -18,7 +18,10 @@
 #endif
 // This shader was automatically converted to be cross-compatible with Vulkan and OpenGL.
 
-// shader 78a2659662685d55 - TV AA
+// shader 78a2659662685d55
+// Used for: TV Anti-Aliasing
+
+
 TEXTURE_LAYOUT(0, 1, 0) uniform sampler2D textureUnitPS0;
 layout(location = 0) in vec4 passParameterSem133;
 layout(location = 0) out vec4 passPixelColor0;
