@@ -3,137 +3,177 @@ titleIds = 0005000010116100,00050000101C4C00,00050000101C4D00
 name = "Equipment - Force Type" 
 path = "Xenoblade Chronicles X/Mods/Loot/Equipment - Force Type"
 description = Force the type of equipment looted.
-version = 4
+version = 5
+
+[Default]
+$type:int = 2
+$sub:int = 0
 
 [Preset] ###########################################
-name = "Ground weapons - ANY ____________________________________________"
-$type = 2
-$sub = 0
+name = "Ground Weapons"
+category = Equipment Type
 
 [Preset]
-name = "Ground weapons - Photon Sabers"
-$type = 2
-$sub = 1
+name = "Random"
+category = Ground Weapon
+condition = $type == 2
 
 [Preset]
-name = "Ground weapons - Assault Rifles"
-$type = 2
-$sub = 2
+name = "Photon Sabers"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 1
 
 [Preset]
-name = "Ground weapons - Sniper Rifles"
-$type = 2
-$sub = 3
+name = "Assault Rifles"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 2
 
 [Preset]
-name = "Ground weapons - Dual Guns"
-$type = 2
-$sub = 4
+name = "Sniper Rifles"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 3
 
 [Preset]
-name = "Ground weapons - Gatling Guns"
-$type = 2
-$sub = 5
+name = "Dual Guns"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 4
 
 [Preset]
-name = "Ground weapons - Rayguns"
-$type = 2
-$sub = 6
+name = "Gatling Guns"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 5
 
 [Preset]
-name = "Ground weapons - Psycho Launchers"
-$type = 2
-$sub = 7
+name = "Rayguns"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 6
 
 [Preset]
-name = "Ground weapons - Longswords"
-$type = 2
-$sub = 8
+name = "Psycho Launchers"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 7
 
 [Preset]
-name = "Ground weapons - Javelins"
-$type = 2
-$sub = 9
+name = "Longswords"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 8
 
 [Preset]
-name = "Ground weapons - Dual Swords"
-$type = 2
-$sub = 10
+name = "Javelins"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 9
 
 [Preset]
-name = "Ground weapons - Shields"
-$type = 2
-$sub = 11
+name = "Dual Swords"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 10
 
 [Preset]
-name = "Ground weapons - Knives"
-$type = 2
-$sub = 12
+name = "Shields"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 11
+
+[Preset]
+name = "Knives"
+category = Ground Weapon
+condition = $type == 2
+$sub:int = 12
 
 [Preset] ###########################################
-name = "Ground armors - ANY ____________________________________________"
-$type = 4
-$sub = 0
+name = "Ground Armors"
+category = Equipment Type
+$type:int = 4
 
 [Preset]
-name = "Ground armors - Head"
-$type = 4
-$sub = 1
+name = "Random"
+category = Ground Armor
+condition = $type == 4
 
 [Preset]
-name = "Ground armors - Torso"
-$type = 4
-$sub = 2
+name = "Head"
+category = Ground Armor
+condition = $type == 4
+$sub:int = 1
 
 [Preset]
-name = "Ground armors - Right arm"
-$type = 4
-$sub = 3
+name = "Torso"
+category = Ground Armor
+condition = $type == 4
+$sub:int = 2
 
 [Preset]
-name = "Ground armors - Left arm"
-$type = 4
-$sub = 4
+name = "Right arm"
+category = Ground Armor
+condition = $type == 4
+$sub:int = 3
 
 [Preset]
-name = "Ground armors - Leg"
-$type = 4
-$sub = 5
+name = "Left arm"
+category = Ground Armor
+condition = $type == 4
+$sub:int = 4
+
+[Preset]
+name = "Leg"
+category = Ground Armor
+condition = $type == 4
+$sub:int = 5
 
 [Preset] ###########################################
-name = "Skell weapons - ANY ____________________________________________"
-$type = 6
-$sub = 0
+name = "Skell weapons (random only)"
+category = Equipment Type
+$type:int = 6
 
 [Preset] ###########################################
-name = "Skell armors - ANY ____________________________________________"
-$type = 8
-$sub = 0
+name = "Skell armors"
+category = Equipment Type
+$type:int = 8
 
 [Preset]
-name = "Skell armors - Head"
-$type = 8
-$sub = 1
+name = "Random"
+category = Skell Armor
+condition = $type == 8
 
 [Preset]
-name = "Skell armors - Torso"
-$type = 8
-$sub = 2
+name = "Head"
+category = Skell Armor
+condition = $type == 8
+$sub:int = 1
 
 [Preset]
-name = "Skell armors - Right arm"
-$type = 8
-$sub = 3
+name = "Torso"
+category = Skell Armor
+condition = $type == 8
+$sub:int = 2
 
 [Preset]
-name = "Skell armors - Left arm"
-$type = 8
-$sub = 4
+name = "Right arm"
+category = Skell Armor
+condition = $type == 8
+$sub:int = 3
 
 [Preset]
-name = "Skell armors - Leg"
-$type = 8
-$sub = 5
+name = "Left arm"
+category = Skell Armor
+condition = $type == 8
+$sub:int = 4
+
+[Preset]
+name = "Leg"
+category = Skell Armor
+condition = $type == 8
+$sub:int = 5
 
 
 

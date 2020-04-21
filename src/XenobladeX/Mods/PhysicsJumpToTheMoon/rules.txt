@@ -3,70 +3,68 @@ titleIds = 0005000010116100,00050000101C4C00,00050000101C4D00
 name = "Jump higher"
 path = "Xenoblade Chronicles X/Mods/Physics/Jump to the Moon!"
 description = Increase horizontal and vertical velocity of jump (Vanilla values are 1.0 for both).
-version = 4
+version = 5
 
-[Preset]
-name = "Horizontal 3.0 / Vertical 1.10"
-$horz = 3.0
-$vert = 1.10
-
-[Preset]
-name = "Horizontal 2.0 / Vertical 1.10"
-$horz = 2.0
-$vert = 1.10
-
-[Preset]
-name = "Horizontal 1.5 / Vertical 1.10"
-$horz = 1.5
-$vert = 1.10
-
-[Preset]
-name = "Horizontal 1.5 / Vertical 1.05"
-$horz = 1.5
-$vert = 1.05
-
-[Preset]
-name = "Horizontal 1.5 / Vertical 1.03"
-$horz = 1.5
-$vert = 1.03
-
-[Preset]
-name = "Horizontal 2.0 / Vertical 1.05"
-$horz = 2.0
-$vert = 1.05
-
-
-[Preset]
-name = "[TEST] Horizontal 1.0 / Vertical 1.02"
+[Default]
 $horz = 1.0
+$vert = 1.0
+
+[Preset]
+name = "1.0 (default)"
+category = Horizontal Velocity
+
+[Preset]
+name = "1.5"
+category = Horizontal Velocity
+$horz = 1.5
+
+[Preset]
+name = "2.0"
+category = Horizontal Velocity
+$horz = 2.0
+
+[Preset]
+name = "2.5"
+category = Horizontal Velocity
+$horz = 2.5
+
+[Preset]
+name = "3.0"
+category = Horizontal Velocity
+$horz = 3.0
+
+
+[Preset]
+name = "1.0 (default)"
+category = VerticalVelocity
+
+[Preset]
+name = "1.02"
+category = VerticalVelocity
 $vert = 1.02
 
 [Preset]
-name = "[TEST] Horizontal 1.0 / Vertical 1.05"
-$horz = 1.0
+name = "1.03"
+category = VerticalVelocity
+$vert = 1.03
+
+[Preset]
+name = "1.04"
+category = VerticalVelocity
+$vert = 1.04
+
+[Preset]
+name = "1.05"
+category = VerticalVelocity
 $vert = 1.05
 
 [Preset]
-name = "[TEST] Horizontal 1.0 / Vertical 1.10"
-$horz = 1.0
+name = "1.10"
+category = VerticalVelocity
 $vert = 1.10
 
 [Preset]
-name = "[TEST] Horizontal 1.0 / Vertical 2.0"
-$horz = 1.0
+name = "2.0"
+category = VerticalVelocity
 $vert = 2.0
 
-[Preset]
-name = "[TEST] Horizontal 1.5 / Vertical 1.0"
-$horz = 1.5
-$vert = 1.0
-
-[Preset]
-name = "[TEST] Horizontal 2.0 / Vertical 1.0"
-$horz = 2.0
-$vert = 1.0
-
-[Preset]
-name = "[TEST] Horizontal 3.0 / Vertical 1.0"
-$horz = 3.0
-$vert = 1.0
