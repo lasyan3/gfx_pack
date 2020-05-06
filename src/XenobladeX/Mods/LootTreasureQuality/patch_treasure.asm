@@ -33,4 +33,4 @@ blr
 ;      : 4) No chest at all, exit with no chest (0)
 ;      : --> The mod below only changes this last step. So even if you put value 1 (gold chest), you'll still get a silver chest if the game succeeded the step 2.
 
-0x21AAF18 = li r3, $treasure ; li r3, 1 ; 0 = nothing (default), 1 = gold, 2 = silver, 3 = bronze
+0x21AAF18 = li r3, $treasure
