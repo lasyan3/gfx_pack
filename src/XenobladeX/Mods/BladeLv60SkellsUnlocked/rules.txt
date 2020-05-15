@@ -8,11 +8,13 @@ version = 5
 [Default]
 $miranium = 2
 $resource = 3
+$ignoreLevel = 2
 
 [Preset]
 name = Normal
 
 [Preset]
-name = CHEAT - Ignore Miranium and resources requirements
+name = CHEAT - Ignore Miranium, resources and level requirements
 $miranium = 0
 $resource = 0
+$ignoreLevel = 0
