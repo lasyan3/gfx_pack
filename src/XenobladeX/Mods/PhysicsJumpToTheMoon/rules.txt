@@ -19,6 +19,26 @@ category = Horizontal Velocity
 $horz = 1.5
 
 [Preset]
+name = "1.6"
+category = Horizontal Velocity
+$horz = 1.6
+
+[Preset]
+name = "1.7"
+category = Horizontal Velocity
+$horz = 1.7
+
+[Preset]
+name = "1.8"
+category = Horizontal Velocity
+$horz = 1.8
+
+[Preset]
+name = "1.9"
+category = Horizontal Velocity
+$horz = 1.9
+
+[Preset]
 name = "2.0"
 category = Horizontal Velocity
 $horz = 2.0
@@ -36,35 +56,35 @@ $horz = 3.0
 
 [Preset]
 name = "1.0 (default)"
-category = VerticalVelocity
+category = Vertical Velocity
 
 [Preset]
 name = "1.02"
-category = VerticalVelocity
+category = Vertical Velocity
 $vert = 1.02
 
 [Preset]
 name = "1.03"
-category = VerticalVelocity
+category = Vertical Velocity
 $vert = 1.03
 
 [Preset]
 name = "1.04"
-category = VerticalVelocity
+category = Vertical Velocity
 $vert = 1.04
 
 [Preset]
 name = "1.05"
-category = VerticalVelocity
+category = Vertical Velocity
 $vert = 1.05
 
 [Preset]
 name = "1.10"
-category = VerticalVelocity
+category = Vertical Velocity
 $vert = 1.10
 
 [Preset]
 name = "2.0"
-category = VerticalVelocity
+category = Vertical Velocity
 $vert = 2.0
 
