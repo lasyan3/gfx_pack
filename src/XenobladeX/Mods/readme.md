@@ -81,6 +81,8 @@
 
 ### Physics mods
 - **Jump to the Moon!**: Increases the horizontal and vertical velocity of the jump (vanilla values are 1.0 for both).
+	> Horizontal velocity is the distance you reach when jumping.
+	> Vertical Velocity is the height of the jump (works while idle, walking and sprinting)
 - **Run Forrest, run!**: Increases the speed of sprinting.
 
 ### Weather mods
